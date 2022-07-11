@@ -1,0 +1,23 @@
+2018-04-23T15:39:15.099Z - error: SQS Error UnexpectedParameter: Unexpected key 'VisibilityTimeout' found in params
+    at ParamValidator.fail (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/param_validator.js:50:37)
+    at ParamValidator.validateStructure (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/param_validator.js:77:14)
+    at ParamValidator.validateMember (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/param_validator.js:88:21)
+    at ParamValidator.validate (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/param_validator.js:34:10)
+    at Request.VALIDATE_PARAMETERS (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/event_listeners.js:125:42)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/event_listeners.js:85:9
+    at finish (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/config.js:320:7)
+    at /Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/config.js:338:9
+    at SharedIniFileCredentials.get (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/config.js:332:24)
+    at Config.getCredentials (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/config.js:352:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/event_listeners.js:80:26)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/sequential_executor.js:101:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at Request.runTo (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/request.js:403:15)
+    at Request.send (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/request.js:367:10)
+    at features.constructor.makeRequest (/Users/danfield/Documents/df/eth/SolidityUtil/node_modules/aws-sdk/lib/service.js:193:27)

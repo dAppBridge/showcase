@@ -1,0 +1,19 @@
+# sudo systemctl enable /home/centos/gethrinkeby.service
+# 
+[Unit]
+Description=Geth Rinkeby
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/centos
+#ExecStart=/usr/local/bin/geth --rinkeby --cache=512 --maxpeers=20 --ws --wsorigins *
+ExecStart=/home/centos/geth_rinkeby.sh
+Restart=always
+User=centos
+Group=centos
+LimitNOFILE=10240
+LimitFSIZE=infinity
+
+[Install]
+WantedBy=multi-user.target

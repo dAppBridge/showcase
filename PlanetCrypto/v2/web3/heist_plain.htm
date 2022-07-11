@@ -1,0 +1,1257 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Bank Heist 4D - Bank Of Eth -  The $Ethereum Exit Scam Bank Heist Game</title>
+    <meta name=keywords content="Ethereum, exitscam, scam, ponzi, game, dapp, get rich, lottery, gambling, investment, returns, bank of eth, bank heist 4d, bankheist4d, bankheist, exitscam.me, FOMO3D">
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/jquery.toast.min.css" />
+    <link rel="stylesheet" href="css/app.css">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="js/web3.min.js"></script>
+	<script src='js/bignumber.min.js'></script>
+	<script src="js/abiHeist.js?a=3"></script>
+
+<style type="text/css">
+
+body {
+  background-color: #ffdd55;
+}
+
+.sticky-shrinknav-menu {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  height: 2.75rem;
+  line-height: 3.75rem;
+  width: 100%;
+  abackground-color: rgba(23, 121, 186, 0.1);
+  background-color: rgba(255, 204, 0, 0.6);
+
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.sticky-shrinknav-menu li {
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.sticky-shrinknav-menu li:hover {
+  box-shadow: 0 0 0 1px #fefefe;
+  background-color: rgba(255, 204, 0, 1);
+}
+
+.sticky-shrinknav-menu a {
+  acolor: #fefefe;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+
+.sticky-shrinknav-header-title {
+  transition: all 0.3s ease;
+  position: relative;
+  -webkit-transform: translateY(-1.875rem);
+      -ms-transform: translateY(-1.875rem);
+          transform: translateY(-1.875rem);
+  margin-bottom: 0;
+  color: #fefefe;
+  z-index: 100;
+
+}
+
+.sticky-shrinknav-header {
+  width: 100%;
+  height: 300px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  abackground-color: #2196e3;
+  background-color: rgb(229, 210, 135);
+  background-image: url("images/cityscape-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.notConnectedModel {
+	background-image: url("images/cityscape-bg.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+}
+.notConnectedModelDiv {
+	padding: 5px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+body.sticky-shrinknav-wrapper {
+  padding-top: 130px;
+  z-index: 100;
+}
+
+
+
+body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
+  aheight: 3.75rem;
+  height: 6.75rem;
+  abackground-color: rgba(23, 121, 186, 0.9);
+  background-color: rgba(255, 204, 0, 0.9);
+  z-index: 100;
+}
+
+body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.header-image {
+	position: relative;
+	top: -20px;
+}
+.contentContainer{
+	padding-top: 300px;	
+	background-color: #ffdd55;
+	width: 100%;
+	z-index: 1;
+}
+.contentContainerShrink{
+	padding-top: 130px;	
+	width: 100%;
+	background-color: #ffdd55;
+	z-index: 1;
+}
+.heistRoom {
+	width: 100%;
+	background-image: url("images/heist-room-full.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 1600px;
+	color: #fff;
+	padding-top: 50px;
+	position: relative;
+	z-index: 1;
+}
+.heistRoom h4 {
+	font-weight: bolder;
+}
+.investmentAmount {
+	width: 70px;
+
+
+}
+.investmentAmountLabel{
+	color: #000;	
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.investButton {
+	aposition: absolute;
+	atop: 105px;
+	aleft: 33%;
+
+}
+.investActionButtonGroup {
+	position: relative;
+	left: -20px;
+}
+.withdrawInvestmentButton {
+	position: relative;
+	aleft: -120px;
+	width: 100px;
+}
+.withdrawDividendsButton {
+	position: relative;
+	aleft: -65px;
+	width: 100px;
+}
+.reinvestButton {
+	position: relative;
+	aleft: -10px;
+	width: 100px;
+}
+.currentDayCard {
+	aposition: absolute;
+	atop: 215px;
+	aright: 10%;
+	border-radius: 25px;
+	padding: 0px;
+}
+.headerCard {
+	border-radius: 25px;
+	padding: 0px;
+}
+.smallTxt {
+	font-size: 0.8em;
+}
+.investorRulesContent {
+	background-color: #ffcc00;
+	position: relative;
+	top: 50px;
+}
+.investmentGrid {
+	position: relative;
+}
+.investmentBox {
+	position: relative;
+
+}
+
+.h4Large{
+	font-size: 1.1em;
+}
+.bonusKeys{
+	position: relative;
+	text-align: left;
+	top: -105px;
+	left: 170px;
+
+}
+.tabs-title a {
+	font-size: 1.2em;
+}
+.shadedRow {
+	background-color: #ffcc00;
+}
+.roundPanel {
+	padding-left: 50px; // only for small screens;
+}
+.investmentBoxPanel {
+	padding-left: 25px; // only for small screen;
+}
+.floyd {
+	background-image: url('images/floyd.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.bonnie {
+	background-image: url('images/bonnie.png');
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.alcapone {
+	background-image: url('images/alcapone.png');
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.cassidy {
+	background-image: url('images/cassidy.png');
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.mugshotCover {
+	background-color: rgba(255,255,255,0.8);
+}
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+/*
+@media123 (min-width: 48em) {
+*/
+@media only screen and (min-width: 555px) {
+	.investmentBox {
+		position: relative;
+
+	}
+	.investorRulesContent {
+		top: 50px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.investorRulesContent {
+		top: 0px;
+	}
+	.investmentBox {
+		position: relative;
+
+	}
+	.investmentAmountLabel {
+		font-size: 1.1em;
+	}
+	.investButton {
+		atop: 75px;
+		aleft: 33%;
+	}
+	.investButton {
+		aposition: absolute;
+		atop: 300px;
+		aleft: 40%;
+		font-size: 1.1em;
+	}
+	.currentDayCard {
+		atop: 65px;
+		aright: 10%;
+	}
+
+	.withdrawInvestmentButton {
+		atop: 535px;
+		aleft: 10%;
+	}
+	.withdrawDividendsButton {
+		atop: 535px;
+		aleft: 30%;
+	}
+	.reinvestButton {
+		atop: 535px;
+		aleft: 50%;
+	}
+}
+@media only screen and (min-width: 1028px) {
+	.heistRoom{
+		height: 700px;
+	}
+	.roundPanel {
+		padding-left: 0px;
+		padding-right: 50px;
+	}
+	.investmentBoxPanel {
+		padding-left: 50px;
+	}
+	.h4Large{
+		font-size: 1.5em;
+	}
+	.investorRulesContent {
+		top: 0px;
+	}
+	.investmentBox {
+		position: relative;
+
+	}
+	.investActionButtonGroup {
+		left: 0px;
+	}
+}
+</style>
+
+
+
+</head>
+<body bgcolor="#ffdd55">
+
+<header class="sticky-shrinknav-header">
+  <center><img src="images/bankheistlogo.png" width="400" class="header-image" /></center>
+  <ul class="menu align-center sticky-shrinknav-menu">
+    <li><a href="https://investors.bankofeth.app/">Investor Room</a></li>
+    <li><a href="https://heist.bankofeth.app/heist.htm">Bank Heist Game</a></li>
+    
+  </ul>
+</header>
+
+<div class="contentContainer" id="contentContainer">
+	<div class="heistRoom">
+
+
+		<!--<div class="grid-container full">-->
+			<div class="grid-x grid-padding-x">
+			  	<div class="cell">
+			  		<center>
+					<div class="card headerCard" style="width: 80%;">
+					  <div class="card-divider" style="padding-top: 5px; padding-bottom: 5px;">
+					  	<center>
+					    	<h4 style="font-size: 1.1em;">Vault Total: <span id="totalEthInRound" class="h4Large">[Loading]</span> - Time Lock Opens in: <span id="roundCountdown">--:--:--</span> - Current Winning Key Owner: <span id="roundCurrentWinner">0x00</span></h4>
+					    </center>
+					  </div>
+
+					  <div class="card-section" style="padding: 15px;">
+					  	<p align="left">
+					  		Safety Deposit Boxes Total: <strong><span id="roundAirdropTotal">[Loading]</span></strong> <span class="smallTxt">- Min investment 0.001 ETH, invest 0.1 ETH for a chance to open a Safety Deposit box and instantly win half the total!</span>
+					  	</p>
+					  </div>
+					</div>
+
+					</center>
+			  	</div>
+
+			</div>
+
+			<div class="grid-x grid-padding-x align-center investmentGrid">
+					
+					<div class="cell small-12 medium-12 large-6 investmentBox investmentBoxPanel" 
+					>
+						<div class="card"  id="investmentBoxFull" style="width: 100%; background-color: rgba(255,255,255,0.6); display:none;  border-radius: 15px;">
+
+							<ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
+							  <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Buy Keys</a></li>
+							  <li class="tabs-title"><a href="#panel2d">Your Returns</a></li>
+							</ul>
+
+							<div class="tabs-content" data-tabs-content="deeplinked-tabs" 
+							style="width: 100%; background-color: rgba(255,255,255,0.6);">
+							  <div class="tabs-panel is-active" id="panel1d">
+
+
+
+								  <div class="card-section" style="padding: 5px;">
+								  	<div style="border-radius: 15px; background-color: rgba(250,250,250,1); padding: 5px;" class="smallTxt">
+									  	<p align="left">
+									  		Invest as little as 0.001 ETH, or invest at least 0.1 ETH for <strong>bonus keys</strong> and a chance to open a <strong>safety deposit box</strong> - with an instant win!  When the Timer runs down the last key holder wins the Vault Total!
+									  	</p>
+									  	<p>
+									  		The more keys you own, the more you earn! ~ <strong>65% of key sales go to previous key holders!!</strong>
+									  	</p>
+								  	</div>
+
+								  	<h5>Number of Keys to Buy</h5>
+
+								  	<center>
+										<div class="input-group">
+										  <span class="input-group-label">KEYS</span>
+										  <input class="input-group-field" type="number" id="investmentAmount" step="1"
+										  min="1" value="1" onchange="updateKeysCost();">
+										  <div class="input-group-label" id="investmentAmountCost">
+										    = 0.001 ETH
+										  </div>
+										</div>
+										<div class="expanded button-group">
+										  <a class="button" id="keysPlus0" onclick="keysPlus(0);">[1]</a>
+										  <a class="button" id="keysPlus1" onclick="keysPlus(1);">+1</a>
+										  <a class="button" id="keysPlus5" onclick="keysPlus(5);">+5</a>
+										  <a class="button" id="keysPlus10" onclick="keysPlus(10);">+10</a>
+										  <a class="button" id="keysPlus100" onclick="keysPlus(100);">+100</a>
+										  <a class="button" id="keysPlus1000" onclick="keysPlus(1000);">+1000</a>
+										</div>
+										<div class="bonusKeys" id="bonusKeys">
+										</div>
+										<button id="investButton" type="button" class="button rounded bordered shadow success investButton" >BUY WITH ETH</button>
+										&nbsp;
+										<button id="reinvestButton" type="button" class="button rounded bordered shadow success investButton" >BUY WITH RETURNS</button>
+										<br/>
+										<p class="smallTxt">
+											Min Spend 0.001 $ETH ~ Spend 0.1 $ETH for 10% bonus/free keys!, 1 $ETH for 33% bonus/free keys!<br/>spend 10 $ETH for 50% bonus/free keys, 100 $ETH for 100% bonus/free keys!
+										</p>
+									</center>
+								</div>
+							</div>
+							<div class="tabs-panel" id="panel2d">
+
+
+								  <div class="card-section" style="padding: 2px;">
+								  	<table class="unstriped smallTxt">
+								  		<tr>
+								  			<td>Address</td>
+								  			<td><span id="yourAddress">0x00</span></td>
+								  		</tr>
+								  		<tr>
+								  			<td>Keys Owned (Round <span id="roundNumber">1</span>)</td>
+								  			<td><span id="yourKeysNumber">0</span></td>
+								  		</tr>
+								  		<tr>
+								  			<td>Investmest Returns</td>
+								  			<td><span id="yourReturn">0.000 ETH</span></td>
+								  		</tr>
+								  		<tr>
+								  			<td>Referral Returns</td>
+								  			<td><span id="yourReferralReturn">0.000 ETH</span></td>
+								  		</tr>
+								  		<tr>
+								  			<td class="shadedRow">Total Returns</td>
+								  			<td class="shadedRow"><span id="yourReturnTotal">0.000 ETH</span></td>
+								  		</tr>
+								  	</table>
+								  	<br/>
+								  	<center>
+								  		
+										<button id="withdrawButton" type="button" class="button rounded bordered shadow success investButton" >WITHDRAW</button>
+								  	</center>
+								  </div>
+							</div>
+
+						  </div>
+						</div>
+					</div>
+
+					<div class="cell small-12 medium-12 large-6 investmentBox"
+						class="roundPanel">
+						<div class="card" id="roundDetailsFull" style="width: 100%; background-color: rgba(255,255,255,0.6); display: none;  border-radius: 15px;">
+
+							<ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
+							  <li class="tabs-title is-active"><a href="#panel2a" aria-selected="true">Current Round</a></li>
+							  <li class="tabs-title"><a href="#panel2b">Latest Players</a></li>
+							</ul>
+
+							<div class="tabs-content" data-tabs-content="deeplinked-tabs" 
+							style="width: 100%; background-color: rgba(255,255,255,0.6);">
+							  <div class="tabs-panel is-active" id="panel2a">
+
+
+
+								  <div class="card-section" style="padding: 15px;">
+								  	<table class="unstriped smallTxt">
+								  		<tr>
+								  			<td>Leader</td>
+								  			<td><span id="currentLeader" class="hide-for-small-only hide-for-medium-only">0x00</span><span id="currentLeaderShort" class="hide-for-large">0x00</span></td>
+								  		</tr>
+								  		<tr>
+								  			<td>ETH Distributed to Players</td>
+								  			<td><span id="distributedEthThisRound">0.000 ETH</span></td>
+								  		</tr>
+								  		<tr>
+								  			<td>Vault Prize Pot</td>
+								  			<td><span id="vaultPrize">0.000 ETH</span></td>
+								  		</tr>
+								  		<tr>
+								  			<td>Safety Deposit Prize Pot</td>
+								  			<td><span id="roundAirdropTotal2">0.000 ETH</span></td>
+								  		</tr>
+								  		<tr>
+								  			<td>Keys Sold</td>
+								  			<td><span id="roundKeysSold">0</span></td>
+								  		</tr>
+								  		<tr>
+								  			<td>Hard Deadline</td>
+								  			<td><span id="roundHardDeadline">21/12/2018 23:59:59</span>*</td>
+								  		</tr>
+								  		<tr>
+								  			<td class="shadedRow">Total Invested</td>
+								  			<td class="shadedRow"><span id="roundInvested">0.000 ETH</span></td>
+								  		</tr>
+								  	</table>
+								  </div>
+								  <p class="smallTxt"><i>
+								  	Remember - the earlier you join a round, the more distributed ETH you'll receive as all players in a round receive a share of every key purchased (65% goes into the distribution fund!).</i>
+								  </p>
+								  <p class="smallTxt">
+								  	* After the Hard Deadline date has passed Key Prices will double every hour
+								  </p>
+								</div>
+
+							  <div class="tabs-panel" id="panel2b">
+
+
+								  <div class="card-section" style="padding: 15px;">
+								  		<table class="smallTxt" id="previousPlayersTable">
+								  			<thead>
+								  				<td>Address</td>
+								  				<td>Keys</td>
+								  			</thead>
+								  		</table>
+								  </div>
+								  
+								</div>
+							</div>
+						</div>	
+					</div>
+
+
+			</div>
+
+			
+
+
+	</div>
+	<a name="investorRoomRules"></a>
+	<div class="grid-x grid-padding-x investorRulesContent">
+
+		<div class="cell"><h4>BANK HEIST 4D ~ HALL OF INFAMY</h4></div>
+		<div class="cell">
+			<p>
+				How holds the most keys in this round? These are the players who will be making the most money <strong>every time someone buys keys! --- BEAT THEM NOW!</strong>
+			</p>
+		</div>
+
+		<div class="cell small-12 medium-12 large-3">
+			<div class="card cassidy" style=" border-radius: 25px; ">
+				<div class="mugshotCover">
+				  <div class="card-section" style="font-size: 0.8em;">
+				    <h4><u>1</u> Butch Cassidy</h4>
+				    <p align="right">
+				    	<strong><span id="leaders0">[loading]</span></strong>
+				    </p>
+				    <p align="right">
+				    	<strong><span id="leadersKeys0">-</span> Keys Held</strong>
+				    </p>
+				  	<center>
+						<button id="pos0Buy" type="button" class="button rounded bordered shadow success investButton" >BEAT THIS POSITION</button>
+				  	</center>
+				  </div>
+				 </div>
+			</div>
+		</div>
+
+		<div class="cell small-12 medium-12 large-3">
+			<div class="card alcapone" style=" border-radius: 25px; ">
+				<div class="mugshotCover">
+				  <div class="card-section" style="font-size: 0.8em;">
+				    <h4><u>2</u> Al Capone</h4>
+				    <p align="right">
+				    	<strong><span id="leaders1">[loading]</span></strong>
+				    </p>
+				    <p align="right">
+				    	<strong><span id="leadersKeys1">-</span> Keys Held</strong>
+				    </p>
+				  	<center>
+						<button id="pos1Buy" type="button" class="button rounded bordered shadow success investButton" >BEAT THIS POSITION</button>
+				  	</center>
+				  </div>
+				 </div>
+			</div>
+		</div>
+
+		<div class="cell small-12 medium-12 large-3">
+			<div class="card bonnie" style=" border-radius: 25px; ">
+				<div class="mugshotCover">
+
+				  <div class="card-section" style="font-size: 0.8em;">
+				    <h4><u>3</u> Bonnie Parker</h4>
+				    <p align="right">
+				    	<strong><span id="leaders2">[loading]</span></strong>
+				    </p>
+				    <p align="right">
+				    	<strong><span id="leadersKeys2">-</span> Keys Held</strong>
+				    </p>
+				  	<center>
+						<button id="pos2Buy" type="button" class="button rounded bordered shadow success investButton" >BEAT THIS POSITION</button>
+				  	</center>
+				  </div>
+				 </div>
+			</div>
+		</div>
+
+		<div class="cell small-12 medium-12 large-3">
+			<div class="cell small-12 medium-12 large-3">
+				<div class="card floyd" style=" border-radius: 25px; ">
+					<div class="mugshotCover">
+
+					  <div class="card-section" style="font-size: 0.8em;">
+					    <h4><u>4</u> "Pretty Boy" Floyd</h4>
+					    <p align="right">
+					    	<strong>
+					    	<span id="leaders3">[loading]</span></strong>
+					    </p>
+					    <p align="right"><strong>
+					    	<span id="leadersKeys3">-</span> Keys Held</strong>
+					    </p>
+					  	<center>
+							<button id="pos3Buy" type="button" class="button rounded bordered shadow success investButton" >BEAT THIS POSITION</button>
+					  	</center>
+					  </div>
+					 </div>
+				</div>
+			</div>
+		</div>
+
+
+	  <div class="cell"><h4>How to play BANK HEIST 4D</h4></div>
+		<div class="cell">
+			<p>
+				Bank Heist 4D is an Ethereum game which has evolved from the ideas developed within such games as FOMO3D, POWH3D etc.  The aim of the game is to become the last player to of purchased a Vault Key before the Vault Time Lock expires.  If you are the current Vault Key holder you are the Master Key holder and have access to the vault funds when it unlocks!  Simple as that... or is it...
+			</p>
+		</div>	
+
+		<div class="cell small-12 medium-12 large-3">
+			<div class="card" style="width: 350px; border-radius: 25px; height: 500px;">
+				<div style="height: 150px">
+			  		<img src="images/keys.png" width="250" style="margin-left: 35px; margin-top: 20px;">
+			  	</div>
+			  <div class="card-section" style="font-size: 0.8em;">
+			    <h4><u>1</u> Keys</h4>
+			    <p>
+			    	Start the game by buying Safe Keys, you need at least one key which costs just 0.001 $ETH.
+			    </p>
+			    <p>
+			    	The last person to buy a Key wins the Vault Jackpot! Winner takes all!
+			    </p>
+			    <p>
+			    	~ To buy enter the number you want in the KEYS box above (Or use the +n button) and then use the [BUY WITH ETH] button or if you have Returns available use [BUY WITH RETURNS].
+			    </p>
+			    <p>
+			    	<strong>It makes sense to buy more keys early in a game - the more you have, the more dividends you'll earn!</strong>
+			    </p>
+			  </div>
+			</div>
+		</div>
+
+		<div class="cell small-12 medium-12 large-3">
+			<div class="card" style="width: 350px; border-radius: 25px; height: 500px;">
+				<div style="height: 150px">
+			  <div class="h4Large" style="height:140px; margin-top: 50px; font-size: 40px; 
+			  padding-left: 100px;">00:00:00</div>
+			  	</div>
+			  <div class="card-section" style="font-size: 0.8em;">
+			    <h4><u>2</u> Safe Timer</h4>
+			    <p>
+			    	The Vault Timer is constantly ticking down, when it reaches 00:00:00 the vault opens and the last person who bought a Key wins the Jackpot!
+			    </p>
+			    <p>
+			    	~ Every new Key bought adds 5 minutes to the time, up to a maximum of 24 hours.
+			    </p>
+			    <p>
+			    	~ There is a Hard Deadline for the timer... if it passes then the price of Keys starts to double every hour.  This prevents the game going on endlessly and will eventually force a winner!
+			    </p>
+			    <p>
+			    	<strong>Always watch the clock and make sure you buy well in advance of 00:00:00!</strong>
+			    </p>
+			  </div>
+			</div>
+		</div>
+
+		<div class="cell small-12 medium-12 large-3">
+			<div class="card" style="width: 350px; border-radius: 25px; height: 500px;">
+				<div style="height: 150px">
+			  		<img src="images/ethcoin.png" width="87" style="margin-top: 45px; margin-left: 120px;">
+				</div>
+			  <div class="card-section" style="font-size: 0.8em;">
+			    <h4><u>3</u> Dividends/Returns</h4>
+			    <p>
+			    	A massive 65% of all sales are distributed to all key holders!  It is divided proportional to the amount of Keys held ~ so the more Keys you hold the bigger share you'll receive!
+			    </p>
+			    <p>
+			    	~ You can Withdraw or use your Returns Instantly to Buy new Keys - there is no lock-in period!  Just use the [BUY WITH RETURNS] or [WITHDRAW] buttons
+			    </p>
+			    <p>
+			    	<strong>It pays to buy as many keys as possible early in each round for the biggest returns!</strong>
+			    </p>
+			  </div>
+			</div>
+		</div>
+
+		<div class="cell small-12 medium-12 large-3">
+			<div class="card" style="width: 350px; border-radius: 25px; height: 500px;">
+				<div style="height: 150px">
+			  		<img src="images/safetydepositbox.png" width="200" style="margin-left: 85px; margin-top: 10px;">
+			  	</div>
+			  <div class="card-section" style="font-size: 0.8em;">
+			    <h4><u>4</u> Safety Deposit Boxes</h4>
+			    <p>
+			    	When you buy at least 100 Keys (Spend 0.1 ETH or more) you are also entered into a random draw to open a Safety Deposit Box. If the box opens (1 in 200 chance) then you will instantly win half of the current Safety Deposit Box prize.
+			    </p>
+			    <p>
+			    	~ The Safety Deposit Box prize is increased every time keys are sold!
+			    </p>
+			    <p>
+			    	<strong>As well as a chance to win the Safety Deposit Box you'll also receive free bonus keys!</strong>
+			    </p>
+			  </div>
+			</div>
+		</div>
+		<div class="cell">
+<!--
+		
+	  	<p>
+	  		- Every time a key is purchased the time lock increases by 5 minutes (But so does the jackpot prize!).
+	  	</p>
+	  	<p>
+	  		- If the game round reaches the Hard Deadline date/time then the price of keys begins to rise quickly... they will double every hour!  This prevents the game lasting an endless amount of time and ensures we will have a winner in a reasonable amount of time - but with a big enough prize!
+	  	</p>
+	  	<p>
+	  		- If you buy enough keys in one investment to spend at least 0.1 ETH then you will also be entered into the random draw for a chance to open the Safety Deposit box.  If your randomly selected then you instantly win half of the the current Safetfy Deposit box fund!
+	  	</p>
+	  	<p>
+	  		- <strong>When you spend at least 0.1 ETH you will also be given bonus keys!</strong> ~ spend 0.1+ $ETH for 10% bonus/free keys! ~ spend 1+ $ETH for 33% bonus/free keys! ~ spend 10+ $ETH for 50% bonus/free keys ~ spend 100+ $ETH for 100% bonus/free keys!
+	  	</p>
+	  	<p>
+	  		- A massive 65% of all ETH from the purchasing of keys is split between all current players in a round - proportianlly!  So the more keys you hold, the bigger chunk of the ETH you'll gain each time someone buys a key!  It pays to get in early each round too for lots of repeat payments!
+	  	</p>
+	  	<p>
+	  		- You can also earn referral commission!  Referer someone to the Bank Heist 4D and you'll earn 3% of their purchases!
+	  	</p>
+-->
+	  	<h4>Key Purchase Split</h4>
+
+	  	<table>
+	  		<tr>
+	  			<td>15%</td>
+	  			<td>Goes to the current round Jackpot</td>
+	  		</tr>
+	  		<tr>
+	  			<td><strong>65%</strong></td>
+	  			<td><strong>Distributed to all investors in the round! <span class="smallTxt">All players in the current round get a share of this fund! The more keys you hold, the more you get!</span></strong></td>
+	  		</tr>
+	  		<tr>
+	  			<td>5%</td>
+	  			<td>Seed fund for the next round</td>
+	  		</tr>
+	  		<tr>
+	  			<td>2%</td>
+	  			<td>Goes into the Safety Deposit Boxes <span class="smallTxt">- spend min 0.1 ETH for a chance to win this</span></td>
+	  		</tr>
+	  		<tr>
+	  			<td>3%</td>
+	  			<td>Profit Fund <span class="smallTxt">- goes to BankOfEth investors (<a href="https://bankofeth.app" target="_new">You can be part of this too</a>)</span></td>
+	  		</tr>
+	  		<tr>
+	  			<td>10%</td>
+	  			<td>Development/Marketing & Admin fund</td>
+	  		</tr>
+	  	</table>
+	  	<br/>
+	  	<h4>Why 4d?</h4>
+	  	<p>
+	  		Because there are 4 Dimensions of income opportunities!
+	  	</p>
+	  	<ol>
+	  		<li>Vault Jackpot Prize!</li>
+	  		<li>Safety Deposit Prizes!</li>
+	  		<li>Passive Income from holding Keys!</li>
+	  		<li>Passive Incoming from Investing in <a href="https://bankofeth.app" target="_new">BankOfEth.app</a></li>
+	  	</ol>
+	  	<br/>
+
+	  	<h4>Contract</h4>
+	  	<p>
+	  		We believe smart-contract should be fully open and available for anyone to view - that way you can trust that the game is safe and your funds cannot be taken.
+	  	</p>
+	  	<p>
+	  		You can verify, audit and view our smart contract at Etherscan: <a href="https://etherscan.io/address/0x2239df7104fd3f4a5e464e108506e76c47858a20" target="_new">0x2239df7104fd3f4a5e464e108506e76c47858a20</a>
+	  	</p>
+	  	<br/>
+
+	  	<h4>Referrals</h4>
+	  	<p>
+	  		We offer a wopping 3% referral bonus when you refer someone to BankOfEth.app!  So when someone follows your Master Node link (Below) you will earn a full 3% of their first investment... so if they invest 1 ETH for example you would instanly earn a bonus of 0.03 ETH!
+	  	</p>
+	  	<p>
+	  		It's easy to refer people on... make sure you have your Ethereum Wallet connected and then share the link below:
+	  	</p>
+	  	<p>
+	  		<strong>Your Referral Master Node Link</strong>
+	  	</p>
+	  	<p>
+	  		<code onclick="copyRef();" id="referralid_full" style="cursor: pointer;">https://heist.bankofeth.app/heist.htm?ref=<span id="referralid"></span></code>
+	  	</p>
+
+	  	<hr/>
+
+	  	<h4>Join the Bank Of Eth Community</h4>
+	  	<p>
+			<center >
+				<a href="https://t.me/bankheist4d" target="_new">Telegram</a>
+					&nbsp;-&nbsp;
+				<a href="https://discord.gg/d5c7pfn" target="_new">Discord</a>
+					&nbsp;-&nbsp;
+				<a href="https://twitter.com/BankOfEth" target="_new">Twitter</a>
+					&nbsp;-&nbsp;
+				<a href="https://reddit.com/r/BankOfEth" target="_new">Reddit</a>
+			</center>
+	  	</p>
+	  	<br/>
+	  	<center>
+	  		<h3>DON'T MISS OUT - BUY YOUR KEYS NOW!</h3>
+	  	</center>
+	  	<br/><br/>
+	  	<hr/>
+	  	<br/><br/>
+	  </div>
+
+	</div>
+</div>
+
+
+
+<div class="reveal" id="notConnectedModel" aria-labelledby="notConnectedHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="notConnectedHeader">Not Connected to Ethereum Mainnet</h4>
+			<p class="smallTxt">
+				It looks like your not connected to the Ethereum Mainnet at the moment!
+			</p>
+			<p class="smallTxt">
+				To play <strong>Game Of Eth</strong> you must be connected to the Ethereum Blockchain mainnet - using an Ethereum Wallet or Browser such as Metamask, Coinbase Wallet, Cipher, Brave etc.
+			</p>
+			<p class="smallTxt">
+				If you already are using a Ethereum browser or wallet please ensure you are logged into your account and using the Mainnet - and then refresh this page.
+			</p>
+			<p class="smallTxt">
+				The main game features will be disabled, and no game stats will be displayed until you connect.
+			</p>
+			<p class="smallTxt">
+				Contact us if you need any help:<br/>
+				<center  class="smallTxt">
+					<a href="mailto:support@bankofeth.app">support@bankofeth.app</a>
+						&nbsp;-&nbsp;
+					<a href="https://t.me/bankheist4d" target="_new">Telegram</a>
+						&nbsp;-&nbsp;
+					<a href="https://discord.gg/d5c7pfn" target="_new">Discord</a>
+				<br/>
+					<a href="https://twitter.com/BankOfEth" target="_new">@BankOfEth</a>
+						&nbsp;-&nbsp;
+					<a href="https://reddit.com/r/BankOfEth" target="_new">Reddit</a>
+				</center>
+			</p>
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="reveal" id="withdrawInvesmentConfirm" aria-labelledby="notConnectedHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="notConnectedHeader">Withdraw Investment</h4>
+			<p class="smallTxt">
+				Your current investment is: <strong><span id="currentInvestment">0</span> Eth</strong>
+			</p>
+			<p class="smallTxt">
+				The current withdrawal tax is 20% giving you a withdrawal settlement figure of: <strong><span id="currentInvestmentSettlement">0</span> ETH</strong>
+			</p>
+			<p class="smallTxt">
+				It does not contain your dividends/profit - which are not taxed! You should withdraw these or reinvest them using the relavant button.
+			</p>
+			<p class="smallTxt">
+				Do you wish to continue with the funds withdrawal?
+			</p>
+
+			<button type="button" id="withdrawInvestmentButtonConfirm" class="button rounded bordered shadow success withdrawInvestmentButton" data-close>YES</button>
+
+			<button type="button" id="withdrawInvestmentButtonCancel" aria-label="Close" data-close class="button rounded bordered shadow cancel withdrawInvestmentButton">NO</button>
+			
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+
+<div class="reveal" id="withdrawDividendsConfirm" aria-labelledby="notConnectedHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="notConnectedHeader">Withdraw Dividends</h4>
+			<p class="smallTxt">
+				Your current profits/dividends available for withdrawal are: <strong><span id="currentDividends1">0</span> Eth</strong> (Including any Referral bonus you've earned).
+			</p>
+			<p class="smallTxt">
+				Do you wish to continue with the dividend withdrawal?
+			</p>
+
+			<button type="button" id="dividendInvestmentButtonConfirm" class="button rounded bordered shadow success withdrawInvestmentButton" data-close>YES</button>
+
+			<button type="button" id="dividendInvestmentButtonCancel" aria-label="Close" data-close class="button rounded bordered shadow cancel withdrawInvestmentButton">NO</button>
+			
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="reveal" id="reinvestDividendsConfirm" aria-labelledby="notConnectedHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="notConnectedHeader">Reinvest Dividends</h4>
+			<p class="smallTxt">
+				Your current profits/dividends available for withdrawal are: <strong><span id="currentDividends2">0</span> Eth</strong> (Including any Referral bonus you've earned).
+			</p>
+			<p class="smallTxt">
+				Reinvesting these dividends will move them into your Investment fund - allowing you to gain a larger share of future profits
+			</p>
+			<p>
+				Do you wish to continue with the reinvestment?
+			</p>
+
+			<button type="button" id="reinvestInvestmentButtonConfirm" class="button rounded bordered shadow success withdrawInvestmentButton" data-close>YES</button>
+
+			<button type="button" id="reinvestInvestmentButtonCancel" aria-label="Close" data-close class="button rounded bordered shadow cancel withdrawInvestmentButton">NO</button>
+			
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="reveal" id="errorMessage" aria-labelledby="errorHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="errorHeader"></h4>
+			<p class="smallTxt" id="errorContent">
+				
+			</p>
+
+			<p class="smallTxt">
+				Contact us if you need any help:<br/>
+				<center  class="smallTxt">
+					<a href="mailto:support@bankofeth.app">support@bankofeth.app</a>
+						&nbsp;-&nbsp;
+					<a href="https://t.me/bankheist4d" target="_new">Telegram</a>
+						&nbsp;-&nbsp;
+					<a href="https://discord.gg/d5c7pfn" target="_new">Discord</a>
+				<br/>
+					<a href="https://twitter.com/BankOfEth" target="_new">@BankOfEth</a>
+						&nbsp;-&nbsp;
+					<a href="https://reddit.com/r/BankOfEth" target="_new">Reddit</a>
+				</center>
+			</p>
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="reveal" id="gamesRoom" aria-labelledby="errorHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="errorHeader">Games Room Coming Soon!</h4>
+			<p  id="errorContent">
+				We are putting the final touches to the games room and they'll be here shortly!
+			</p>
+			<p>
+				Remember - as well as earning income from the bank profits you will also earn profit for every game we launch here too!!
+			</p>
+
+			<p class="smallTxt">
+				Contact us if you need any help:<br/>
+				<center  class="smallTxt">
+					<a href="mailto:support@bankofeth.app">support@bankofeth.app</a>
+						&nbsp;-&nbsp;
+					<a href="https://t.me/bankheist4d" target="_new">Telegram</a>
+						&nbsp;-&nbsp;
+					<a href="https://discord.gg/d5c7pfn" target="_new">Discord</a>
+				<br/>
+					<a href="https://twitter.com/BankOfEth" target="_new">@BankOfEth</a>
+						&nbsp;-&nbsp;
+					<a href="https://reddit.com/r/BankOfEth" target="_new">Reddit</a>
+				</center>
+			</p>
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/jquery.toast.min.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+
+
+
+<script lanaguage="javascript">
+
+
+
+var canPlay = false;
+
+var minBet = 0.001;
+var maxBet = 0.002;
+var account = 0x00;
+var BankOfEthHeistContract;
+
+var playing = false;
+
+var useGasPrice = 9000000000;
+
+var contractAddress = "0x2239df7104fD3f4a5e464E108506E76c47858a20";
+
+var useTestnet = false;
+var isMainGame = true;
+var isDetail = false;
+
+
+var eth_to_usd = 194.683;
+var PERCENT_SPEED = 200;
+var GAME_UPDATE_SPEED = 10000;
+var displayGameID = 1;
+var maxGames = 2;
+var _referer = "0x0000000000000000000000000000000000000000";
+
+$(document).foundation();
+
+$(function() {
+  $(window).scroll(function() {
+    var winTop = $(window).scrollTop();
+
+    if (winTop >= 100) {
+      	$("body").addClass("sticky-shrinknav-wrapper");
+      	$('#contentContainer').addClass('contentContainerShrink').removeClass('contentContainer');
+
+    } else{
+      	$("body").removeClass("sticky-shrinknav-wrapper");
+      	$('#contentContainer').addClass('contentContainer').removeClass('contentContainerShrink');
+      
+    }
+  });
+
+  var _newReferer = getUrlParameter('ref')||"";
+  if(_newReferer.length > 0) { // newly referred
+  	_referer = _newReferer;
+  } else { // existing user referred by someone
+  	var _cookieRef = Cookies.get('ref')|"";
+  	if(_cookieRef.length >0)
+  		_referer = _cookieRef;
+  }
+  Cookies.set('ref', _referer, { expires: 30 });
+
+
+
+
+  $("#investButton").click(function(){ if(canPlay) { playGame() };} );
+  $("#withdrawButton").click(function(){ if(canPlay) { withdrawDividends() };} );
+
+  $("#withdrawInvestmentButton").click(function(){
+  	if(canPlay) {
+  		$('#withdrawInvesmentConfirm').foundation('open');
+  	}
+  });
+
+  $("#withdrawInvestmentButtonConfirm").click(function(){
+  	if(canPlay) {
+  		withdrawInvestment();
+  	}
+  });
+
+  $("#withdrawDividendsButton").click(function() {
+  	if(canPlay) {
+  		$('#withdrawDividendsConfirm').foundation('open');
+  	}
+  });
+  $('#dividendInvestmentButtonConfirm').click(function(){
+  	if(canPlay) {
+  		withdrawDividends();
+  	}
+  });
+
+  $('#reinvestButton').click(function(){
+  	if(canPlay) {
+  		reinvestDividends();
+  	}
+  });
+  $('#reinvestInvestmentButtonConfirm').click(function() {
+  	if(canPlay){
+  		reinvestDividends();
+  	}
+  });
+
+  $('#pos0Buy').click(function() {
+  	if(canPlay) {
+  		beatPosition(0);
+  	}
+  });
+  $('#pos1Buy').click(function() {
+  	if(canPlay) {
+  		beatPosition(1);
+  	}
+  });
+  $('#pos2Buy').click(function() {
+  	if(canPlay) {
+  		beatPosition(2);
+  	}
+  });
+  $('#pos3Buy').click(function() {
+  	if(canPlay) {
+  		beatPosition(3);
+  	}
+  });
+  $('#pos4Buy').click(function() {
+  	if(canPlay) {
+  		beatPosition(4);
+  	}
+  });
+
+
+});
+
+function copyRef() {
+	if(!canPlay)
+		return;
+
+ 	var copyText = document.getElementById("referralid");
+    var textArea = document.createElement("textarea");
+    textArea.value = 'https://heist.bankofeth.app/heist.htm?ref=' + copyText.innerHTML;
+    document.body.appendChild(textArea);
+    textArea.select();
+	document.execCommand("copy");
+	textArea.remove();
+
+	$.toast({
+	    heading: 'Copied',
+	    text: 'Your Master Node link has been copied to your clipboard!',
+	    showHideTransition: 'slide',
+	    icon: 'success'
+	})
+
+}
+
+function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+setTimeout(function(){
+	$('#investmentBoxFull').fadeIn('slow');
+	setTimeout(function(){
+		$('#roundDetailsFull').fadeIn('slow');
+	},2000);
+},3000);
+
+</script>
+
+<script src="js/mainHeist.min.js?a=10"></script>
+
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5baa91682253a22e"></script>
+
+
+<!-- Default Statcounter code for Bankofeth.app
+https://bankofeth.app -->
+<script type="text/javascript">
+var sc_project=11833854; 
+var sc_invisible=1; 
+var sc_security="88f986d4"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11833854/0/88f986d4/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+</body>
+</html>

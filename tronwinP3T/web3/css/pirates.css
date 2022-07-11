@@ -1,0 +1,15 @@
+.scratch_card.scratch_card_cells3 {
+	background: url(../images/pirates/bg_3by1.png) 0 0 no-repeat;
+}
+
+.scratch_card.scratch_card_cells9 {
+	background: url(../images/pirates/bg_3by3.png) 0 0 no-repeat;
+}
+
+.scratch_card_scratch_area_image {
+	background: url(../images/pirates/scratch_area1.png) 0 0 no-repeat;
+}
+
+.scratch_card_cell_icon {
+	background: url(../images/pirates/icons.png) 0 9999px repeat-x;
+}

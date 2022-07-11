@@ -1,0 +1,63 @@
+#!/bin/bash
+#!/bin/bash
+# chkconfig: 345 20 80
+# description: Report server
+
+#  sudo nano /etc/init.d/init_logread
+#  sudo chmod 0755 /etc/init.d/init_logread 
+#  sudo chkconfig init_logread on
+#  sudo service init_logread start
+
+# location of the app script
+APP_DIR=/home/centos/dAppBridge/testnet2
+APP_FILE=/src/web3/logread.js
+
+# location of the log files
+#LOG_DIR=/home/centos/dAppBridge/logs
+#LOG_FILE=report-server.log
+LOG_DIR=/var/log/dAppBridge
+LOG_FILE=logread_testnet2.log
+
+# location of the forever binary
+FOREVER=/usr/bin/forever
+
+start() {
+    su -c "$FOREVER \
+        -l $LOG_DIR/$LOG_FILE \
+        --append \
+        --uid \"centos\" \
+        --sourceDir $APP_DIR \
+        start $APP_FILE" - centos
+}
+
+stop() {
+    su -c "$FOREVER stop $APP_DIR$APP_FILE" - centos
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    status)
+        su -c "$FOREVER list | grep -q $APP_FILE" - cenotos
+#        $FOREVER " list | grep -q $APP_FILE"
+        if [ "$?" -eq "0" ]; then
+            echo "$APP_FILE is running"
+            exit 0
+        else 
+            echo "$APP_FILE is not running"
+            exit 3
+        fi
+    ;;
+    *)
+        echo "Usage: $0 {status|start|stop|restart}"
+        exit 1
+esac
+exit 0

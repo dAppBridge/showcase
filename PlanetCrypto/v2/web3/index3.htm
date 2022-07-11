@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Own The Map</title>
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+
+   <script src="js/virtual-grid.js" language="javascript"></script>
+
+   <style type="text/css">
+   	
+	body { margin:0; padding:0; }
+	#mapid { position:absolute; top:0; bottom:0; width:100%; }
+
+   </style>
+
+</head>
+<body>
+<div id="mapid"></div>
+
+
+
+   <script type="text/javascript">
+   		var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(mymap);
+
+
+    // add a layer for zoome level 15
+    /*
+    var CanvasLayer = L.GridLayer.extend({
+      createTile: function(coords){
+          //console.log(coords);
+          // create a <canvas> element for drawing
+          var tile = L.DomUtil.create('canvas', 'leaflet-tile');
+          // setup tile width and height according to the options
+          var size = this.getTileSize();
+          tile.width = size.x;
+          tile.height = size.y;
+          // get a canvas context and draw something on it using coords.x, coords.y and coords.z
+          var ctx = tile.getContext('2d');
+
+          // return the tile so it can be rendered on screen
+          return tile;
+      }
+    });
+    var zoom15Grid = new CanvasLayer();
+    zoom15Grid.addTo(mymap);
+    */
+
+      var rects = {};
+
+      function coordsToKey(coords){
+        return coords.x + ':' + coords.y + ':' +coords.z;
+      }
+
+
+
+
+     // level 15 and higher show buy grid
+     // level 11 and higher should be able to draw purchased areas
+     // level 10 and lower = only show markers
+
+
+      
+      // make a new VirtualGrid
+      var grid18;// = new VirtualGrid({});
+      var grid17;
+
+ 
+
+
+      
+
+
+
+      // only init when zoom is 18...
+      var gridIinit = false;
+
+      var onDownEvent = false;
+      var inSubtractionMode = false;
+      var rectsToBuy = {};
+      function rectsToBuyLen() {
+        var i=0;
+        for(var keys in rectsToBuy) {
+          i++;
+        }
+        return i;
+      }
+      // add in a max range for each erc721 card...
+      // so from the first plot a card can only have plots within x number of grids
+      // to prevent cards being too scattered
+
+
+
+      mymap.on('zoomend', function(ev){
+        console.log(ev);
+        console.log(gridIinit);
+        
+        if(gridIinit==false && ev.target._zoom >= 17){
+
+
+          var _cellSize = getPixelSize(10);
+
+          grid18 = new VirtualGrid({
+            cellSize: _cellSize
+          });
+
+          grid18.on('cellsupdated', function(e){
+
+
+          });
+
+          // when new cells come into view...
+          grid18.on('cellcreate', function(e) {
+
+
+
+            if(mymap.getZoom() >= 17) {
+
+
+              // check if we have it in rectsToBuy...
+              var _key = coordsToKey(e.coords);
+
+
+              if(rectsToBuy[e.bounds.getNorthWest().toString()] ) {
+                rects[coordsToKey(e.coords)] = L.rectangle(e.bounds, {
+                    color: '#999',
+                    weight: 1,
+                    opacity: 0.4,
+                    fillOpacity: 0.4,
+                    fillColor: '#990000',
+                    fill: true
+                    //dashArray: "20 40"
+                  }).addTo(mymap);
+              } else {
+                rects[coordsToKey(e.coords)] = L.rectangle(e.bounds, {
+                  color: '#999',
+                  weight: 1,
+                  opacity: 0.4,
+                  fillOpacity: 0
+                  //dashArray: "20 40"
+                }).addTo(mymap);                
+              }
+
+
+
+
+              rects[coordsToKey(e.coords)].on('click', function(e){
+                console.log("key", _key);
+                console.log('cell click', e);
+
+                if(!onDownEvent) {
+                  
+                  
+
+                  if(!inSubtractionMode){
+                    rectsToBuy = {};
+                    onDownEvent = true;
+
+                    rectsToBuy[e.sourceTarget._bounds.getNorthWest().toString()] = _key;
+                    console.log("ADDING KEY:", e.sourceTarget._bounds.getNorthWest().toString());
+                    
+                    console.log(e.sourceTarget._bounds.getNorthWest().toString());
+
+                    e.sourceTarget.setStyle({
+                      fill: true, 
+                      fillOpacity: 0.4, 
+                      fillColor: '#990000'});
+
+                  } else {
+
+                    e.sourceTarget.setStyle({
+                      color: '#999',
+                      weight: 1,
+                      opacity: 0.4,
+                      fillOpacity: 0
+                    });
+
+                    delete rectsToBuy[_key];
+
+
+                    console.log("New length:", rectsToBuyLen());
+
+                  }
+
+                } else {
+                  // close of selection
+                  onDownEvent = false;
+                  console.log(rectsToBuyLen());
+                  // show current plot size alert
+
+                  // -> allow subtraction from plot mode
+                  inSubtractionMode = true;
+
+                }
+
+                console.log('cell click', e.sourceTarget._bounds._northEast);
+
+
+              });
+
+              rects[coordsToKey(e.coords)].on('mouseover', function(e){
+                if(e.sourceTarget.options.fillOpacity == '0.6') {
+                  // marked for buying
+                } else {
+                  if(onDownEvent){
+
+
+                    if(e.sourceTarget.options.fillOpacity == '0.4'){
+                      // already marked
+                    } else {
+                      //rectsToBuy.push(e.sourceTarget);
+                      rectsToBuy[e.sourceTarget._bounds.getNorthWest().toString()] = _key;
+
+                      console.log(rectsToBuyLen());
+                      console.log(rectsToBuyLen() * 0.02 + " ETH");
+
+                      e.sourceTarget.setStyle({
+                        fill: true, 
+                        fillOpacity: 0.4, 
+                        fillColor: '#990000'});
+                    }
+                  }
+                }
+                
+              });
+
+              rects[coordsToKey(e.coords)].on('mouseout', function(e){
+                if(e.sourceTarget.options.fillOpacity == '0.6') {
+                  // marked for buying
+                } else {
+                  /*
+                  e.sourceTarget.setStyle({
+                  color: '#999',
+                  weight: 1,
+                  opacity: 0.4,
+                  fillOpacity: 0}
+                    );
+                  */
+                }
+              });
+            }
+          });
+
+          grid18.on('cellenter', function(e) {
+            console.log("cellcenter");
+            if(mymap.getZoom() >= 17) {
+              console.log("Adding to map");
+              var rect = rects[coordsToKey(e.coords)];
+
+
+
+              mymap.addLayer(rect);
+            }
+          });
+
+          grid18.on('cellleave', function(e) {
+            try {
+              var rect = rects[coordsToKey(e.coords)];
+
+              mymap.removeLayer(rect);
+            } catch(e){}
+          });
+
+
+
+          grid18.addTo(mymap);
+          gridIinit = true;
+        }
+
+       
+
+        
+      });
+
+      // zoom 15 = 3.36 pixels per 10m
+
+      function getPixelSize(baseMeters) {
+        var _centerLatLng = mymap.getCenter(); // get map center
+        var _pointC = mymap.latLngToContainerPoint(_centerLatLng); // convert to containerpoint (pixels)
+        var _pointX = [_pointC.x + 1, _pointC.y]; // add one pixel to x
+        var _pointY = [_pointC.x, _pointC.y + 1]; // add one pixel to y
+
+        // convert containerpoints to latlng's
+        var _latLngC = mymap.containerPointToLatLng(_pointC);
+        var _latLngX = mymap.containerPointToLatLng(_pointX);
+        var _latLngY = mymap.containerPointToLatLng(_pointY);
+
+        var _pixelSizeX = _latLngC.distanceTo(_latLngX); // calculate distance between c and x (latitude)
+        var _pixelSizeX = _latLngC.distanceTo(_latLngY); // calculate distance between c and y (longitude)
+        console.log("INIT SIZE:" + baseMeters / _pixelSizeX);
+        return baseMeters / _pixelSizeX;
+      }
+   </script>
+</body>
+</html>

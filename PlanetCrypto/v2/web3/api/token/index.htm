@@ -1,0 +1,104 @@
+<html>
+<head>
+	<script src="/js/web3custom.min.js?a=1"></script>
+	<script src="/js/planetCryptoABI.js?a=6"></script>
+</head>
+<body>
+
+
+
+	<script type="text/javascript">
+	var token_id = getUrlParameter('token_id');
+
+
+	//var CONNECTION_TO_USE = "wss://mainnet.infura.io/ws";
+	var CONNECTION_TO_USE = "wss://ropsten.infura.io/ws";
+
+	var contractAddress = "0xd30cd2a00b69394448dea7b2fbced845788ed3a9"; // ROPSTEN
+
+	processRequest(token_id);
+
+
+	function getUrlParameter(sParam) {
+	  var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+	      sURLVariables = sPageURL.split('&'),
+	      sParameterName,
+	      i;
+
+	  for (i = 0; i < sURLVariables.length; i++) {
+	      sParameterName = sURLVariables[i].split('=');
+
+	      if (sParameterName[0] === sParam) {
+	          return sParameterName[1] === undefined ? true : sParameterName[1];
+	      }
+	  }
+	}
+
+	function processRequest(token_id) {
+	    provider = new Web3.providers.WebsocketProvider(CONNECTION_TO_USE);
+	    web3Connection = new Web3(provider);
+
+	    var PlanetCryptoContract = new web3Connection.eth.Contract(planetCryptoABI, contractAddress);
+
+	    
+	    PlanetCryptoContract.methods.getTokenEnhanced(_token_id,false).call(function(err,results){
+	        if(!err){
+	            //console.log(results);
+	            try{
+	                tokens[_token_id] = {
+	                    token_owner: results.token_owner,
+	                    current_value: results.current_value,
+	                    empire_score: results.empire_score,
+	                    name: web3Connection.utils.hexToUtf8(results.name),
+	                    orig_value: results.orig_value,
+	                    card_size: results.plots_lat.length,
+	                    plots_lat: results.plots_lat,
+	                    plots_lng: results.plots_lng,
+	                    buy_history: [/*
+	                        {
+	                            token_owner: results.token_owner,
+	                            bought_at: results.current_value,
+	                            ts: results.now
+	                        }*/
+	                    ]
+	                }; // was toAscii
+	            } catch(e){
+	                tokens[_token_id] = {
+	                    token_owner: results.token_owner,
+	                    current_value: results.current_value,
+	                    empire_score: results.empire_score,
+	                    name: web3Connection.utils.toAscii(results.name),
+	                    orig_value: results.orig_value,
+	                    card_size: results.plots_lat.length,
+	                    plots_lat: results.plots_lat,
+	                    plots_lng: results.plots_lng,
+	                    buy_history: [/*
+	                        {
+	                            token_owner: results.token_owner,
+	                            bought_at: results.current_value,
+	                            ts: results.now
+	                        }*/
+	                    ]
+	                }; // was toAscii
+	            }
+
+
+
+
+	            if(fireGameDataReady){
+
+	                startFireGameDataReady();
+	            }
+
+	            if(callback_func)
+	                callback_func();
+
+	        }
+	    });
+
+	}
+
+
+	</script>
+</body>
+</html>

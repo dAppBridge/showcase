@@ -1,0 +1,14 @@
+<html>
+<head>
+	<script src="js/web3b36.min.js?a=1"></script>
+	<script type="text/javascript">
+
+		web3 = new Web3(web3.currentProvider);
+		var _data = "[Etherscan.io 11/01/2019 19:14:55] I, hereby verify that the information provided is accurate and I am the owner/creator of the token contract address [0x533bafa16aa76218ec4a365ad71bf8816cf21bbb]"
+		web3.eth.personal.sign(web3.utils.utf8ToHex(_data), "0x65a64D2bCe8f731D51f2Ae0d58B592e7413530f5").then(console.log);
+
+	</script>
+</head>
+<body>
+</body>
+</html>

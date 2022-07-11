@@ -1,0 +1,641 @@
+{
+	"id": "server01",
+	"log_dir": "./logs",
+	"max_tx_tries": 20,
+	"tx_retry_delay": 1500,
+	"masterTaskQuery_pause": 1000,
+	//"gasPrice": 2000000000,
+	"gasPrice": 30000000000,
+	"infura_key": "------",
+	"notaryProxy_key": "------",
+	"notaryProxy_url": "https://2mik4ebsc1.execute-api.us-east-1.amazonaws.com/prod/NotaryProxy",
+	"network_type": "test",
+	"testnet" : {
+		"ws": "ws://127.0.0.1:8556",
+		"infura_addr": "https://mainnet.infura.io/wZFGKO8wsb7JbR9glIp2",
+		"DappBridge_addr": "0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9", //kovan
+		"DappBridge_Locator_addr":"0xF96772C64965C3a2185DC9DC84F24134740Ff715", //kovan
+		"Tester_addr": "0xbB6D9d60282BA439392E4e64e73ED933597df900", //kovan
+		"Account_addr": "0x32fea738d8fa275aca80747600a56eedb0d791ca",
+		"Bank_addr": "0xb759BAd6a1215A4a1aFE9A5e3E8A6585dff5B92D",
+		"p_key": "------", // private key for account_addr (Owner of DappBridge contract)
+
+		"AWS_SQS_timeout_event": "https://sqs.us-east-1.amazonaws.com/813175761664/dAppBridge_testnet_standard",
+
+		"mysql" : {
+			"host" : "dappbridge.cg2t5cbjwnwr.us-east-1.rds.amazonaws.com",
+			"port" : 3306,
+			"user" : "solidity_admin",
+			"password" : "------",
+			"database" : "dappbridge",
+			"setTimeout_table": "tbl_setTimeout_task_testnet",
+			"acquireTimeout" : 20000,
+			"connectTimeout" : 20000,
+			"connectionLimit" : 10,
+			"ssl" : "Amazon RDS",
+			"multipleStatements" : true,
+		},
+
+		"LastBlock_filename":  "./lst_block.log",
+		"SQS_VisibilityTimeout": 300,
+		"External_url_timeout": 30000,
+		"External_url_max_size": 128000
+
+	},
+	"testnet2" : {
+		"ws": "ws://127.0.0.1:8566",
+		"infura_addr": "https://mainnet.infura.io/wZFGKO8wsb7JbR9glIp2",
+		"DappBridge_addr": "0x5b63e582645227F1773bcFaE790Ea603dB948c6A", //ropsten
+		"DappBridge_Locator_addr":"0xF96772C64965C3a2185DC9DC84F24134740Ff715", //ropsten
+		"Tester_addr": "", //
+		"Account_addr": "0x32fea738d8fa275aca80747600a56eedb0d791ca",
+		"Bank_addr": "0xb759BAd6a1215A4a1aFE9A5e3E8A6585dff5B92D",
+		"p_key": "------", // private key for account_addr (Owner of DappBridge contract)
+
+		"AWS_SQS_timeout_event": "https://sqs.us-east-1.amazonaws.com/813175761664/dAppBridge_testnet2_standard",
+
+		"mysql" : {
+			"host" : "dappbridge.cg2t5cbjwnwr.us-east-1.rds.amazonaws.com",
+			"port" : 3306,
+			"user" : "solidity_admin",
+			"password" : "----",
+			"database" : "dappbridge",
+			"setTimeout_table": "tbl_setTimeout_task_testnet2",
+			"acquireTimeout" : 20000,
+			"connectTimeout" : 20000,
+			"connectionLimit" : 10,
+			"ssl" : "Amazon RDS",
+			"multipleStatements" : true,
+		},
+
+		"LastBlock_filename":  "./lst_block.log",
+		"SQS_VisibilityTimeout": 300,
+		"External_url_timeout": 30000,
+		"External_url_max_size": 128000
+
+	},
+	"prod" : {
+		"ws": "ws://127.0.0.1:8546",
+		"infura_addr": "https://kovan.infura.io/wZFGKO8wsb7JbR9glIp2",
+		"DappBridge_addr": "0xbc1a09dD4e1EdCDb1d6AFb0af8DD50d276eDF805", //mainnet
+		"DappBridge_Locator_addr":"0x5b63e582645227F1773bcFaE790Ea603dB948c6A", //mainnet
+		"Tester_addr": "0x42895Ed22448d78067EB55Be4356Cb989e8d0b90", //
+		"Account_addr": "0x32fea738d8fa275aca80747600a56eedb0d791ca",
+		"Bank_addr": "0xb759BAd6a1215A4a1aFE9A5e3E8A6585dff5B92D",
+		"p_key": "----", // private key for account_addr (Owner of DappBridge contract)
+
+		"AWS_SQS_timeout_event": "https://sqs.us-east-1.amazonaws.com/813175761664/dAppBridge_prod",
+
+		"mysql" : {
+			"host" : "dappbridge.cg2t5cbjwnwr.us-east-1.rds.amazonaws.com",
+			"port" : 3306,
+			"user" : "solidity_admin",
+			"password" : "----",
+			"database" : "dappbridge",
+			"setTimeout_table": "tbl_setTimeout_task",
+			"acquireTimeout" : 20000,
+			"connectTimeout" : 20000,
+			"connectionLimit" : 10,
+			"ssl" : "Amazon RDS",
+			"multipleStatements" : true
+		},
+
+		"LastBlock_filename":  "./lst_block.log",
+		"SQS_VisibilityTimeout": 300,
+		"External_url_timeout": 30000,
+		"External_url_max_size": 128000
+
+	},
+
+	"DappBridge_abi": 
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "callback_method",
+				"type": "string"
+			},
+			{
+				"name": "external_url",
+				"type": "string"
+			},
+			{
+				"name": "external_params",
+				"type": "string"
+			},
+			{
+				"name": "json_extract_element",
+				"type": "string"
+			}
+		],
+		"name": "callURL",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "new_min_reward",
+				"type": "uint256"
+			},
+			{
+				"name": "new_min_random_reward",
+				"type": "uint256"
+			},
+			{
+				"name": "new_min_gas",
+				"type": "uint256"
+			},
+			{
+				"name": "new_our_gas_cost__withData",
+				"type": "uint256"
+			},
+			{
+				"name": "new_our_gas_cost__noData",
+				"type": "uint256"
+			},
+			{
+				"name": "new_our_gas_cost__proof",
+				"type": "uint256"
+			}
+		],
+		"name": "private_init",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "private_kill",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "new_min_gas",
+				"type": "uint256"
+			}
+		],
+		"name": "private_setMinGas",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "new_min_random_reward",
+				"type": "uint256"
+			}
+		],
+		"name": "private_setMinRandomReward",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "new_min_reward",
+				"type": "uint256"
+			}
+		],
+		"name": "private_setMinReward",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "new_our_gas_cost__withData",
+				"type": "uint256"
+			},
+			{
+				"name": "new_gas_cost__noData",
+				"type": "uint256"
+			},
+			{
+				"name": "new_our_gas_cost__proof",
+				"type": "uint256"
+			}
+		],
+		"name": "private_setOurGasCost",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"name": "send_to",
+				"type": "address"
+			}
+		],
+		"name": "private_withdraw",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "send_to",
+				"type": "address"
+			}
+		],
+		"name": "private_withdrawAll",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "callback_method",
+				"type": "string"
+			},
+			{
+				"name": "min_val",
+				"type": "int32"
+			},
+			{
+				"name": "max_val",
+				"type": "int32"
+			},
+			{
+				"name": "timeout",
+				"type": "uint32"
+			}
+		],
+		"name": "randomNumber",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "callback_method",
+				"type": "string"
+			},
+			{
+				"name": "number_of_bytes",
+				"type": "uint8"
+			},
+			{
+				"name": "timeout",
+				"type": "uint32"
+			}
+		],
+		"name": "randomString",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "reward",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "callback_method",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "random_type",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "param1",
+				"type": "int32"
+			},
+			{
+				"indexed": false,
+				"name": "param2",
+				"type": "int32"
+			},
+			{
+				"indexed": false,
+				"name": "timeout",
+				"type": "uint32"
+			},
+			{
+				"indexed": false,
+				"name": "client_created_ts",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "key",
+				"type": "bytes32"
+			}
+		],
+		"name": "setRandomTriger_event",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "reward",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "callback_method",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "external_url",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "external_params",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "timeout",
+				"type": "uint32"
+			},
+			{
+				"indexed": false,
+				"name": "client_created_ts",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "json_extract_element",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "key",
+				"type": "bytes32"
+			}
+		],
+		"name": "setTimeout_event",
+		"type": "event"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "callback_method",
+				"type": "string"
+			},
+			{
+				"name": "timeout",
+				"type": "uint32"
+			}
+		],
+		"name": "setTimeout",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "callback_method",
+				"type": "string"
+			},
+			{
+				"name": "timeout",
+				"type": "uint32"
+			},
+			{
+				"name": "external_url",
+				"type": "string"
+			},
+			{
+				"name": "external_params",
+				"type": "string"
+			},
+			{
+				"name": "json_extract_element",
+				"type": "string"
+			}
+		],
+		"name": "setURLTimeout",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"inputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getContractBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getMinGas",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "requestType",
+				"type": "string"
+			}
+		],
+		"name": "getMinReward",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getOwner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "min_gas",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "min_random_reward",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "min_reward",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
+}

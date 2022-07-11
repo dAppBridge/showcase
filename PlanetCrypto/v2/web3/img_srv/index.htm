@@ -1,0 +1,111 @@
+<html>
+<head>
+
+   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+
+  
+</head>
+<body>
+
+<div style="display: none;" id="img_mapid"></div>
+<div style="display: none;" id="img_mapid2"></div>
+<!--
+file:///Volumes/GoogleDrive/My%20Drive/my%20stuff/df/eth/otm/web3/img_test/index.htm?lat=51.50521&lng=-0.09
+
+http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/18/87172/131006
+-->
+	<script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
+
+
+	<script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
+    integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g=="
+    crossorigin=""></script>
+    
+	<script type="text/javascript">
+	var lat = getUrlParameter('lat');
+	var lng = getUrlParameter('lng');
+
+	var _latLng = L.latLng(lat, lng);
+	
+
+	var img_map = L.map('img_mapid',{
+			doubleClickZoom: false,
+			zoomSnap: 1,
+			boxZoom: false,
+			scrollWheelZoom: true
+		}).setView([51.505, -0.09],18);
+
+
+	var layerPoint = img_map.project(_latLng).divideBy(256).floor();
+// good: https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/16/24641/19294
+// bad:  https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/18/49283/38589
+	$.ajax({
+	  url: "https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/18/" + layerPoint.y + "/" + layerPoint.x,
+	  crossDomain: true,
+	  processData: false,
+	  dataType: 'image/jpeg',
+	  //dataType: 'jsonp',
+	  statusCode: {
+	  	404: function() {
+			console.log("404");
+			img_map.setZoom(17);
+			layerPoint = img_map.project(_latLng).divideBy(256).floor();
+		//				 https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/17/72171/74950
+			document.location.href = "https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/17/" + layerPoint.y + "/" + layerPoint.x;
+
+	  	},
+	  	200: function() {
+			console.log("200");
+	//		document.location.href = "https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/18/" + layerPoint.y + "/" + layerPoint.x;
+	  	}
+	  }, 
+	  error: function(err){
+  		//console.log("error", err);
+  		if(err.statusText == "parsererror"){
+  			console.log("found");
+			document.location.href = "https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/18/" + layerPoint.y + "/" + layerPoint.x;
+  		} else {
+			var img_map2 = L.map('img_mapid2',{
+					doubleClickZoom: false,
+					zoomSnap: 1,
+					boxZoom: false,
+					scrollWheelZoom: true
+				}).setView([51.505, -0.09],17);
+
+			layerPoint = img_map2.project(_latLng).divideBy(256).floor();
+						 //https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/17/72171/74950
+			document.location.href = "https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/17/" + layerPoint.y + "/" + layerPoint.x;
+
+  		}
+
+
+	  }
+	});
+
+
+	
+
+
+	function getUrlParameter(sParam) {
+	  var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+	      sURLVariables = sPageURL.split('&'),
+	      sParameterName,
+	      i;
+
+	  for (i = 0; i < sURLVariables.length; i++) {
+	      sParameterName = sURLVariables[i].split('=');
+
+	      if (sParameterName[0] === sParam) {
+	          return sParameterName[1] === undefined ? true : sParameterName[1];
+	      }
+	  }
+	}
+
+	</script>
+</body>
+</html>

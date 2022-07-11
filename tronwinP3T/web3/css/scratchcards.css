@@ -1,0 +1,258 @@
+.clearer { clear: both; margin: 0; padding: 0; font-size: 0; height: 0; }
+
+body {
+	/*font-family: Arial, sans-serif;*/
+	color: #2a2a2a;
+}
+
+.scratch_card {
+	position: relative;
+	/*margin: 100px 10px;*/
+
+	width: 696px;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+
+
+}
+
+.scratch_card.scratch_card_cells3 {
+	height: 354px;
+}
+
+.scratch_card.scratch_card_cells9 {
+	height: 667px;
+
+}
+
+.scratch_card_cells_container {
+	position: absolute;
+	width: 460px;
+	top: 180px;
+	left: 200px;
+}
+
+/* scratching cursor applies to the cells area, and to the whole scratchcard if we happen to be scratching */
+.scratch_card.scratching,
+.scratch_card_cells_container {
+	/*cursor: url(../images/coin_cursor.png) 67 35, pointer;*/
+	/*cursor: url(../images/coin_cursor2.png) 70 37, pointer;*/
+	/*cursor: url(../images/coin_cursor3.png) 100 20, pointer;*/
+	cursor: url(../images/coin_cursor4.png) 6 20, pointer;
+}
+
+.scratch_card_scratch_area_image {
+	width: 128px; height:128px;
+	display: none;
+}
+
+.scratch_card_cell {
+	width: 148px; height: 148px;
+	margin: 2px; 
+	border: 10px solid transparent;
+	border-radius: 10px;
+	position: relative;
+	float: left;
+}
+
+.scratch_card_cell.opened {
+	border-color: #dddd00;
+}
+
+.scratch_card_cell.complete {
+	border-color: #00bb00;
+}
+
+.scratch_card_cell.denied {
+	border-color: #bb0000;
+}
+
+.scratch_card_cell_icon {
+	width: 128px; height: 128px;
+}
+
+.scratch_card_cell_icon_sm {
+	width: 16px; height: 16px;
+}
+.scratch_card_cell .cnv_scratch {
+	position: absolute;
+	top: 0; left: 0; width: 100%; height: 100%;
+	z-index: 10;
+}
+
+.scratch_card_cell_icon.icon_1 { background-position: 0 0; }
+.scratch_card_cell_icon.icon_2 { background-position: 0 -128px; }
+.scratch_card_cell_icon.icon_3 { background-position: 0 -256px; }
+.scratch_card_cell_icon.icon_4 { background-position: 0 -384px; }
+.scratch_card_cell_icon.icon_5 { background-position: 0 -512px; }
+.scratch_card_cell_icon.icon_6 { background-position: 0 -640px; }
+.scratch_card_cell_icon.icon_7 { background-position: 0 -768px; }
+.scratch_card_cell_icon.icon_8 { background-position: 0 -896px; }
+.scratch_card_cell_icon.icon_9 { background-position: 0 -1024px; }
+.scratch_card_cell_icon.icon_10 { background-position: 0 -1152px; }
+.scratch_card_cell_icon.icon_11 { background-position: 0 -1280px; }
+.scratch_card_cell_icon.icon_12 { background-position: 0 -1408px; }
+.scratch_card_cell_icon.icon_13 { background-position: 0 -1536px; }
+.scratch_card_cell_icon.icon_14 { background-position: 0 -1664px; }
+.scratch_card_cell_icon.icon_15 { background-position: 0 -1792px; }
+.scratch_card_cell_icon.icon_16 { background-position: 0 -1920px; }
+.scratch_card_cell_icon.icon_17 { background-position: 0 -2048px; }
+.scratch_card_cell_icon.icon_18 { background-position: 0 -2176px; }
+.scratch_card_cell_icon.icon_19 { background-position: 0 -2304px; }
+.scratch_card_cell_icon.icon_20 { background-position: 0 -2432px; }
+.scratch_card_cell_icon.icon_21 { background-position: 0 -2560px; }
+
+
+
+
+.scratch_card_cell_icon.icon_1_half { background-position: 0 0; }
+.scratch_card_cell_icon.icon_2_half { background-position: 0 -64px; }
+.scratch_card_cell_icon.icon_3_half { background-position: 0 -128px; }
+.scratch_card_cell_icon.icon_4_half { background-position: 0 -192px; }
+.scratch_card_cell_icon.icon_5_half { background-position: 0 -256px; }
+.scratch_card_cell_icon.icon_6_half { background-position: 0 -320px; }
+.scratch_card_cell_icon.icon_7_half { background-position: 0 -384px; }
+.scratch_card_cell_icon.icon_8_half { background-position: 0 -448px; }
+.scratch_card_cell_icon.icon_9_half { background-position: 0 -512px; }
+.scratch_card_cell_icon.icon_10_half { background-position: 0 -576px; }
+.scratch_card_cell_icon.icon_11_half { background-position: 0 -640px; }
+.scratch_card_cell_icon.icon_12_half { background-position: 0 -704px; }
+.scratch_card_cell_icon.icon_13_half { background-position: 0 -768px; }
+.scratch_card_cell_icon.icon_14_half { background-position: 0 -832px; }
+.scratch_card_cell_icon.icon_15_half { background-position: 0 -896px; }
+.scratch_card_cell_icon.icon_16_half { background-position: 0 -960px; }
+.scratch_card_cell_icon.icon_17_half { background-position: 0 -1024px; }
+.scratch_card_cell_icon.icon_18_half { background-position: 0 -1088px; }
+.scratch_card_cell_icon.icon_19_half { background-position: 0 -1152px; }
+.scratch_card_cell_icon.icon_20_half { background-position: 0 -1216px; }
+.scratch_card_cell_icon.icon_21_half { background-position: 0 -1280px; }
+
+
+.scratch_card_cell_icon_sm.icon_1_half2 { background-position: 0 0; }
+.scratch_card_cell_icon_sm.icon_2_half2 { background-position: 0 -16px; }
+.scratch_card_cell_icon_sm.icon_3_half2 { background-position: 0 -32px; }
+.scratch_card_cell_icon_sm.icon_4_half2 { background-position: 0 -48px; }
+.scratch_card_cell_icon_sm.icon_5_half2 { background-position: 0 -64px; }
+.scratch_card_cell_icon_sm.icon_6_half2 { background-position: 0 -80px; }
+.scratch_card_cell_icon_sm.icon_7_half2 { background-position: 0 -96px; }
+.scratch_card_cell_icon_sm.icon_8_half2 { background-position: 0 -112px; }
+.scratch_card_cell_icon_sm.icon_9_half2 { background-position: 0 -128px; }
+.scratch_card_cell_icon_sm.icon_10_half2 { background-position: 0 -144px; }
+.icon_11_half2 { background-position: 0 -160px; }
+.icon_12_half2 { background-position: 0 -176px; }
+.icon_13_half2 { background-position: 0 -192px; }
+.icon_14_half2 { background-position: 0 -208px; }
+.icon_15_half2 { background-position: 0 -224px; }
+.icon_16_half2 { background-position: 0 -240px; }
+.icon_17_half2 { background-position: 0 -256px; }
+.icon_18_half2 { background-position: 0 -272px; }
+.icon_19_half2 { background-position: 0 -288px; }
+.icon_20_half2 { background-position: 0 -304px; }
+.icon_21_half2 { background-position: 0 -320px; }
+
+.scratch_card_cell_icon_1 {
+	background: url(../images/magic_lamp/icons.png);/* 0 9999px repeat-x;*/
+	background-color: rgba(0,0,0,0.3);
+
+}
+.scratch_card_cell_icon_2 {
+
+	background: url(../images/pirates/icons.png);/* 0 9999px repeat-x;*/
+	background-color: rgba(0,0,0,0.3);
+}
+.scratch_card_cell_icon_3 {
+	background: url(../images/mine/icons.png);/* 0 9999px repeat-x;*/
+	background-color: rgba(0,0,0,0.3);
+}
+
+.scratch_card_cell_icon_4 {
+	background: url(../images/slots/icons.png);/* 0 9999px repeat-x;*/
+	background-color: rgba(0,0,0,0.3);
+}
+
+.scratch_card_dialog_overlay {
+	position: absolute;
+	top: 0; left: 0; width: 100%; height: 100%;
+	z-index: 10;
+	background-color: black;
+	opacity: 0.7;
+	display: none;
+
+}
+
+.scratch_card_dialog {
+	position: absolute;
+	width: 630px;
+	left: 33px;
+	z-index: 100;
+		color: black;
+		font-size: 12pt;
+		line-height: 15px;
+}
+
+.scratch_card.scratch_card_cells3 .scratch_card_dialog {
+	height: 332px;
+	top: 10px;
+	background: url(../images/dialog_bg_small.png) 0 0 no-repeat;
+}
+
+.scratch_card.scratch_card_cells9 .scratch_card_dialog {
+	height: 418px;
+	top: 80px;
+	background: url(../images/dialog_bg_large.png) 0 0 no-repeat;
+}
+
+.scratch_card_dialog h1 {
+	margin: 55px 80px 30px 105px;
+	font-size: 40px;
+	text-align: center;
+	text-shadow: #dbb772 2px 3px 1px;
+}
+
+.scratch_card.scratch_card_cells9 .scratch_card_dialog h1 {
+	margin-top: 70px;
+}
+
+.scratch_card_dialog p {
+	margin: 10px 90px 10px 115px;
+	text-align: center;
+	font-size: 10pt;
+}
+
+.scratch_card_dialog .scratch_card_dialog_buttons {
+	position: absolute;
+	height: 61px;
+	bottom: 15px;
+	left: 105px; right: 80px;
+	text-align: center;
+}
+
+.scratch_card.scratch_card_cells9 .scratch_card_dialog .scratch_card_dialog_buttons {
+	bottom: 45px;
+}
+
+.scratch_card_dialog .scratch_card_dialog_button {
+	display: inline-block;
+	height: 60px; width: 160px;
+	margin: 0 10px;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_play_now { background: url(../images/dialog_btn_green_play_now.png) 0 0 no-repeat; }
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_play_again { background: url(../images/dialog_btn_green_play_again.png) 0 0 no-repeat; }
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_refresh { background: url(../images/dialog_btn_red_refresh.png) 0 0 no-repeat; }
+
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_collect_prize {
+    background: url(../images/dialog_btn_green_collect_prize.png) 0 0 no-repeat;
+	width: 201px;
+}
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_load_balance {
+    background: url(../images/dialog_btn_red_load_balance.png) 0 0 no-repeat;
+	width: 184px;
+}

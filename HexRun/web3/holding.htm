@@ -1,0 +1,867 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<html>
+<head>
+	<meta charset="utf-8"/>
+
+	<title>HEX RUN : Double your HEX Tokens</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Padauk" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+
+
+	<style type="text/css">
+		body{
+			background-color: black;
+			background-image: url(images/back1.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center; 
+			color: white;
+			font-size: 14pt;
+			font-family: 'Padauk', sans-serif;
+		}
+		h1 {
+			font-size: 18pt;
+			font-weight: bolder;
+			text-transform: uppercase;
+			color: #ff3cbe;
+		}
+		h2 {
+			font-size: 16pt;
+			font-weight: bolder;
+			color: #ffd201;
+		}
+		h3 {
+			font-size: 16pt;
+			font-weight: bolder;
+			color: #ff3cbe;
+		}
+		h4 {
+			font-size: 12pt;
+			color: #555;
+		}
+		button {
+			font-family: 'Padauk', sans-serif;
+		}
+		table {
+			width: 40%;
+			
+		}
+		table thead {
+			color: #555 !important;
+			font-size: 12pt;
+		}
+		table tr {
+		    background-color: rgba(0,0,0,0.9) !important;
+		    text-align: center;
+		    font-weight: bold;
+		}
+
+		.hexIcon {
+			width: 20px;
+			height: 20px;
+			margin: 5px;
+			top: -2px;
+			position: relative;
+		}
+
+		.orange {
+			color: #ff3cbe;
+		}
+		.yellow {
+			color: #ffd201;
+		}
+		.infoPanel {
+			background-color: rgba(0,0,0,0.5);
+			padding: 5px;
+			border-color: white;
+			border: 2px solid;
+			line-height: 12pt;
+			margin-bottom: 10px;
+		}
+
+
+
+	html,body{heigth:100%; width:100%; overflow:none}
+	.comment {
+		font-size: 10pt;
+		color: #aaa;
+		width: 40%;
+		background-color: rgba(0,0,0,0.5);
+		padding: 5px;
+		border-color: white;
+		border: 2px solid;
+	}
+	.top-bar {
+		width: 100%;
+		position: fixed;
+		top: 0px;
+	}
+	#canvas {
+		z-index: -1;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background-color: rgba(0,0,0,0.6);
+	}
+	.footer {
+		font-size: 10pt;
+		color: #aaa;
+		width: 100%;
+		line-height: 8pt;
+	}
+
+
+	@media (max-width: 1024px) {
+		table {
+			width: 80%;
+			font-size: 16pt;
+		}
+	}
+	@media (pointer:coarse) {
+		table {
+			width: 80%;
+			font-size: 18pt;
+		}
+	}
+	</style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167352337-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-167352337-1');
+	</script>
+
+
+</head>
+<body>
+<div class="top-bar hide" style="z-index: 9999;">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+      <li>
+        <a href="#">One</a>
+      </li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+    </ul>
+  </div>
+</div>
+
+
+	<center style="padding-top: 50px;">
+		<br/>
+		<img src="images/HexRun-Logo.png" width="500" style="z-index: 999;" />
+		<br/>
+		<h1>The Fastest, Easiest and Risk-Free way to Multiply your HEX every 30 days</h1>
+		<strong class="orange">The worlds first ERC20 token multiplier smart-contract!<br/></strong>
+		<h2>2000 HEX registration fee buys you into level 1 ~ gives you 4000 HEX return!!!</h2>
+		<br/>
+		Fully secured Ethereum Smart-Contract DOA ~ HEX is never stored ~ Always sent direct to your wallet P2P 
+		<br/><br/>
+		<div class="hide">
+			<button type="button" class="success button large">REGISTER NOW</button>&nbsp;&nbsp;
+			<button type="button" class="primary button large">LOGIN</button>
+		</div>
+		<div>
+			<h1 style="color: white;">LAUNCHING IN: <span id="countdownClock" class="yellow">00:00:00</span></h1>
+			Join our <a href="https://t.me/HEXRun" target="_new">Telegram</a> or <a href="https://discord.gg/P5aJgaC" target="_new">Discord</a> for pre-launch news, updates &amp; guides!
+			<br/><br/>
+		</div>
+
+		<h2>PROFIT TABLE</h2>
+
+		<table class="unstriped">
+
+		  <tbody>
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#1
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">2,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		2
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">4,000</span> HEX
+		      	</td>
+		    </tr>
+
+
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#2
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">4,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		4
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">16,000</span> HEX
+		      	</td>
+		    </tr>
+
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#3
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">8,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		8
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">64,000</span> HEX
+		      	</td>
+		    </tr>
+
+
+
+
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#4
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">16,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		16
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">256,000</span> HEX
+		      	</td>
+		    </tr>
+
+
+
+
+
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#5
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">32,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		32
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">1,024,000</span> HEX
+		      	</td>
+		    </tr>
+
+
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#6
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">64,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		2
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">128,000</span> HEX
+		      	</td>
+		    </tr>
+
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#7
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">128,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		4
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">512,000</span> HEX
+		      	</td>
+		    </tr>
+
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#8
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">256,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		8
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">2,048,000</span> HEX
+		      	</td>
+		    </tr>
+
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#9
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">512,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		16
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">8,192,000</span> HEX
+		      	</td>
+		    </tr>
+
+		    <tr>
+				<td>
+					<h4>Level</h4>
+		      		#10
+				</td>
+		      	<td>
+		      		<h4>Price</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">1,024,000</span> HEX
+		      	</td>
+		      	<td>
+		      		<h4>Referrals</h4>
+		      		32
+		      	</td>
+		      	<td>
+		      		<h4>Income</h4>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">32,768,000</span> HEX
+		      	</td>
+		    </tr>
+
+		   </tbody>
+		</table>
+
+		<h2 style="color: white;">YOUR TOTAL PROFIT: <img src="images/hex-icon-sm.png" class="hexIcon"/>
+			<span class="yellow">45,012,000</span>
+			 HEX EVERY 30 DAYS<sup>*</sup></h2>
+		
+		<div class="comment">
+				* 45,012,000 HEX profit is the maximum profit theoretical posssible ~ using a repeat passage through every level of HEXRUN.  In practice, and in tested conditions it is very realistic to expect a return of HALF of this amount and more with a simple pass through each level. 
+		</div>
+	</center>
+
+	<br/>
+
+	<div class="grid-x grid-margin-x">
+
+	  <div class="cell small-12 medium-12 large-3 large-offset-3 infoPanel">
+	  	<h3>Zero Risk Smart Contract</h3>
+	  	The admin of the smart-contract does not have any access to your HEX ~ all profits are instantly transfered to your wallet, P2P!
+	  	<br/><br/>
+	  	There is zero risk involved in using the HEXRUN smart-contract because it hold no funds!
+	  </div>
+	  <div class="cell small-12 medium-12 large-3 infoPanel">
+	  	<h3>Full Decentralization</h3>
+	  	No one controls HEXRUN!<br/><br/>
+	  	It has been deployed to the Ethereum mainnet and runs fully autonomously ~ it cannot be stopped ~ it cannot be changed!  It is fully immutable!
+	  </div>
+
+	  <div class="cell small-12 medium-12 large-3 large-offset-3 infoPanel">
+	  	<h3>Earn from your Referrals Uplines!</h3>
+	  	When people you invite have filled up their referral slots new referrals of theirs become invites of yours earning you more!
+	  	<br/><br/>
+	  	
+	  </div>
+	  <div class="cell small-12 medium-12 large-3 infoPanel">
+	  	<h3>No Referrals?</h3>
+	  	No need to worry if you have trouble filling up your own referral slots ~ the system will find referrals for you using it's automatic referral system.
+	  	<br/><br/>
+	  	New players who join without a referral are distributed evenly amongst users starting from existing users who previously bought level 1!
+	  </div>
+
+	  <div class="cell small-12 medium-12 large-6 large-offset-3 infoPanel">
+	  	<h3>Zero Commission ~ Zero Fees</h3>
+	  	The contract has been deployed and set free to run autonomously!  
+	  	<br/><br/>
+	  	There are no commissions to pay to the admin or exit fees ~ all HEX transfers go direct to your upline directly and are never kept within the contract!
+	  </div>
+	  
+	</div>
+
+	<br/>
+
+
+
+	<div class="grid-x grid-margin-x">
+
+		<div class="cell large-auto"></div>
+
+
+	  <div class="cell small-12 medium-12 large-3 infoPanel">
+
+	  	<center>
+	  		<h2>0</h2>
+	  		total participants
+	  	</center>
+	  	<br/>
+	  	<div class="grid-x grid-margin-x">
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 1: <span class="yellow">0</span><br/>
+	  			<br/>
+	  		</div>
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 2: <span class="yellow">0</span><br/>
+	  		</div>
+
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 3: <span class="yellow">0</span><br/>
+	  			<br/>
+	  		</div>
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 4: <span class="yellow">0</span><br/>
+	  		</div>
+
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 5: <span class="yellow">0</span><br/>
+	  			<br/>
+	  		</div>
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 6: <span class="yellow">0</span><br/>
+	  		</div>
+
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 7: <span class="yellow">0</span><br/>
+	  			<br/>
+	  		</div>
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 8: <span class="yellow">0</span><br/>
+	  		</div>
+
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 9: <span class="yellow">0</span><br/>
+	  			<br/>
+	  		</div>
+	  		<div class="cell small-4 small-offset-2">
+	  			Lvl 10: <span class="yellow">0</span><br/>
+	  		</div>
+	  	</div>
+
+	  	<center>
+	  		<button type="button" class="primary button hide">YOUR DASHBOARD</button>
+	  	</center>
+	  </div>
+
+
+	  <div class="cell small-12 medium-12 large-3 infoPanel">
+	  		<center>
+	  			<h2>HEX HODL'rs Online</h2>
+	  		<script type="text/javascript" src="https://rf.revolvermaps.com/0/0/4.js?i=5flmil68dcv&amp;m=5&amp;h=128&amp;c=ffd201&amp;r=0" async="async"></script>
+	  		<br/><br/>
+	  		HEXRUN active: <span class="yellow">0 days</span><br/>
+	  		total transactions: <span class="yellow">0</span><br/>
+	  		last 24 hours: <span class="yellow">0</span><br/>
+	  		<br/>
+	  		<button type="button" class="primary button hide">INVITE USERS</button>
+	  </div>
+
+	  <div class="cell small-12 medium-12 large-3 infoPanel">
+	  		<center>
+	  			<img src="images/hex-icon-sm.png" width="100"/><br/>
+	  			<h2>0 HEX</h2>
+	  			total transactions
+	  		
+	  		<br/><br/>
+	  		equivilant to ETH: <span class="yellow">0 ETH</span><br/>
+	  		equivilant to BTC: <span class="yellow">0 BTC</span><br/>
+	  		equivilant to $: <span class="yellow">0 $</span><br/>
+	  		for 24 hours: <span class="yellow">0 $</span><br/>
+	  		1 HEX = <span class="yellow">0 $</span><br/>
+	  		<br/>
+
+	  		<button type="button" class="primary button hide">VIEW CONTRACT</button>
+	  </div>
+
+
+	  <div class="cell large-auto"></div>
+
+	</div>
+	<br/>
+	<div class="hide">
+	<center><h2>Latest Transactions</h2></center>
+	<center>
+		<table class="unstriped">
+			<thead>
+				<tr>
+					<td>Date</td>
+					<td>Lvl</td>
+					<td>Amount</td>
+					<td>Tx</td>
+				</tr>
+			</thead>
+		  <tbody>
+		    <tr>
+				<td>
+		      		#1
+				</td>
+		      	<td>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="orange">4500</span> HEX
+		      	</td>
+		      	<td>
+		      		2
+		      	</td>
+		      	<td>
+		      		<img src="images/hex-icon-sm.png" class="hexIcon"/><span class="yellow">9000</span> HEX
+		      	</td>
+		    </tr>
+		   </tbody>
+		</table>
+	</center>
+	</div>
+
+	<div class="footer">
+
+		<center>
+
+
+			<a href="https://t.me/HEXRun" target="_new"><img src="images/icon_telegram.png" width="50" border="0" /></a>
+			&nbsp;&nbsp;
+			<a href="https://discord.gg/P5aJgaC" target="_new"><img src="images/icon_discord.png" width="100" border="0"/></a>
+			<br/><br/>
+
+			<div style="width: 70%;">
+			HEXRUN network is a smart contract running on the decentralised Ethereum network and does not belong to any individual person or business enterprise.  It's purpose is to distribute the HEX cryptocurrency token evenly between all users of the smart contract.  The distribution is controlled by the smart contract algorithm ~ which is immutable, uncontrollable and unstoppable!<br/>
+			The site administrators DO NOT own the HEXRUN project and have no technical or any other means to access user funds which are ALWAYS sent direct to users wallets P2P (Person 2 Person).
+			<br/><br/>
+			&copy; 2020 HEXRUN network ~ <a href="mailto:support@hexrun.network">support@hexrun.network</a>
+		</div>
+		</center>
+	</div>
+	<br/><br/><br/>
+
+	<canvas id="canvas"></canvas>
+
+
+
+
+
+	<!--<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js" crossorign="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+	<!--<script src="js/main.js" type="text/javascript"></script>-->
+
+<script type="text/javascript">
+$(function () {
+
+	function updateInnerHTML(item, value){
+	  document.getElementById(item).innerHTML = value;
+	}
+	function padNumber(n, width, z) {
+	  z = z || '0';
+	  n = n + '';
+	  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+	}
+
+	var targetDate = new Date("2020-04-28");
+
+	targetDate.setUTCMonth(4);
+	targetDate.setUTCDate(28);
+	targetDate.setUTCHours(13);
+	targetDate.setUTCMinutes(0);
+
+	setTimeout(function(){
+		updateClocks();
+	},1000);
+
+	function updateClocks() {
+		let _now = new Date().getTime();
+
+	
+			let _diff = (targetDate - _now); 
+		if(_diff < 0) {
+			setTimeout(function(){
+				document.location.href = '/';
+			}, 10000);
+			
+			return;
+		} else {
+
+			var delta = Math.abs(targetDate - _now) / 1000;
+
+
+			var days = Math.floor(delta / 86400);
+			delta -= days * 86400;
+
+
+			var hours = Math.floor(delta / 3600) % 24;
+			delta -= hours * 3600;
+
+
+			var minutes = Math.floor(delta / 60) % 60;
+			delta -= minutes * 60;
+
+
+			var seconds = delta % 60;  // in theory the modulus is not required
+
+			let _diffStr2 = days + " Days, " + padNumber(hours,2) + ":" + padNumber(minutes,2) + ":" + padNumber(seconds.toFixed(0),2);
+			updateInnerHTML('countdownClock', _diffStr2);
+
+
+
+		}
+		setTimeout(function(){
+			updateClocks();
+		},1000);
+	}
+	// end of clocks
+
+    var W, H,
+        canvas, ctx, //ctx stands for context and is the "curso" of our canvas element.
+        particleCount = 700,
+        particles = []; //this is an array which will hold our particles Object/Class
+
+    W = window.innerWidth ;
+    H = window.innerHeight ;
+    
+    canvas = $("#canvas").get(0); //this "get(0) will pull the underlying non-jquery wrapped dom element from our selection
+    canvas.width = W;
+    canvas.height = H;
+
+    ctx = canvas.getContext("2d"); // settng the context to 2d rather than the 3d WEBGL
+    ctx.globalCompositeOperation = "lighter";
+    
+    var mouse = {
+      x: 0, 
+      y: 0,
+      rx:0,
+      ry:0,
+      speed:45,
+      delta:0
+    };
+    
+
+
+    document.addEventListener('mousemove', function(e){ 
+        
+        mouse.x = e.clientX || e.pageX; 
+        mouse.y = e.clientY || e.pageY;
+        mouse.x-=W/2;
+        mouse.y-=H/2;
+      
+    }, false);
+  
+    function randomNorm(mean, stdev) {
+      
+      return Math.abs(Math.round((Math.random()*2-1)+(Math.random()*2-1)+(Math.random()*2-1))*stdev)+mean;
+    }
+
+    //Setup particle class
+    function Particle() {
+        //using hsl is easier when we need particles with similar colors
+        /*
+        this.h=parseInt(45);
+        this.s=parseInt(40 * Math.random() + 30);
+        this.l=parseInt(40 * Math.random() + 30);
+        this.a=0.4*Math.random() ;
+        */
+        this.h=parseInt(185);
+        this.s=parseInt(180 * Math.random() + 30);
+        this.l=parseInt(180 * Math.random() + 30);
+        this.a=0.8*Math.random() ;
+
+        this.color = "hsla("+ this.h +","+ this.s +"%,"+ this.l +"%,"+(this.a)+")";
+        this.shadowcolor = "hsla("+ this.h +","+ this.s +"%,"+ this.l +"%,"+parseFloat(this.a-0.55)+")";
+      
+
+        
+        this.x = Math.random() * W;
+        this.y = Math.random() * H;
+        this.direction = {
+            "x": -1 + Math.random() * 2,
+            "y": -1 + Math.random() * 2
+        };
+        //this.radius = 9 * ((Math.random()*2-1)+(Math.random()*2-1)+(Math.random()*2-1)+3);
+        this.radius = randomNorm(0,4);
+        this.scale=0.8*Math.random()+0.5;
+        this.rotation=Math.PI/4*Math.random();
+      
+        this.grad=ctx.createRadialGradient( this.x, this.y, this.radius, this.x, this.y, 0 );
+        this.grad.addColorStop(0,this.color);
+        this.grad.addColorStop(1,this.shadowcolor);
+      
+        this.vx = (2 * Math.random() + 4)*.01*this.radius;
+        this.vy = (2 * Math.random() + 4)*.01*this.radius;
+        
+        this.valpha = 0.01*Math.random()-0.02;
+        
+        this.move = function () {
+            this.x += this.vx * this.direction.x ;
+            this.y += this.vy * this.direction.y ;
+            this.rotation+=this.valpha;
+            //this.radius*= Math.abs((this.valpha*0.01+1));
+
+        };
+        this.changeDirection = function (axis) {
+            this.direction[axis] *= -1;
+            this.valpha *= -1;
+        };
+        this.draw = function () {
+            ctx.save();
+            ctx.translate(this.x+mouse.rx/-20*this.radius,this.y+mouse.ry/-20*this.radius);  
+          ctx.rotate(this.rotation);  
+          ctx.scale(1,this.scale);
+            
+            this.grad=ctx.createRadialGradient( 0, 0, this.radius, 0, 0, 0 );
+            this.grad.addColorStop(1,this.color);
+            this.grad.addColorStop(0,this.shadowcolor);
+            ctx.beginPath();
+            ctx.fillStyle = this.grad;
+            ctx.arc(0, 0, this.radius, 0, Math.PI * 2, false);
+            ctx.fill();
+            ctx.restore();
+
+            
+        };
+        this.boundaryCheck = function () {
+            if (this.x >= W*1.2) {
+                this.x = W*1.2;
+                this.changeDirection("x");
+            } else if (this.x <= -W*0.2) {
+                this.x = -W*0.2;
+                this.changeDirection("x");
+            }
+            if (this.y >= H*1.2) {
+                this.y = H*1.2;
+                this.changeDirection("y");
+            } else if (this.y <= -H*0.2) {
+                this.y = -H*0.2;
+                this.changeDirection("y");
+            }
+        };
+    } //end particle class
+
+    function clearCanvas() {
+        ctx.clearRect(0, 0, W, H);
+    } //end clear canvas
+
+    function createParticles() {
+        for (var i = particleCount - 1; i >= 0; i--) {
+            p = new Particle();
+            particles.push(p);
+        }
+    } // end createParticles
+
+    function drawParticles() {
+        for (var i = particleCount - 1; i >= 0; i--) {
+            p = particles[i];
+            p.draw();
+        }
+
+      
+    } //end drawParticles
+
+    function updateParticles() {
+        for (var i = particles.length - 1; i >= 0; i--) {
+            p = particles[i];
+            p.move();
+            p.boundaryCheck();
+
+        }
+    } //end updateParticles
+
+    function initParticleSystem() {
+        createParticles();
+        drawParticles();
+    }
+
+    function animateParticles() {
+        clearCanvas();
+        setDelta();
+        update()
+        drawParticles();
+        updateParticles();
+        requestAnimationFrame(animateParticles);
+    }
+  
+    initParticleSystem();
+    requestAnimationFrame(animateParticles);
+  
+    function setDelta() {  
+      this.now    =   (new Date()).getTime();  
+      mouse.delta  =   (this.now-this.then)/1000;  
+      this.then   =   this.now;  
+    }
+    function update() {  
+ 
+    if(isNaN(mouse.delta) || mouse.delta <= 0) { return; }  
+ 
+    var distX   =   mouse.x - (mouse.rx),  
+        distY   =   mouse.y - (mouse.ry);  
+
+    if(distX !== 0 && distY !== 0) {          
+ 
+        mouse.rx -=  ((mouse.rx - mouse.x) / mouse.speed); 
+        mouse.ry -=  ((mouse.ry - mouse.y) / mouse.speed); 
+         
+    }   
+  
+};  
+    
+
+
+
+
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+# This config should be placed in following path:
+#   ~/.local/share/io.parity.ethereum/config.toml
+
+[parity]
+# Parity continously syncs the chain
+mode = "active"
+# Blockchain and settings will be stored in /ethsync/io.parity.ethereum.kovan.
+base_path = "/ethsync/io.parity.ethereum.kovan"
+# You will be identified as 'dappbridge-testnet' amongst other nodes..
+identity = "dappbridge-testnet"
+# Kovan Test Network
+chain = "kovan"
+
+[ui]
+# Wallet will be accessible on port 8190.
+port = 8190
+
+[network]
+# Parity will listen for connections on port 30313.
+port = 30313
+# Parity will try to maintain connection to at least 15 peers.
+min_peers = 15
+# Parity will maintain at most 25 peers.
+max_peers = 25
+# Parity will allow up to 34 pending connections.
+max_pending_peers = 34
+
+[rpc]
+# JSON-RPC over HTTP will be accessible on port 8555.
+port = 8555
+
+[websockets]
+# JSON-RPC over WebSockets will be accessible on port 8556.
+port = 8556
+
+[ipc]
+# Parity will create an IPC socket at /ethsync/io.parity.ethereum.kovan/jsonrpc.ipc.
+path = "/ethsync/io.parity.ethereum.kovan/jsonrpc.ipc"
+
+[secretstore]
+# Secret Store will be running on port 8093.
+port = 8093
+# Secret Store HTTP iface will be running on port 8092.
+http_port = 8092
+
+[misc]
+# Logs will be stored at /var/log/parity-testnet.
+log_file = "/var/log/parity-testnet"

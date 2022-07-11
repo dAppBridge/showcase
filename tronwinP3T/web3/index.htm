@@ -1,0 +1,989 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Bank Of Eth - The $Ethereum Bank Investment Game Where you Earn $ETH!</title>
+    
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/jquery.toast.min.css" />
+    <link rel="stylesheet" href="css/app.css">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="js/web3.min.js"></script>
+	<script src='js/bignumber.min.js'></script>
+	<script src="js/abi.js?a=2"></script>
+
+<style type="text/css">
+
+body {
+  background-color: #ffdd55;
+}
+
+.sticky-shrinknav-menu {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  height: 2.75rem;
+  line-height: 3.75rem;
+  width: 100%;
+  abackground-color: rgba(23, 121, 186, 0.1);
+  background-color: rgba(255, 204, 0, 0.6);
+
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.sticky-shrinknav-menu li {
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.sticky-shrinknav-menu li:hover {
+  box-shadow: 0 0 0 1px #fefefe;
+  background-color: rgba(255, 204, 0, 1);
+}
+
+.sticky-shrinknav-menu a {
+  acolor: #fefefe;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+
+.sticky-shrinknav-header-title {
+  transition: all 0.3s ease;
+  position: relative;
+  -webkit-transform: translateY(-1.875rem);
+      -ms-transform: translateY(-1.875rem);
+          transform: translateY(-1.875rem);
+  margin-bottom: 0;
+  color: #fefefe;
+  z-index: 100;
+
+}
+
+.sticky-shrinknav-header {
+  width: 100%;
+  height: 300px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  abackground-color: #2196e3;
+  background-color: rgb(229, 210, 135);
+  background-image: url("images/cityscape-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.notConnectedModel {
+	background-image: url("images/cityscape-bg.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+}
+.notConnectedModelDiv {
+	padding: 5px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+body.sticky-shrinknav-wrapper {
+  padding-top: 130px;
+  z-index: 100;
+}
+
+
+
+body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
+  aheight: 3.75rem;
+  height: 6.75rem;
+  abackground-color: rgba(23, 121, 186, 0.9);
+  background-color: rgba(255, 204, 0, 0.9);
+  z-index: 100;
+}
+
+body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.header-image {
+	position: relative;
+	top: -20px;
+}
+.contentContainer{
+	padding-top: 300px;	
+	background-color: #ffdd55;
+	width: 100%;
+	z-index: 1;
+}
+.contentContainerShrink{
+	padding-top: 130px;	
+	width: 100%;
+	background-color: #ffdd55;
+	z-index: 1;
+}
+.investorRoom {
+	width: 100%;
+	background-image: url("images/investor-room-full.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 700px;
+	color: #fff;
+	padding-top: 10px;
+	position: relative;
+	z-index: 1;
+}
+.investorRoom h4 {
+	font-weight: bolder;
+}
+.investmentAmount {
+	width: 70px;
+
+
+}
+.investmentAmountLabel{
+	color: #fff;	
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.investButton {
+	aposition: absolute;
+	atop: 105px;
+	aleft: 33%;
+
+}
+.investActionButtonGroup {
+	position: relative;
+	left: -20px;
+}
+.withdrawInvestmentButton {
+	position: relative;
+	aleft: -120px;
+	width: 100px;
+}
+.withdrawDividendsButton {
+	position: relative;
+	aleft: -65px;
+	width: 100px;
+}
+.reinvestButton {
+	position: relative;
+	aleft: -10px;
+	width: 100px;
+}
+.currentDayCard {
+	aposition: absolute;
+	atop: 215px;
+	aright: 10%;
+	border-radius: 25px;
+	padding: 0px;
+}
+.investmentCard {
+	aposition: absolute;
+	atop: 455px;
+	aright: 10%;
+	border-radius: 25px;
+	padding: 0px;
+}
+.smallTxt {
+	font-size: 0.8em;
+}
+.investorRulesContent {
+	background-color: #ffcc00;
+	position: relative;
+	top: 50px;
+}
+.investmentGrid {
+	position: relative;
+}
+.investmentBox {
+	position: relative;
+	left: -30px;
+	top: 5px;
+	height: 230px;
+}
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+/*
+@media123 (min-width: 48em) {
+*/
+@media only screen and (min-width: 555px) {
+	.investmentBox {
+		position: relative;
+		left: -40px;
+		top: 30px;
+	}
+	.investorRulesContent {
+		top: 50px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.investorRulesContent {
+		top: 0px;
+	}
+	.investmentBox {
+		position: relative;
+		left: -60px;
+		top: 30px;
+		height: 360px;
+	}
+	.investmentAmountLabel {
+		font-size: 1.1em;
+	}
+	.investButton {
+		top: 75px;
+		left: 33%;
+	}
+	.investButton {
+		aposition: absolute;
+		atop: 300px;
+		aleft: 40%;
+		font-size: 1.5em;
+	}
+	.currentDayCard {
+		atop: 65px;
+		aright: 10%;
+	}
+	.investmentCard {
+		atop: 305px;
+		aright: 10%;	
+	}
+	.withdrawInvestmentButton {
+		atop: 535px;
+		aleft: 10%;
+	}
+	.withdrawDividendsButton {
+		atop: 535px;
+		aleft: 30%;
+	}
+	.reinvestButton {
+		atop: 535px;
+		aleft: 50%;
+	}
+}
+@media only screen and (min-width: 1028px) {
+	.investorRulesContent {
+		top: 0px;
+	}
+	.investmentBox {
+		position: relative;
+		left: 15px;
+		top: 150px;
+	}
+	.investActionButtonGroup {
+		left: 0px;
+	}
+}
+</style>
+
+
+
+</head>
+<body bgcolor="#ffdd55">
+
+<header class="sticky-shrinknav-header">
+  <center><img src="images/bankofethlogo.png" width="400" class="header-image" /></center>
+  <ul class="menu align-center sticky-shrinknav-menu">
+    <li><a href="https://investors.bankofeth.app/">Investor Room</a></li>
+    <li><a href="https://heist.bankofeth.app/heist.htm">Bank Heist Game</a></li>
+  </ul>
+</header>
+
+<div class="contentContainer" id="contentContainer">
+	<div class="investorRoom">
+
+
+		<!--<div class="grid-container full">-->
+			<div class="grid-x grid-padding-x">
+			  	<div class="cell">
+						<h4 class="show-for-small-only">
+							Invest your $ETH, gain Returns on our Profits!
+						</h4>
+						<h4 class="show-for-medium">
+							Invest your $ETH, Daily Returns on Profits we Make - highest returns on the market!
+						</h4>
+			  	</div>
+			</div>
+
+			<div class="grid-x grid-padding-x align-center investmentGrid">
+		    	<div class="cell small-1 medium-1 large-2"></div>
+		    	<div class="cell small-1 medium-1 large-2"></div>
+		    	<div class="cell small-9 medium-9 large-3 investmentBox">
+		    		<center>
+				        <label class="investmentAmountLabel text-center">Investment Amount
+				          <center><input type="number" placeholder="0.05" value="0.05" step="0.01" min="0.01" size="4" width="4" id="investmentAmount" class="investmentAmount" /></center>
+				        </label>
+						<button id="investButton" type="button" class="button rounded bordered shadow success investButton" >INVEST NOW</button>
+					</center>
+					<div class="small warning button-group show-for-large investActionButtonGroup" id="investActionButtonGroup">
+						<button type="button" id="withdrawInvestmentButton" class="button rounded bordered shadow success withdrawInvestmentButton">WITHDRAW INVESTMENT</button>
+						<button type="button" id="withdrawDividendsButton" class="button rounded bordered shadow success withdrawDividendsButton">WITHDRAW DIVIDENDS</button>
+						<button type="button" id="reinvestButton" class="button rounded bordered shadow success reinvestButton">REINVEST DIVIDENDS</button>
+					</div>
+		    	</div>
+
+		    	<!-- space column-->
+		    	<div class="cell small-1 medium-1 large-1"></div>
+
+
+		    	<div class="cell small-8 medium-4 large-4">
+		    		
+					<div class="card currentDayCard" style="width: 300px;">
+					  <div class="card-divider" style="padding-top: 5px; padding-bottom: 5px;">
+					    <h4 style="font-size: 1.1em;">Game Round: <span id="tradingDay">1</span></h4>
+					  </div>
+					  <div class="card-section" style="padding: 2px;">
+					  	<table class="unstriped smallTxt">
+					  		<tr >
+					  			<td>Investments Today</td>
+					  			<td><span id="investmentsToday">0</span> / <span id="investmentsTodayAmount">0</span> ETH</td>
+					  		</tr>
+					  		<tr>
+					  			<td>Profit Today</td>
+					  			<td><span id="profitToday">0</span> ETH</td>
+					  		</tr>
+					  		<tr>
+					  			<td>All Time Investments</td>
+					  			<td><span id="allTimeInvestmentsNum">0</span> / <span id="allTimeInvestmentsEth">0</span> ETH</td>
+					  		</tr>
+					  		<tr>
+					  			<td>All Time Profit</td>
+					  			<td><span id="allTimeProfit">0</span> ETH</td>
+					  		</tr>
+					  	</table>
+					  </div>
+					</div>
+
+					<div class="card investmentCard" style="width: 300px;">
+					  <div class="card-divider" style="padding-top: 5px; padding-bottom: 5px;">
+					    <h4 style="font-size: 1.1em;">Your Investments</h4>
+					  </div>
+					  <div class="card-section" style="padding: 2px;">
+					  	<table class="unstriped smallTxt">
+					  		<tr>
+					  			<td>Address</td>
+					  			<td><span id="yourAddress">0x00</span></td>
+					  		</tr>
+					  		<tr>
+					  			<td>Total Investment</td>
+					  			<td><span id="yourTotalInvestments">0</span> / <span id="yourTotalInvestmentsAmount">0</span> ETH</td>
+					  		</tr>
+					  		<tr>
+					  			<td>Dividends Available</td>
+					  			<td><span id="yourDividendsAvailable">0</span> ETH</td>
+					  		</tr>
+					  		<tr>
+					  			<td>Divs So Far Today</td>
+					  			<td><span id="yourDividendsToday">0</span> ETH</td>
+					  		</tr>
+					  	</table>
+					  </div>
+					</div>
+
+
+		    	</div>
+		  </div>
+		
+
+
+	</div>
+	<a name="investorRoomRules"></a>
+	<div class="grid-x grid-padding-x investorRulesContent">
+	  <div class="cell"><h4>How to play Bank of Eth</h4></div>
+	  <div class="cell">
+	  	<p>
+	  		Bank of Eth is a Ethereum Banking game which allows you to invest Ethereum into our provably fair smart-contract in return for a share of all profits made.
+	  	</p>
+	  	<p>
+	  		Every $ETH you submit into the smart contract it is split as follows:
+	  	</p>
+	  	<table>
+	  		<tr>
+	  			<td>80%</td>
+	  			<td>Into your Investment Fund</td>
+	  		</tr>
+	  		<tr>
+	  			<td>10%</td>
+	  			<td>Marketing, Admin &amp; Development costs of mainting the BankofEth</td>
+	  		</tr>
+	  		<tr>
+	  			<td>10%</td>
+	  			<td><strong>Profit Fund - the largest profit split on the market!</strong></td>
+	  		</tr> 
+	  	</table>
+	  	<br/>
+	  	<strong>We've halved the withdrawel fees!</strong>
+	  	<p>
+	  		<strike>When you withdraw your investment the same set of fees apply (10% goes to the marketing, admin & dev fund and 10% into the daily profit funds)... but if you only choose to withdraw or reinvest your dividends then no fee apply!</strike>
+	  	</p>
+	  	<p>
+	  		We have now halved the withdrawel fee to make BankOfEth even more efficient for your investment!  When you choose to withdraw your investment now you will only be charged a 10% fee in total!!!  This is split 5% to the Profit Fund and 5% to the Marketing, Admin & Dev fund.... the lowest in the market!
+	  	</p>
+	  	<p>
+	  		The <strong>Profit Fund</strong> is then split <strong>every day</strong> between all investors proportionally to the amount they have investors... the more you invest - the more you gain!
+	  	</p>
+	  	<p>
+	  		Your Dividends are available daily - just wait 24 hours after your first investment to see how much you've earned and can then withdraw if you wish - or keep in the system for more profit!
+	  	</p>
+	  	<hr/>
+	  	<h4>Example Returns on Investment (ROI)</h4>
+	  	<p>
+	  		Because BankOfEth offers the biggest profit split of any other dApp on the market we offer a extremely quick RoI as you can see from the example below:
+	  	</p>
+	  	<p>
+	  		<strong>Initial Investment: 0.05 $ETH</strong>
+	  	</p>
+	  	<table class="smallTxt">
+	  		<thead>
+	  			<td>Day</td>
+	  			<td>Your Investment Value</td>
+	  			<td>Total Daily Investments</td>
+	  			<td>Total Investment Pot Value</td>
+	  			<td>Total Daily Profit</td>
+	  			<td>Your Share of Profit</td>
+	  			<td>You Could Exit For</td>
+	  		</thead>
+	  		<tr>
+	  			<td>1</td>
+	  			<td>0.04</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>0.4 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.036 $ETH</td>
+	  		</tr>
+	  		<tr>
+	  			<td>2</td>
+	  			<td>0.045</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>0.8 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.0405 $ETH</td>
+	  		</tr>
+	  		<tr>
+	  			<td>3</td>
+	  			<td>0.0478</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>1.2 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.043 $ETH</td>
+	  		</tr>
+	  		<tr>
+	  			<td>4</td>
+	  			<td>0.0498</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>1.6 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.0448 $ETH</td>
+	  		</tr>
+	  		<tr>
+	  			<td>5</td>
+	  			<td>0.05136</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>2 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.0462 $ETH</td>
+	  		</tr>
+	  		<tr>
+	  			<td>6</td>
+	  			<td>0.0526</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>2.4 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.0474 $ETH</td>
+	  		</tr>
+	  		<tr>
+	  			<td>7</td>
+	  			<td>0.0537</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>2.8 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.0483 $ETH</td>
+	  		</tr>
+	  		<tr>
+	  			<td>8</td>
+	  			<td>0.0547</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>3.2 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.0492 $ETH</td>
+	  		</tr>
+
+	  		<tr style="background-color: #ffdd55;">
+	  			<td>9</td>
+	  			<td>0.0555</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>3.6 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.05001 $ETH</td>
+	  		</tr>
+
+	  		<tr>
+	  			<td>10</td>
+	  			<td>0.0563</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>4 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.0507 $ETH</td>
+	  		</tr>
+
+	  		<tr>
+	  			<td>11</td>
+	  			<td>0.0570</td>
+	  			<td>10 / 0.4 $ETH</td>
+	  			<td>4.4 $ETH</td>
+	  			<td>0.05 $ETH</td>
+	  			<td>0.005 $ETH</td>
+	  			<td>0.0513 $ETH</td>
+	  		</tr>
+
+	  	</table>
+
+	  	<h5>Break even at day 9!</h5>
+	  	<p>
+	  		And that is even without re-investing back your dividends or further $ETH to increase your share-holding!
+	  	</p>
+	  	<hr/>
+	  	<h4>Fair, sustainable funding model</h4>
+	  	<p>
+	  		Because we offer rewards based on this formula (And NOT on a guareented return for life like some other dApps!) we have calculated and modelled that this is the most sustainable and secure way for playing!
+	  	</p>
+	  	<p>
+	  		We've verified and made our contract available for audit from day 1 - to ensure you get a fair game!
+	  	</p>
+	  	<p>
+	  		<a href="#" onclick="viewContract();">View Verified Contract at Etherscan</a>
+	  	</p>
+	  	<hr/>
+	  	<h4>More Profits!</h4>
+	  	<p>
+	  		There is more - we also feed the daily profits from all other games we develop now and in the future.  All dApps feed into the Bank of Eth at the same 5% rate <strong>EACH DAY</strong> and you will receive the same cut!
+	  	</p>
+	  	<p>
+	  		Don't delay - get in early for regular payouts!
+	  	</p>
+	  	<h4>Referrals</h4>
+	  	<p>
+	  		We offer a wopping 3% referral bonus when you refer someone to BankOfEth.app!  So when someone follows your Master Node link (Below) you will earn a full 3% of their first investment... so if they invest 1 ETH for example you would instanly earn a bonus of 0.03 ETH!
+	  	</p>
+	  	<p>
+	  		It's easy to refer people on... make sure you have your Ethereum Wallet connected and then share the link below:
+	  	</p>
+	  	<p>
+	  		<strong>Your Referral Master Node Link</strong>
+	  	</p>
+	  	<p>
+	  		<code onclick="copyRef();" id="referralid_full" style="cursor: pointer;">https://bankofeth.app/?ref=<span id="referralid"></span></code>
+	  	</p>
+
+	  	<hr/>
+
+	  	<h4>Join the Bank Of Eth Community</h4>
+	  	<p>
+			<center >
+				Discord: <a href="https://discord.gg/d5c7pfn" target="_new">https://discord.gg/d5c7pfn</a>
+					&nbsp;-&nbsp;
+				Twitter: <a href="https://twitter.com/BankOfEth" target="_new">https://twitter.com/BankOfEth</a>
+					&nbsp;-&nbsp;
+				Telegram: <a href="https://t.me/bankofeth" target="_new">https://t.me/bankofeth</a>
+					&nbsp;-&nbsp;
+				Reddit: <a href="https://reddit.com/r/BankOfEth" target="_new">https://reddit.com/r/BankOfEth</a>
+			</center>
+	  	</p>
+	  	<br/><br/>
+	  	<br/><br/>
+	  </div>
+
+	</div>
+</div>
+
+
+
+<div class="reveal" id="notConnectedModel" aria-labelledby="notConnectedHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="notConnectedHeader">Not Connected to Ethereum Mainnet</h4>
+			<p class="smallTxt">
+				It looks like your not connected to the Ethereum Mainnet at the moment!
+			</p>
+			<p class="smallTxt">
+				To play <strong>Game Of Eth</strong> you must be connected to the Ethereum Blockchain mainnet - using an Ethereum Wallet or Browser such as Metamask, Coinbase Wallet, Cipher, Brave etc.
+			</p>
+			<p class="smallTxt">
+				If you already are using a Ethereum browser or wallet please ensure you are logged into your account and using the Mainnet - and then refresh this page.
+			</p>
+			<p class="smallTxt">
+				The main game features will be disabled, and no game stats will be displayed until you connect.
+			</p>
+			<p class="smallTxt">
+				Contact us if you need any help:<br/>
+				<center  class="smallTxt">
+					<a href="mailto:support@bankofeth.app">support@bankofeth.app</a>
+					&nbsp;-&nbsp;
+					<a href="https://discord.gg/d5c7pfn" target="_new">https://discord.gg/d5c7pfn</a>
+				&nbsp;-&nbsp;
+					<a href="https://twitter/BankOfEth" target="_new">https://twitter/BankOfEth</a>
+					<br/>
+				<a href="https://t.me/bankofeth" target="_new">https://t.me/bankofeth</a>
+					&nbsp;-&nbsp;
+					<a href="https://reddit.com/r/BankOfEth" target="_new">https://reddit.com/r/BankOfEth</a>
+				</center>
+			</p>
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="reveal" id="withdrawInvesmentConfirm" aria-labelledby="notConnectedHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="notConnectedHeader">Withdraw Investment</h4>
+			<p class="smallTxt">
+				Your current investment is: <strong><span id="currentInvestment">0</span> Eth</strong>
+			</p>
+			<p class="smallTxt">
+				The current withdrawal tax is 20% giving you a withdrawal settlement figure of: <strong><span id="currentInvestmentSettlement">0</span> ETH</strong>
+			</p>
+			<p class="smallTxt">
+				It does not contain your dividends/profit - which are not taxed! You should withdraw these or reinvest them using the relavant button.
+			</p>
+			<p class="smallTxt">
+				Do you wish to continue with the funds withdrawal?
+			</p>
+
+			<button type="button" id="withdrawInvestmentButtonConfirm" class="button rounded bordered shadow success withdrawInvestmentButton" data-close>YES</button>
+
+			<button type="button" id="withdrawInvestmentButtonCancel" aria-label="Close" data-close class="button rounded bordered shadow cancel withdrawInvestmentButton">NO</button>
+			
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+
+<div class="reveal" id="withdrawDividendsConfirm" aria-labelledby="notConnectedHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="notConnectedHeader">Withdraw Dividends</h4>
+			<p class="smallTxt">
+				Your current profits/dividends available for withdrawal are: <strong><span id="currentDividends1">0</span> Eth</strong> (Including any Referral bonus you've earned).
+			</p>
+			<p class="smallTxt">
+				Do you wish to continue with the dividend withdrawal?
+			</p>
+
+			<button type="button" id="dividendInvestmentButtonConfirm" class="button rounded bordered shadow success withdrawInvestmentButton" data-close>YES</button>
+
+			<button type="button" id="dividendInvestmentButtonCancel" aria-label="Close" data-close class="button rounded bordered shadow cancel withdrawInvestmentButton">NO</button>
+			
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="reveal" id="reinvestDividendsConfirm" aria-labelledby="notConnectedHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="notConnectedHeader">Reinvest Dividends</h4>
+			<p class="smallTxt">
+				Your current profits/dividends available for withdrawal are: <strong><span id="currentDividends2">0</span> Eth</strong> (Including any Referral bonus you've earned).
+			</p>
+			<p class="smallTxt">
+				Reinvesting these dividends will move them into your Investment fund - allowing you to gain a larger share of future profits
+			</p>
+			<p>
+				Do you wish to continue with the reinvestment?
+			</p>
+
+			<button type="button" id="reinvestInvestmentButtonConfirm" class="button rounded bordered shadow success withdrawInvestmentButton" data-close>YES</button>
+
+			<button type="button" id="reinvestInvestmentButtonCancel" aria-label="Close" data-close class="button rounded bordered shadow cancel withdrawInvestmentButton">NO</button>
+			
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="reveal" id="errorMessage" aria-labelledby="errorHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="errorHeader"></h4>
+			<p class="smallTxt" id="errorContent">
+				
+			</p>
+
+			<p class="smallTxt">
+				Contact us if you need any help:<br/>
+				<center  class="smallTxt">
+					<a href="mailto:support@bankofeth.app">support@bankofeth.app</a>
+					&nbsp;-&nbsp;
+					<a href="https://discord.gg/d5c7pfn" target="_new">https://discord.gg/d5c7pfn</a>
+				&nbsp;-&nbsp;
+					<a href="https://twitter/BankOfEth" target="_new">https://twitter/BankOfEth</a>
+					<br/>
+				<a href="https://t.me/bankofeth" target="_new">https://t.me/bankofeth</a>
+					&nbsp;-&nbsp;
+					<a href="https://reddit.com/r/BankOfEth" target="_new">https://reddit.com/r/BankOfEth</a>
+				</center>
+			</p>
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="reveal" id="gamesRoom" aria-labelledby="errorHeader" data-reveal>
+	<div class="notConnectedModel">
+		<div class="notConnectedModelDiv">
+			<h4 id="errorHeader">Games Room Coming Soon!</h4>
+			<p  id="errorContent">
+				We are putting the final touches to the games room and they'll be here shortly!
+			</p>
+			<p>
+				Remember - as well as earning income from the bank profits you will also earn profit for every game we launch here too!!
+			</p>
+
+			<p class="smallTxt">
+				Contact us if you need any help:<br/>
+				<center  class="smallTxt">
+					<a href="mailto:support@bankofeth.app">support@bankofeth.app</a>
+					&nbsp;-&nbsp;
+					<a href="https://discord.gg/d5c7pfn" target="_new">https://discord.gg/d5c7pfn</a>
+				&nbsp;-&nbsp;
+					<a href="https://twitter/BankOfEth" target="_new">https://twitter/BankOfEth</a>
+					<br/>
+				<a href="https://t.me/bankofeth" target="_new">https://t.me/bankofeth</a>
+					&nbsp;-&nbsp;
+					<a href="https://reddit.com/r/BankOfEth" target="_new">https://reddit.com/r/BankOfEth</a>
+				</center>
+			</p>
+			<button class="close-button" data-close aria-label="Close" type="button">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/jquery.toast.min.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+
+
+
+<script lanaguage="javascript">
+
+
+
+var canPlay = false;
+
+var minBet = 0.001;
+var maxBet = 0.002;
+var account = 0x00;
+var BankOfEthContract;
+
+var playing = false;
+
+var useGasPrice = 9000000000;
+
+var contractAddress = "0xd70c3f752Feb69Ecf8Eb31E48B20A97D979e8e5e";
+
+var useTestnet = false;
+var isMainGame = true;
+var isDetail = false;
+
+
+var eth_to_usd = 194.683;
+var PERCENT_SPEED = 200;
+var GAME_UPDATE_SPEED = 20000;
+var displayGameID = 1;
+var maxGames = 2;
+var _referer = "0x0000000000000000000000000000000000000000";
+
+$(document).foundation();
+
+$(function() {
+  $(window).scroll(function() {
+    var winTop = $(window).scrollTop();
+
+    if (winTop >= 130) {
+      	$("body").addClass("sticky-shrinknav-wrapper");
+      	$('#contentContainer').addClass('contentContainerShrink').removeClass('contentContainer');
+
+    } else{
+      	$("body").removeClass("sticky-shrinknav-wrapper");
+      	$('#contentContainer').addClass('contentContainer').removeClass('contentContainerShrink');
+      
+    }
+  });
+
+  var _newReferer = getUrlParameter('ref')||"";
+  if(_newReferer.length > 0) { // newly referred
+  	_referer = _newReferer;
+  } else { // existing user referred by someone
+  	var _cookieRef = Cookies.get('ref')|"";
+  	if(_cookieRef.length >0)
+  		_referer = _cookieRef;
+  }
+  Cookies.set('ref', _referer, { expires: 30 });
+
+  $("#investButton").click(function(){ if(canPlay) { playGame() };} );
+  $("#withdrawInvestmentButton").click(function(){
+  	if(canPlay) {
+  		$('#withdrawInvesmentConfirm').foundation('open');
+  	}
+  });
+
+  $("#withdrawInvestmentButtonConfirm").click(function(){
+  	if(canPlay) {
+  		withdrawInvestment();
+  	}
+  });
+
+  $("#withdrawDividendsButton").click(function() {
+  	if(canPlay) {
+  		$('#withdrawDividendsConfirm').foundation('open');
+  	}
+  });
+  $('#dividendInvestmentButtonConfirm').click(function(){
+  	if(canPlay) {
+  		withdrawDividends();
+  	}
+  });
+
+  $('#reinvestButton').click(function(){
+  	if(canPlay) {
+  		$('#reinvestDividendsConfirm').foundation('open');
+  	}
+  });
+  $('#reinvestInvestmentButtonConfirm').click(function() {
+  	if(canPlay){
+  		reinvestDividends();
+  	}
+  });
+
+  $('#gamesRoomLink').click(function(){
+  	$('#gamesRoom').foundation('open');
+  });
+
+});
+
+function copyRef() {
+	if(!canPlay)
+		return;
+
+ 	var copyText = document.getElementById("referralid");
+    var textArea = document.createElement("textarea");
+    textArea.value = 'https://bankofeth.app/?ref=' + copyText.innerHTML;
+    document.body.appendChild(textArea);
+    textArea.select();
+	document.execCommand("copy");
+	textArea.remove();
+
+	$.toast({
+	    heading: 'Copied',
+	    text: 'Your Master Node link has been copied to your clipboard!',
+	    showHideTransition: 'slide',
+	    icon: 'success'
+	})
+
+
+}
+
+function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+</script>
+
+<script src="js/main.min.js"></script>
+
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5baa91682253a22e"></script>
+
+
+<!-- Default Statcounter code for Bankofeth.app
+https://bankofeth.app -->
+<script type="text/javascript">
+var sc_project=11833854; 
+var sc_invisible=1; 
+var sc_security="88f986d4"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11833854/0/88f986d4/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "DappBridge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "latest",
+    "config": "latest",
+    "ethereumjs-abi": "^0.6.5",
+    "forever": "latest",
+    "forever-monitor": "^1.7.1",
+    "left-pad": "latest",
+    "mysql": "latest",
+    "sqs-consumer": "latest",
+    "web3": "latest",
+    "winston": "latest",
+    "winston-daily-rotate-file": "latest",
+    "async": "latest"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "json-loader": "^0.5.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "style-loader": "^0.20.3",
+    "web3": "latest",
+    "webpack": "^4.1.1"
+  }
+}

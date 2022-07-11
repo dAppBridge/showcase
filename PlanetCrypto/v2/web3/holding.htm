@@ -1,0 +1,128 @@
+<html>
+<head>
+	<title>PlanetCrypto.app - the worlds biggest collectible Blockchain Game!</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<style type="text/css">
+		body {
+	      font-family: Montserrat;
+	      font-style: normal;
+	      font-size: 12pt;
+		}
+	    .smallTxt {
+	      font-size: 0.8em;
+	    }
+
+	</style>
+
+</head>
+<body>
+	<center>
+	<br/><br/><br/>
+
+		
+
+		<h2>PLANETCrypto Relaunch coming soon!</h2>
+
+		<h3>The original OG metaverse project is relaunching!</h3>
+	</center>
+
+		<strong>THE OG METAVERSE</strong>
+		<ul>
+			<li>
+				OG NFT Metaverse project first launched in 2019! 
+			</li>
+			<li>
+				Relaunching in 2022 on Ethereum &amp; BSC!
+			</li>
+			<li>
+				The whole planet becomes a grid of NFTs for you to buy!
+			</li>
+			<li>
+				Holding land earns daily dividends, bonusers and more!
+			</li>
+		</ul>
+
+		<strong>NEW FOR 2022</strong>
+		<ul>
+			<li>Every plot of land has the possibility of containing: natural resources, artifacts and EARTHLINGS!</li>
+			<li>Trade resources and artifacts for PLANETCOIN ~ use PLANETCOIN to buy more land!</li>
+			<li>10,000 super rare EARTHLINGS will be randomly distributed accross the planet!</li>
+			<li>Sell your plots of land, resources, artifacts &amp; EARTHLINGS as standard NFTs for Eth and BNB!</li>
+		</ul>
+
+		<br/><br/>
+		<!--The new game will start at 5am EST / 9AM UTC....-->
+		
+		<strong>Join our Discord or Telegram for launch news and how to get onto the Whitelist</strong>
+
+		<!--<br/><br/><br/>
+		Launching in:
+		<h1 id="countdownClock">00:00:00</h1>-->
+		<br/>
+	</center>
+	<center class="smallTxt" >
+            
+              <a href="mailto:support@cryptoplanet.app">support@cryptoplanet.app</a>
+                &nbsp;-&nbsp;
+              <a href="https://t.me/PlanetCryptoApp" target="_new">Telegram</a>
+                &nbsp;-&nbsp;
+              <a href="https://discord.gg/2k66rEn" target="_new">Discord</a>
+
+
+    </center>
+
+
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		window.addEventListener('load', function(){
+			var targetDate = new Date("2019-05-04");
+			//var targetDate = Date.parse("2019 05 04 09:00:00 UTC");
+	
+			//targetDate.setUTCFullYear(2019);
+			//targetDate.setUTCMonth(5);
+			//targetDate.setUTCDate(4);
+			targetDate.setUTCHours(9);
+
+//			setTimeout(function(){
+//				updateClocks();
+//			},1000);
+
+			function updateClocks() {
+				let _now = new Date().getTime();
+
+  		
+  				let _diff = (targetDate - _now); 
+				if(_diff < 0) {
+					updateInnerHTML('countdownClock', "Launching..."); 
+					return;
+				} else {
+
+					let _hrs = Math.floor(_diff/1000/60/60);
+					_diff -= _hrs*1000*60*60;
+					let _mns = Math.floor(_diff/1000/60);
+					_diff -= _mns*1000*60;
+					let _scs = Math.floor(_diff/1000);
+
+					let _diffStr2 = padNumber(_hrs,2) + ":" + padNumber(_mns,2) + ":" + padNumber(_scs,2);
+					updateInnerHTML('countdownClock', _diffStr2);
+				}
+				setTimeout(function(){
+					updateClocks();
+				},1000);
+			}
+
+
+		});
+
+function updateInnerHTML(item, value){
+  document.getElementById(item).innerHTML = value;
+}
+function padNumber(n, width, z) {
+  z = z || '0';
+  n = n + '';
+  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+	</script>
+</body>
+</html>

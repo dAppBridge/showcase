@@ -1,0 +1,18 @@
+# sudo systemctl enable /home/centos/gethprod.service
+# 
+[Unit]
+Description=Geth Prod
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/centos
+ExecStart=/home/centos/geth_prod.sh
+Restart=always
+User=centos
+Group=centos
+LimitNOFILE=10240
+LimitFSIZE=infinity
+
+[Install]
+WantedBy=multi-user.target

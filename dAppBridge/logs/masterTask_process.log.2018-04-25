@@ -1,0 +1,657 @@
+2018-04-25T14:22:30.497Z - info: Starting reading master tasks...
+2018-04-25T14:22:31.608Z - info: Result:0:1
+2018-04-25T14:22:31.611Z - info: Result:1:2
+2018-04-25T14:22:31.612Z - info: Result:2:3
+2018-04-25T14:22:31.612Z - info: Result:3:4
+2018-04-25T14:22:31.613Z - info: Result:4:5
+2018-04-25T14:22:31.737Z - info: Web request statusCode:200
+2018-04-25T14:22:31.738Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:22:00 UTC","updatedISO":"2018-04-25T14:22:00+00:00","updateduk":"Apr 25, 2018 at 15:22 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,958.0363","description":"United States Dollar","rate_float":8958.0363},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,423.9063","description":"British Pound Sterling","rate_float":6423.9063},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,349.8090","description":"Euro","rate_float":7349.809}}}
+2018-04-25T14:22:31.759Z - info: Web request statusCode:200
+2018-04-25T14:22:31.759Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:22:00 UTC","updatedISO":"2018-04-25T14:22:00+00:00","updateduk":"Apr 25, 2018 at 15:22 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,958.0363","description":"United States Dollar","rate_float":8958.0363},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,423.9063","description":"British Pound Sterling","rate_float":6423.9063},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,349.8090","description":"Euro","rate_float":7349.809}}}
+2018-04-25T14:22:31.762Z - info: Web request statusCode:200
+2018-04-25T14:22:31.762Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:22:00 UTC","updatedISO":"2018-04-25T14:22:00+00:00","updateduk":"Apr 25, 2018 at 15:22 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,958.0363","description":"United States Dollar","rate_float":8958.0363},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,423.9063","description":"British Pound Sterling","rate_float":6423.9063},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,349.8090","description":"Euro","rate_float":7349.809}}}
+2018-04-25T14:22:31.773Z - info: Web request statusCode:200
+2018-04-25T14:22:31.773Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:22:00 UTC","updatedISO":"2018-04-25T14:22:00+00:00","updateduk":"Apr 25, 2018 at 15:22 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,958.0363","description":"United States Dollar","rate_float":8958.0363},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,423.9063","description":"British Pound Sterling","rate_float":6423.9063},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,349.8090","description":"Euro","rate_float":7349.809}}}
+2018-04-25T14:22:31.810Z - info: Web request statusCode:200
+2018-04-25T14:22:31.810Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:22:00 UTC","updatedISO":"2018-04-25T14:22:00+00:00","updateduk":"Apr 25, 2018 at 15:22 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,958.0363","description":"United States Dollar","rate_float":8958.0363},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,423.9063","description":"British Pound Sterling","rate_float":6423.9063},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,349.8090","description":"Euro","rate_float":7349.809}}}
+2018-04-25T14:22:32.338Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:22:32.372Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:22:32.373Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:22:32.374Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:22:32.374Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:22:32.606Z - info: Our Min reward=:1
+2018-04-25T14:22:32.607Z - info: Our Min reward=:1
+2018-04-25T14:22:32.607Z - info: Our Min reward=:1
+2018-04-25T14:22:32.607Z - info: Our Min reward=:1
+2018-04-25T14:22:32.607Z - info: Our Min reward=:1
+2018-04-25T14:27:48.522Z - info: Connecting to WebSocket
+2018-04-25T14:27:48.906Z - info: Starting reading master tasks...
+2018-04-25T14:27:49.664Z - info: Result:0:1
+2018-04-25T14:27:49.667Z - info: Result:1:2
+2018-04-25T14:27:49.668Z - info: Result:2:3
+2018-04-25T14:27:49.668Z - info: Result:3:4
+2018-04-25T14:27:49.669Z - info: Result:4:5
+2018-04-25T14:27:49.789Z - info: Web request statusCode:200
+2018-04-25T14:27:49.789Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:27:00 UTC","updatedISO":"2018-04-25T14:27:00+00:00","updateduk":"Apr 25, 2018 at 15:27 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,918.8400","description":"United States Dollar","rate_float":8918.84},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,395.7983","description":"British Pound Sterling","rate_float":6395.7983},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,317.6496","description":"Euro","rate_float":7317.6496}}}
+2018-04-25T14:27:49.799Z - info: Web request statusCode:200
+2018-04-25T14:27:49.799Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:27:00 UTC","updatedISO":"2018-04-25T14:27:00+00:00","updateduk":"Apr 25, 2018 at 15:27 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,918.8400","description":"United States Dollar","rate_float":8918.84},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,395.7983","description":"British Pound Sterling","rate_float":6395.7983},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,317.6496","description":"Euro","rate_float":7317.6496}}}
+2018-04-25T14:27:49.801Z - info: Web request statusCode:200
+2018-04-25T14:27:49.801Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:27:00 UTC","updatedISO":"2018-04-25T14:27:00+00:00","updateduk":"Apr 25, 2018 at 15:27 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,918.8400","description":"United States Dollar","rate_float":8918.84},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,395.7983","description":"British Pound Sterling","rate_float":6395.7983},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,317.6496","description":"Euro","rate_float":7317.6496}}}
+2018-04-25T14:27:49.808Z - info: Web request statusCode:200
+2018-04-25T14:27:49.809Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:27:00 UTC","updatedISO":"2018-04-25T14:27:00+00:00","updateduk":"Apr 25, 2018 at 15:27 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,918.8400","description":"United States Dollar","rate_float":8918.84},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,395.7983","description":"British Pound Sterling","rate_float":6395.7983},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,317.6496","description":"Euro","rate_float":7317.6496}}}
+2018-04-25T14:27:49.859Z - info: Web request statusCode:200
+2018-04-25T14:27:49.859Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:27:00 UTC","updatedISO":"2018-04-25T14:27:00+00:00","updateduk":"Apr 25, 2018 at 15:27 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,918.8400","description":"United States Dollar","rate_float":8918.84},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,395.7983","description":"British Pound Sterling","rate_float":6395.7983},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,317.6496","description":"Euro","rate_float":7317.6496}}}
+2018-04-25T14:27:51.518Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:27:51.521Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:27:51.523Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:27:51.524Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:27:51.525Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:27:51.624Z - info: Our Min reward=:1
+2018-04-25T14:27:51.624Z - info: Our Min reward=:1
+2018-04-25T14:27:51.624Z - info: Our Min reward=:1
+2018-04-25T14:27:51.625Z - info: Our Min reward=:1
+2018-04-25T14:27:51.625Z - info: Our Min reward=:1
+2018-04-25T14:34:26.907Z - info: Connecting to WebSocket
+2018-04-25T14:34:27.900Z - info: Starting reading master tasks...
+2018-04-25T14:34:28.804Z - info: Result:0:1
+2018-04-25T14:34:28.808Z - info: Result:1:2
+2018-04-25T14:34:28.808Z - info: Result:2:3
+2018-04-25T14:34:28.809Z - info: Result:3:4
+2018-04-25T14:34:28.809Z - info: Result:4:5
+2018-04-25T14:34:29.077Z - info: Web request statusCode:200
+2018-04-25T14:34:29.077Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:34:29.087Z - info: Web request statusCode:200
+2018-04-25T14:34:29.087Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:34:29.095Z - info: Web request statusCode:200
+2018-04-25T14:34:29.095Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:34:29.097Z - info: Web request statusCode:200
+2018-04-25T14:34:29.097Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:34:29.180Z - info: Web request statusCode:200
+2018-04-25T14:34:29.180Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:34:29.760Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:34:29.762Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:34:29.764Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:34:29.765Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:34:29.765Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:35:07.214Z - info: Connecting to WebSocket
+2018-04-25T14:35:07.305Z - info: Starting reading master tasks...
+2018-04-25T14:35:08.127Z - info: Result:0:1
+2018-04-25T14:35:08.131Z - info: Result:1:2
+2018-04-25T14:35:08.132Z - info: Result:2:3
+2018-04-25T14:35:08.132Z - info: Result:3:4
+2018-04-25T14:35:08.132Z - info: Result:4:5
+2018-04-25T14:35:08.264Z - info: Web request statusCode:200
+2018-04-25T14:35:08.264Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:35:08.288Z - info: Web request statusCode:200
+2018-04-25T14:35:08.289Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:35:08.297Z - info: Web request statusCode:200
+2018-04-25T14:35:08.297Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:35:08.302Z - info: Web request statusCode:200
+2018-04-25T14:35:08.302Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:35:08.383Z - info: Web request statusCode:200
+2018-04-25T14:35:08.384Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:34:00 UTC","updatedISO":"2018-04-25T14:34:00+00:00","updateduk":"Apr 25, 2018 at 15:34 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,870.5425","description":"United States Dollar","rate_float":8870.5425},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,361.1636","description":"British Pound Sterling","rate_float":6361.1636},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,278.0229","description":"Euro","rate_float":7278.0229}}}
+2018-04-25T14:35:08.465Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:35:08.471Z - info: Our Min reward=1, to return=9
+2018-04-25T14:35:08.541Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:35:08.543Z - info: Our Min reward=1, to return=9
+2018-04-25T14:35:08.579Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:35:08.591Z - info: Our Min reward=1, to return=9
+2018-04-25T14:35:08.605Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:35:08.610Z - info: Our Min reward=1, to return=9
+2018-04-25T14:35:08.643Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:35:08.644Z - info: Our Min reward=1, to return=9
+2018-04-25T14:36:59.217Z - info: Connecting to WebSocket
+2018-04-25T14:36:59.303Z - info: Starting reading master tasks...
+2018-04-25T14:37:00.079Z - info: Result:0:1
+2018-04-25T14:37:00.083Z - info: Result:1:2
+2018-04-25T14:37:00.083Z - info: Result:2:3
+2018-04-25T14:37:00.084Z - info: Result:3:4
+2018-04-25T14:37:00.084Z - info: Result:4:5
+2018-04-25T14:37:00.219Z - info: Web request statusCode:200
+2018-04-25T14:37:00.220Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:36:00 UTC","updatedISO":"2018-04-25T14:36:00+00:00","updateduk":"Apr 25, 2018 at 15:36 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,847.0800","description":"United States Dollar","rate_float":8847.08},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,344.3384","description":"British Pound Sterling","rate_float":6344.3384},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,258.7726","description":"Euro","rate_float":7258.7726}}}
+2018-04-25T14:37:00.237Z - info: Web request statusCode:200
+2018-04-25T14:37:00.237Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:36:00 UTC","updatedISO":"2018-04-25T14:36:00+00:00","updateduk":"Apr 25, 2018 at 15:36 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,847.0800","description":"United States Dollar","rate_float":8847.08},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,344.3384","description":"British Pound Sterling","rate_float":6344.3384},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,258.7726","description":"Euro","rate_float":7258.7726}}}
+2018-04-25T14:37:00.239Z - info: Web request statusCode:200
+2018-04-25T14:37:00.240Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:36:00 UTC","updatedISO":"2018-04-25T14:36:00+00:00","updateduk":"Apr 25, 2018 at 15:36 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,847.0800","description":"United States Dollar","rate_float":8847.08},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,344.3384","description":"British Pound Sterling","rate_float":6344.3384},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,258.7726","description":"Euro","rate_float":7258.7726}}}
+2018-04-25T14:37:00.243Z - info: Web request statusCode:200
+2018-04-25T14:37:00.243Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:36:00 UTC","updatedISO":"2018-04-25T14:36:00+00:00","updateduk":"Apr 25, 2018 at 15:36 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,847.0800","description":"United States Dollar","rate_float":8847.08},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,344.3384","description":"British Pound Sterling","rate_float":6344.3384},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,258.7726","description":"Euro","rate_float":7258.7726}}}
+2018-04-25T14:37:00.448Z - info: Web request statusCode:200
+2018-04-25T14:37:00.448Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:36:00 UTC","updatedISO":"2018-04-25T14:36:00+00:00","updateduk":"Apr 25, 2018 at 15:36 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,847.0800","description":"United States Dollar","rate_float":8847.08},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,344.3384","description":"British Pound Sterling","rate_float":6344.3384},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,258.7726","description":"Euro","rate_float":7258.7726}}}
+2018-04-25T14:37:00.472Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:37:00.484Z - info: Our Min reward=1, to return=9
+2018-04-25T14:37:00.517Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:37:00.518Z - info: Our Min reward=1, to return=9
+2018-04-25T14:37:00.533Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:37:00.534Z - info: Our Min reward=1, to return=9
+2018-04-25T14:37:00.535Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:37:00.536Z - info: Our Min reward=1, to return=9
+2018-04-25T14:37:00.607Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:37:00.608Z - info: Our Min reward=1, to return=9
+2018-04-25T14:38:46.469Z - info: Connecting to WebSocket
+2018-04-25T14:38:46.855Z - info: Starting reading master tasks...
+2018-04-25T14:38:47.606Z - info: Result:0:1
+2018-04-25T14:38:47.609Z - info: Result:1:2
+2018-04-25T14:38:47.610Z - info: Result:2:3
+2018-04-25T14:38:47.610Z - info: Result:3:4
+2018-04-25T14:38:47.610Z - info: Result:4:5
+2018-04-25T14:38:47.725Z - info: Web request statusCode:200
+2018-04-25T14:38:47.725Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:38:00 UTC","updatedISO":"2018-04-25T14:38:00+00:00","updateduk":"Apr 25, 2018 at 15:38 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,772.2863","description":"United States Dollar","rate_float":8772.2863},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.7030","description":"British Pound Sterling","rate_float":6290.703},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,197.4065","description":"Euro","rate_float":7197.4065}}}
+2018-04-25T14:38:47.734Z - info: Web request statusCode:200
+2018-04-25T14:38:47.734Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:38:00 UTC","updatedISO":"2018-04-25T14:38:00+00:00","updateduk":"Apr 25, 2018 at 15:38 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,772.2863","description":"United States Dollar","rate_float":8772.2863},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.7030","description":"British Pound Sterling","rate_float":6290.703},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,197.4065","description":"Euro","rate_float":7197.4065}}}
+2018-04-25T14:38:47.737Z - info: Web request statusCode:200
+2018-04-25T14:38:47.737Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:38:00 UTC","updatedISO":"2018-04-25T14:38:00+00:00","updateduk":"Apr 25, 2018 at 15:38 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,772.2863","description":"United States Dollar","rate_float":8772.2863},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.7030","description":"British Pound Sterling","rate_float":6290.703},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,197.4065","description":"Euro","rate_float":7197.4065}}}
+2018-04-25T14:38:47.741Z - info: Web request statusCode:200
+2018-04-25T14:38:47.741Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:38:00 UTC","updatedISO":"2018-04-25T14:38:00+00:00","updateduk":"Apr 25, 2018 at 15:38 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,772.2863","description":"United States Dollar","rate_float":8772.2863},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.7030","description":"British Pound Sterling","rate_float":6290.703},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,197.4065","description":"Euro","rate_float":7197.4065}}}
+2018-04-25T14:38:47.744Z - info: Web request statusCode:200
+2018-04-25T14:38:47.745Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:38:00 UTC","updatedISO":"2018-04-25T14:38:00+00:00","updateduk":"Apr 25, 2018 at 15:38 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,772.2863","description":"United States Dollar","rate_float":8772.2863},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.7030","description":"British Pound Sterling","rate_float":6290.703},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,197.4065","description":"Euro","rate_float":7197.4065}}}
+2018-04-25T14:38:47.823Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:38:47.828Z - info: Our Min reward=1, to return=9
+2018-04-25T14:38:47.832Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:38:47.833Z - info: Our Min reward=1, to return=9
+2018-04-25T14:38:47.835Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:38:47.836Z - info: Our Min reward=1, to return=9
+2018-04-25T14:38:47.844Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:38:47.845Z - info: Our Min reward=1, to return=9
+2018-04-25T14:38:47.847Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:38:47.849Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:15.716Z - info: Connecting to WebSocket
+2018-04-25T14:39:15.801Z - info: Starting reading master tasks...
+2018-04-25T14:39:16.503Z - info: Result:0:1
+2018-04-25T14:39:16.506Z - info: Result:1:2
+2018-04-25T14:39:16.507Z - info: Result:2:3
+2018-04-25T14:39:16.507Z - info: Result:3:4
+2018-04-25T14:39:16.507Z - info: Result:4:5
+2018-04-25T14:39:16.598Z - info: Web request statusCode:200
+2018-04-25T14:39:16.598Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:16.608Z - info: Web request statusCode:200
+2018-04-25T14:39:16.608Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:16.610Z - info: Web request statusCode:200
+2018-04-25T14:39:16.610Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:16.616Z - info: Web request statusCode:200
+2018-04-25T14:39:16.617Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:16.620Z - info: Web request statusCode:200
+2018-04-25T14:39:16.620Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:16.935Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:16.941Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:16.943Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:16.946Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:16.947Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:16.948Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:16.948Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:16.949Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:16.951Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:16.952Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:27.370Z - info: Connecting to WebSocket
+2018-04-25T14:39:27.452Z - info: Starting reading master tasks...
+2018-04-25T14:39:28.161Z - info: Result:0:1
+2018-04-25T14:39:28.164Z - info: Result:1:2
+2018-04-25T14:39:28.165Z - info: Result:2:3
+2018-04-25T14:39:28.165Z - info: Result:3:4
+2018-04-25T14:39:28.165Z - info: Result:4:5
+2018-04-25T14:39:28.281Z - info: Web request statusCode:200
+2018-04-25T14:39:28.281Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:28.291Z - info: Web request statusCode:200
+2018-04-25T14:39:28.291Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:28.293Z - info: Web request statusCode:200
+2018-04-25T14:39:28.293Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:28.299Z - info: Web request statusCode:200
+2018-04-25T14:39:28.299Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:28.301Z - info: Web request statusCode:200
+2018-04-25T14:39:28.301Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:39:00 UTC","updatedISO":"2018-04-25T14:39:00+00:00","updateduk":"Apr 25, 2018 at 15:39 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,797.0788","description":"United States Dollar","rate_float":8797.0788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,308.4819","description":"British Pound Sterling","rate_float":6308.4819},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,217.7480","description":"Euro","rate_float":7217.748}}}
+2018-04-25T14:39:28.438Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:28.444Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:28.445Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:28.446Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:28.447Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:28.449Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:28.456Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:28.457Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:39:28.458Z - info: Our Min reward=1, to return=9
+2018-04-25T14:39:28.459Z - info: Our Min reward=1, to return=9
+2018-04-25T14:45:59.210Z - info: Connecting to WebSocket
+2018-04-25T14:46:00.526Z - info: Starting reading master tasks...
+2018-04-25T14:46:01.381Z - info: Result:0:1
+2018-04-25T14:46:01.386Z - info: Result:1:2
+2018-04-25T14:46:01.386Z - info: Result:2:3
+2018-04-25T14:46:01.387Z - info: Result:3:4
+2018-04-25T14:46:01.387Z - info: Result:4:5
+2018-04-25T14:46:01.512Z - info: Web request statusCode:200
+2018-04-25T14:46:01.512Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:45:00 UTC","updatedISO":"2018-04-25T14:45:00+00:00","updateduk":"Apr 25, 2018 at 15:45 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,804.3175","description":"United States Dollar","rate_float":8804.3175},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,313.6729","description":"British Pound Sterling","rate_float":6313.6729},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,223.6872","description":"Euro","rate_float":7223.6872}}}
+2018-04-25T14:46:01.521Z - info: Web request statusCode:200
+2018-04-25T14:46:01.521Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:45:00 UTC","updatedISO":"2018-04-25T14:45:00+00:00","updateduk":"Apr 25, 2018 at 15:45 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,804.3175","description":"United States Dollar","rate_float":8804.3175},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,313.6729","description":"British Pound Sterling","rate_float":6313.6729},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,223.6872","description":"Euro","rate_float":7223.6872}}}
+2018-04-25T14:46:01.524Z - info: Web request statusCode:200
+2018-04-25T14:46:01.524Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:45:00 UTC","updatedISO":"2018-04-25T14:45:00+00:00","updateduk":"Apr 25, 2018 at 15:45 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,804.3175","description":"United States Dollar","rate_float":8804.3175},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,313.6729","description":"British Pound Sterling","rate_float":6313.6729},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,223.6872","description":"Euro","rate_float":7223.6872}}}
+2018-04-25T14:46:01.528Z - info: Web request statusCode:200
+2018-04-25T14:46:01.528Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:45:00 UTC","updatedISO":"2018-04-25T14:45:00+00:00","updateduk":"Apr 25, 2018 at 15:45 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,804.3175","description":"United States Dollar","rate_float":8804.3175},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,313.6729","description":"British Pound Sterling","rate_float":6313.6729},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,223.6872","description":"Euro","rate_float":7223.6872}}}
+2018-04-25T14:46:01.534Z - info: Web request statusCode:200
+2018-04-25T14:46:01.534Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:45:00 UTC","updatedISO":"2018-04-25T14:45:00+00:00","updateduk":"Apr 25, 2018 at 15:45 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,804.3175","description":"United States Dollar","rate_float":8804.3175},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,313.6729","description":"British Pound Sterling","rate_float":6313.6729},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,223.6872","description":"Euro","rate_float":7223.6872}}}
+2018-04-25T14:46:11.888Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:46:11.890Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:46:11.893Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:46:11.894Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:46:11.894Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:46:12.087Z - info: Our Min reward=1, to return=9
+2018-04-25T14:48:48.425Z - info: Connecting to WebSocket
+2018-04-25T14:48:49.776Z - info: Starting reading master tasks...
+2018-04-25T14:48:50.554Z - info: Result:0:1
+2018-04-25T14:48:50.558Z - info: Result:1:2
+2018-04-25T14:48:50.558Z - info: Result:2:3
+2018-04-25T14:48:50.558Z - info: Result:3:4
+2018-04-25T14:48:50.559Z - info: Result:4:5
+2018-04-25T14:48:50.668Z - info: Web request statusCode:200
+2018-04-25T14:48:50.668Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:48:00 UTC","updatedISO":"2018-04-25T14:48:00+00:00","updateduk":"Apr 25, 2018 at 15:48 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,764.5250","description":"United States Dollar","rate_float":8764.525},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,285.1373","description":"British Pound Sterling","rate_float":6285.1373},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,191.0386","description":"Euro","rate_float":7191.0386}}}
+2018-04-25T14:48:50.677Z - info: Web request statusCode:200
+2018-04-25T14:48:50.678Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:48:00 UTC","updatedISO":"2018-04-25T14:48:00+00:00","updateduk":"Apr 25, 2018 at 15:48 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,764.5250","description":"United States Dollar","rate_float":8764.525},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,285.1373","description":"British Pound Sterling","rate_float":6285.1373},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,191.0386","description":"Euro","rate_float":7191.0386}}}
+2018-04-25T14:48:50.680Z - info: Web request statusCode:200
+2018-04-25T14:48:50.680Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:48:00 UTC","updatedISO":"2018-04-25T14:48:00+00:00","updateduk":"Apr 25, 2018 at 15:48 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,764.5250","description":"United States Dollar","rate_float":8764.525},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,285.1373","description":"British Pound Sterling","rate_float":6285.1373},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,191.0386","description":"Euro","rate_float":7191.0386}}}
+2018-04-25T14:48:50.681Z - info: Web request statusCode:200
+2018-04-25T14:48:50.681Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:48:00 UTC","updatedISO":"2018-04-25T14:48:00+00:00","updateduk":"Apr 25, 2018 at 15:48 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,764.5250","description":"United States Dollar","rate_float":8764.525},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,285.1373","description":"British Pound Sterling","rate_float":6285.1373},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,191.0386","description":"Euro","rate_float":7191.0386}}}
+2018-04-25T14:48:50.712Z - info: Web request statusCode:200
+2018-04-25T14:48:50.712Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:48:00 UTC","updatedISO":"2018-04-25T14:48:00+00:00","updateduk":"Apr 25, 2018 at 15:48 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,764.5250","description":"United States Dollar","rate_float":8764.525},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,285.1373","description":"British Pound Sterling","rate_float":6285.1373},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,191.0386","description":"Euro","rate_float":7191.0386}}}
+2018-04-25T14:48:57.844Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:48:57.846Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:48:57.848Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:48:57.850Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:48:57.851Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:48:58.098Z - info: Our Min reward=1, to return=9
+2018-04-25T14:48:58.100Z - info: Our Min reward=1, to return=9
+2018-04-25T14:48:58.101Z - info: Our Min reward=1, to return=9
+2018-04-25T14:48:58.102Z - info: Our Min reward=1, to return=9
+2018-04-25T14:48:58.103Z - info: Our Min reward=1, to return=9
+2018-04-25T14:50:14.352Z - info: Connecting to WebSocket
+2018-04-25T14:50:15.710Z - info: Starting reading master tasks...
+2018-04-25T14:50:17.507Z - info: Result:0:1
+2018-04-25T14:50:17.511Z - info: Result:1:2
+2018-04-25T14:50:17.511Z - info: Result:2:3
+2018-04-25T14:50:17.512Z - info: Result:3:4
+2018-04-25T14:50:17.512Z - info: Result:4:5
+2018-04-25T14:50:17.628Z - info: Web request statusCode:200
+2018-04-25T14:50:17.628Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:50:00 UTC","updatedISO":"2018-04-25T14:50:00+00:00","updateduk":"Apr 25, 2018 at 15:50 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,771.5113","description":"United States Dollar","rate_float":8771.5113},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.1472","description":"British Pound Sterling","rate_float":6290.1472},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,196.7706","description":"Euro","rate_float":7196.7706}}}
+2018-04-25T14:50:17.638Z - info: Web request statusCode:200
+2018-04-25T14:50:17.638Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:50:00 UTC","updatedISO":"2018-04-25T14:50:00+00:00","updateduk":"Apr 25, 2018 at 15:50 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,771.5113","description":"United States Dollar","rate_float":8771.5113},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.1472","description":"British Pound Sterling","rate_float":6290.1472},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,196.7706","description":"Euro","rate_float":7196.7706}}}
+2018-04-25T14:50:17.640Z - info: Web request statusCode:200
+2018-04-25T14:50:17.641Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:50:00 UTC","updatedISO":"2018-04-25T14:50:00+00:00","updateduk":"Apr 25, 2018 at 15:50 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,771.5113","description":"United States Dollar","rate_float":8771.5113},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.1472","description":"British Pound Sterling","rate_float":6290.1472},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,196.7706","description":"Euro","rate_float":7196.7706}}}
+2018-04-25T14:50:17.643Z - info: Web request statusCode:200
+2018-04-25T14:50:17.643Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:50:00 UTC","updatedISO":"2018-04-25T14:50:00+00:00","updateduk":"Apr 25, 2018 at 15:50 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,771.5113","description":"United States Dollar","rate_float":8771.5113},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.1472","description":"British Pound Sterling","rate_float":6290.1472},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,196.7706","description":"Euro","rate_float":7196.7706}}}
+2018-04-25T14:50:17.645Z - info: Web request statusCode:200
+2018-04-25T14:50:17.646Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:50:00 UTC","updatedISO":"2018-04-25T14:50:00+00:00","updateduk":"Apr 25, 2018 at 15:50 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,771.5113","description":"United States Dollar","rate_float":8771.5113},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,290.1472","description":"British Pound Sterling","rate_float":6290.1472},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,196.7706","description":"Euro","rate_float":7196.7706}}}
+2018-04-25T14:50:38.922Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:50:38.925Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:50:38.927Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:50:38.928Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:50:38.928Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:50:39.126Z - info: Our Min reward=1, to return=9
+2018-04-25T14:50:39.127Z - info: Our Min reward=1, to return=9
+2018-04-25T14:50:39.128Z - info: Our Min reward=1, to return=9
+2018-04-25T14:50:39.129Z - info: Our Min reward=1, to return=9
+2018-04-25T14:50:39.130Z - info: Our Min reward=1, to return=9
+2018-04-25T14:51:54.780Z - info: Connecting to WebSocket
+2018-04-25T14:51:55.957Z - info: Starting reading master tasks...
+2018-04-25T14:51:56.910Z - info: Result:0:1
+2018-04-25T14:51:56.914Z - info: Result:1:2
+2018-04-25T14:51:56.914Z - info: Result:2:3
+2018-04-25T14:51:56.915Z - info: Result:3:4
+2018-04-25T14:51:56.915Z - info: Result:4:5
+2018-04-25T14:51:57.041Z - info: Web request statusCode:200
+2018-04-25T14:51:57.041Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:51:00 UTC","updatedISO":"2018-04-25T14:51:00+00:00","updateduk":"Apr 25, 2018 at 15:51 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,755.8050","description":"United States Dollar","rate_float":8755.805},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,278.8841","description":"British Pound Sterling","rate_float":6278.8841},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,183.8841","description":"Euro","rate_float":7183.8841}}}
+2018-04-25T14:51:57.051Z - info: Web request statusCode:200
+2018-04-25T14:51:57.051Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:51:00 UTC","updatedISO":"2018-04-25T14:51:00+00:00","updateduk":"Apr 25, 2018 at 15:51 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,755.8050","description":"United States Dollar","rate_float":8755.805},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,278.8841","description":"British Pound Sterling","rate_float":6278.8841},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,183.8841","description":"Euro","rate_float":7183.8841}}}
+2018-04-25T14:51:57.068Z - info: Web request statusCode:200
+2018-04-25T14:51:57.069Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:51:00 UTC","updatedISO":"2018-04-25T14:51:00+00:00","updateduk":"Apr 25, 2018 at 15:51 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,755.8050","description":"United States Dollar","rate_float":8755.805},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,278.8841","description":"British Pound Sterling","rate_float":6278.8841},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,183.8841","description":"Euro","rate_float":7183.8841}}}
+2018-04-25T14:51:57.095Z - info: Web request statusCode:200
+2018-04-25T14:51:57.095Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:51:00 UTC","updatedISO":"2018-04-25T14:51:00+00:00","updateduk":"Apr 25, 2018 at 15:51 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,755.8050","description":"United States Dollar","rate_float":8755.805},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,278.8841","description":"British Pound Sterling","rate_float":6278.8841},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,183.8841","description":"Euro","rate_float":7183.8841}}}
+2018-04-25T14:51:57.107Z - info: Web request statusCode:200
+2018-04-25T14:51:57.107Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:51:00 UTC","updatedISO":"2018-04-25T14:51:00+00:00","updateduk":"Apr 25, 2018 at 15:51 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,755.8050","description":"United States Dollar","rate_float":8755.805},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,278.8841","description":"British Pound Sterling","rate_float":6278.8841},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,183.8841","description":"Euro","rate_float":7183.8841}}}
+2018-04-25T14:51:58.336Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:51:58.338Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:51:58.340Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:51:58.342Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:51:58.342Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:51:58.644Z - info: Our Min reward=1, to return=9
+2018-04-25T14:51:58.645Z - info: Is Address:true
+2018-04-25T14:51:58.647Z - info: Our Min reward=1, to return=9
+2018-04-25T14:51:58.648Z - info: Is Address:true
+2018-04-25T14:51:58.649Z - info: Our Min reward=1, to return=9
+2018-04-25T14:51:58.649Z - info: Is Address:true
+2018-04-25T14:51:58.650Z - info: Our Min reward=1, to return=9
+2018-04-25T14:51:58.651Z - info: Is Address:true
+2018-04-25T14:51:58.653Z - info: Our Min reward=1, to return=9
+2018-04-25T14:51:58.653Z - info: Is Address:true
+2018-04-25T14:54:00.699Z - info: Connecting to WebSocket
+2018-04-25T14:54:02.784Z - info: Starting reading master tasks...
+2018-04-25T14:54:03.660Z - info: Result:0:1
+2018-04-25T14:54:03.663Z - info: Result:1:2
+2018-04-25T14:54:03.663Z - info: Result:2:3
+2018-04-25T14:54:03.664Z - info: Result:3:4
+2018-04-25T14:54:03.664Z - info: Result:4:5
+2018-04-25T14:54:03.828Z - info: Web request statusCode:200
+2018-04-25T14:54:03.828Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:53:00 UTC","updatedISO":"2018-04-25T14:53:00+00:00","updateduk":"Apr 25, 2018 at 15:53 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,750.2013","description":"United States Dollar","rate_float":8750.2013},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,274.8656","description":"British Pound Sterling","rate_float":6274.8656},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,179.2864","description":"Euro","rate_float":7179.2864}}}
+2018-04-25T14:54:03.844Z - info: Web request statusCode:200
+2018-04-25T14:54:03.844Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:53:00 UTC","updatedISO":"2018-04-25T14:53:00+00:00","updateduk":"Apr 25, 2018 at 15:53 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,750.2013","description":"United States Dollar","rate_float":8750.2013},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,274.8656","description":"British Pound Sterling","rate_float":6274.8656},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,179.2864","description":"Euro","rate_float":7179.2864}}}
+2018-04-25T14:54:03.859Z - info: Web request statusCode:200
+2018-04-25T14:54:03.859Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:53:00 UTC","updatedISO":"2018-04-25T14:53:00+00:00","updateduk":"Apr 25, 2018 at 15:53 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,750.2013","description":"United States Dollar","rate_float":8750.2013},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,274.8656","description":"British Pound Sterling","rate_float":6274.8656},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,179.2864","description":"Euro","rate_float":7179.2864}}}
+2018-04-25T14:54:03.861Z - info: Web request statusCode:200
+2018-04-25T14:54:03.861Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:53:00 UTC","updatedISO":"2018-04-25T14:53:00+00:00","updateduk":"Apr 25, 2018 at 15:53 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,750.2013","description":"United States Dollar","rate_float":8750.2013},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,274.8656","description":"British Pound Sterling","rate_float":6274.8656},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,179.2864","description":"Euro","rate_float":7179.2864}}}
+2018-04-25T14:54:03.863Z - info: Web request statusCode:200
+2018-04-25T14:54:03.863Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:53:00 UTC","updatedISO":"2018-04-25T14:53:00+00:00","updateduk":"Apr 25, 2018 at 15:53 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,750.2013","description":"United States Dollar","rate_float":8750.2013},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,274.8656","description":"British Pound Sterling","rate_float":6274.8656},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,179.2864","description":"Euro","rate_float":7179.2864}}}
+2018-04-25T14:54:17.613Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:54:17.616Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:54:17.618Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:54:17.619Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:54:17.620Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:54:17.777Z - info: Our Min reward=1, to return=9
+2018-04-25T14:54:17.778Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:54:17.779Z - info: Our Min reward=1, to return=9
+2018-04-25T14:54:17.779Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:54:17.780Z - info: Our Min reward=1, to return=9
+2018-04-25T14:54:17.781Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:54:17.781Z - info: Our Min reward=1, to return=9
+2018-04-25T14:54:17.782Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:54:17.782Z - info: Our Min reward=1, to return=9
+2018-04-25T14:54:17.783Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:56:17.856Z - info: Connecting to WebSocket
+2018-04-25T14:56:18.841Z - info: Starting reading master tasks...
+2018-04-25T14:56:19.562Z - info: Result:0:1
+2018-04-25T14:56:19.567Z - info: Result:1:2
+2018-04-25T14:56:19.567Z - info: Result:2:3
+2018-04-25T14:56:19.568Z - info: Result:3:4
+2018-04-25T14:56:19.568Z - info: Result:4:5
+2018-04-25T14:56:19.703Z - info: Web request statusCode:200
+2018-04-25T14:56:19.703Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:56:00 UTC","updatedISO":"2018-04-25T14:56:00+00:00","updateduk":"Apr 25, 2018 at 15:56 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,859.2188","description":"United States Dollar","rate_float":8859.2188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,353.0432","description":"British Pound Sterling","rate_float":6353.0432},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,268.7321","description":"Euro","rate_float":7268.7321}}}
+2018-04-25T14:56:19.713Z - info: Web request statusCode:200
+2018-04-25T14:56:19.713Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:56:00 UTC","updatedISO":"2018-04-25T14:56:00+00:00","updateduk":"Apr 25, 2018 at 15:56 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,859.2188","description":"United States Dollar","rate_float":8859.2188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,353.0432","description":"British Pound Sterling","rate_float":6353.0432},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,268.7321","description":"Euro","rate_float":7268.7321}}}
+2018-04-25T14:56:19.715Z - info: Web request statusCode:200
+2018-04-25T14:56:19.715Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:56:00 UTC","updatedISO":"2018-04-25T14:56:00+00:00","updateduk":"Apr 25, 2018 at 15:56 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,859.2188","description":"United States Dollar","rate_float":8859.2188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,353.0432","description":"British Pound Sterling","rate_float":6353.0432},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,268.7321","description":"Euro","rate_float":7268.7321}}}
+2018-04-25T14:56:19.718Z - info: Web request statusCode:200
+2018-04-25T14:56:19.718Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:56:00 UTC","updatedISO":"2018-04-25T14:56:00+00:00","updateduk":"Apr 25, 2018 at 15:56 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,859.2188","description":"United States Dollar","rate_float":8859.2188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,353.0432","description":"British Pound Sterling","rate_float":6353.0432},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,268.7321","description":"Euro","rate_float":7268.7321}}}
+2018-04-25T14:56:19.720Z - info: Web request statusCode:200
+2018-04-25T14:56:19.720Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:56:00 UTC","updatedISO":"2018-04-25T14:56:00+00:00","updateduk":"Apr 25, 2018 at 15:56 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,859.2188","description":"United States Dollar","rate_float":8859.2188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,353.0432","description":"British Pound Sterling","rate_float":6353.0432},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,268.7321","description":"Euro","rate_float":7268.7321}}}
+2018-04-25T14:56:25.273Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:56:25.286Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:56:25.288Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:56:25.290Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:56:25.291Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:56:25.580Z - info: Our Min reward=1, to return=9
+2018-04-25T14:56:25.581Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:56:25.582Z - info: Our Min reward=1, to return=9
+2018-04-25T14:56:25.582Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:56:25.583Z - info: Our Min reward=1, to return=9
+2018-04-25T14:56:25.584Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:56:25.584Z - info: Our Min reward=1, to return=9
+2018-04-25T14:56:25.585Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:56:25.586Z - info: Our Min reward=1, to return=9
+2018-04-25T14:56:25.587Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:57:17.002Z - info: Connecting to WebSocket
+2018-04-25T14:57:17.688Z - info: Starting reading master tasks...
+2018-04-25T14:57:18.486Z - info: Result:0:1
+2018-04-25T14:57:18.489Z - info: Result:1:2
+2018-04-25T14:57:18.489Z - info: Result:2:3
+2018-04-25T14:57:18.490Z - info: Result:3:4
+2018-04-25T14:57:18.490Z - info: Result:4:5
+2018-04-25T14:57:18.663Z - info: Web request statusCode:200
+2018-04-25T14:57:18.663Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:57:00 UTC","updatedISO":"2018-04-25T14:57:00+00:00","updateduk":"Apr 25, 2018 at 15:57 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,883.2300","description":"United States Dollar","rate_float":8883.23},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,370.2619","description":"British Pound Sterling","rate_float":6370.2619},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,288.4326","description":"Euro","rate_float":7288.4326}}}
+2018-04-25T14:57:18.673Z - info: Web request statusCode:200
+2018-04-25T14:57:18.673Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:57:00 UTC","updatedISO":"2018-04-25T14:57:00+00:00","updateduk":"Apr 25, 2018 at 15:57 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,883.2300","description":"United States Dollar","rate_float":8883.23},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,370.2619","description":"British Pound Sterling","rate_float":6370.2619},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,288.4326","description":"Euro","rate_float":7288.4326}}}
+2018-04-25T14:57:18.675Z - info: Web request statusCode:200
+2018-04-25T14:57:18.675Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:57:00 UTC","updatedISO":"2018-04-25T14:57:00+00:00","updateduk":"Apr 25, 2018 at 15:57 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,883.2300","description":"United States Dollar","rate_float":8883.23},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,370.2619","description":"British Pound Sterling","rate_float":6370.2619},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,288.4326","description":"Euro","rate_float":7288.4326}}}
+2018-04-25T14:57:18.678Z - info: Web request statusCode:200
+2018-04-25T14:57:18.678Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:57:00 UTC","updatedISO":"2018-04-25T14:57:00+00:00","updateduk":"Apr 25, 2018 at 15:57 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,883.2300","description":"United States Dollar","rate_float":8883.23},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,370.2619","description":"British Pound Sterling","rate_float":6370.2619},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,288.4326","description":"Euro","rate_float":7288.4326}}}
+2018-04-25T14:57:18.686Z - info: Web request statusCode:200
+2018-04-25T14:57:18.686Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 14:57:00 UTC","updatedISO":"2018-04-25T14:57:00+00:00","updateduk":"Apr 25, 2018 at 15:57 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,883.2300","description":"United States Dollar","rate_float":8883.23},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,370.2619","description":"British Pound Sterling","rate_float":6370.2619},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,288.4326","description":"Euro","rate_float":7288.4326}}}
+2018-04-25T14:57:20.855Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:57:20.859Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:57:20.861Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:57:20.863Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:57:20.864Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T14:57:21.124Z - info: Our Min reward=1, to return=9
+2018-04-25T14:57:21.125Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:57:21.126Z - info: Our Min reward=1, to return=9
+2018-04-25T14:57:21.126Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:57:21.127Z - info: Our Min reward=1, to return=9
+2018-04-25T14:57:21.127Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:57:21.128Z - info: Our Min reward=1, to return=9
+2018-04-25T14:57:21.129Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T14:57:21.130Z - info: Our Min reward=1, to return=9
+2018-04-25T14:57:21.131Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:43:40.692Z - info: Connecting to WebSocket
+2018-04-25T15:43:41.361Z - info: Starting reading master tasks...
+2018-04-25T15:43:42.101Z - info: Result:0:1
+2018-04-25T15:43:42.105Z - info: Result:1:2
+2018-04-25T15:43:42.106Z - info: Result:2:3
+2018-04-25T15:43:42.106Z - info: Result:3:4
+2018-04-25T15:43:42.107Z - info: Result:4:5
+2018-04-25T15:43:42.278Z - info: Web request statusCode:200
+2018-04-25T15:43:42.278Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:43:00 UTC","updatedISO":"2018-04-25T15:43:00+00:00","updateduk":"Apr 25, 2018 at 16:43 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,934.1788","description":"United States Dollar","rate_float":8934.1788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,411.1935","description":"British Pound Sterling","rate_float":6411.1935},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.7852","description":"Euro","rate_float":7339.7852}}}
+2018-04-25T15:43:42.287Z - info: Web request statusCode:200
+2018-04-25T15:43:42.287Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:43:00 UTC","updatedISO":"2018-04-25T15:43:00+00:00","updateduk":"Apr 25, 2018 at 16:43 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,934.1788","description":"United States Dollar","rate_float":8934.1788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,411.1935","description":"British Pound Sterling","rate_float":6411.1935},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.7852","description":"Euro","rate_float":7339.7852}}}
+2018-04-25T15:43:42.290Z - info: Web request statusCode:200
+2018-04-25T15:43:42.290Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:43:00 UTC","updatedISO":"2018-04-25T15:43:00+00:00","updateduk":"Apr 25, 2018 at 16:43 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,934.1788","description":"United States Dollar","rate_float":8934.1788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,411.1935","description":"British Pound Sterling","rate_float":6411.1935},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.7852","description":"Euro","rate_float":7339.7852}}}
+2018-04-25T15:43:42.295Z - info: Web request statusCode:200
+2018-04-25T15:43:42.295Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:43:00 UTC","updatedISO":"2018-04-25T15:43:00+00:00","updateduk":"Apr 25, 2018 at 16:43 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,934.1788","description":"United States Dollar","rate_float":8934.1788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,411.1935","description":"British Pound Sterling","rate_float":6411.1935},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.7852","description":"Euro","rate_float":7339.7852}}}
+2018-04-25T15:43:42.297Z - info: Web request statusCode:200
+2018-04-25T15:43:42.297Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:43:00 UTC","updatedISO":"2018-04-25T15:43:00+00:00","updateduk":"Apr 25, 2018 at 16:43 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,934.1788","description":"United States Dollar","rate_float":8934.1788},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,411.1935","description":"British Pound Sterling","rate_float":6411.1935},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.7852","description":"Euro","rate_float":7339.7852}}}
+2018-04-25T15:43:42.476Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:43:42.478Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:43:42.480Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:43:42.483Z - info: Our Min reward=1, to return=9
+2018-04-25T15:43:42.483Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:43:42.484Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:43:42.486Z - info: Our Min reward=1, to return=9
+2018-04-25T15:43:42.486Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:43:42.487Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:43:42.488Z - info: Our Min reward=1, to return=9
+2018-04-25T15:43:42.488Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:43:42.489Z - info: Our Min reward=1, to return=9
+2018-04-25T15:43:42.489Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:43:42.491Z - info: Our Min reward=1, to return=9
+2018-04-25T15:43:42.492Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:43:42.638Z - info: Final return after gas=33778
+2018-04-25T15:43:42.647Z - info: Final return after gas=33778
+2018-04-25T15:43:42.649Z - info: Final return after gas=33778
+2018-04-25T15:43:42.654Z - info: Final return after gas=33778
+2018-04-25T15:43:42.655Z - info: Final return after gas=33778
+2018-04-25T15:48:12.343Z - info: Connecting to WebSocket
+2018-04-25T15:48:13.701Z - info: Starting reading master tasks...
+2018-04-25T15:48:14.605Z - info: Result:0:1
+2018-04-25T15:48:14.608Z - info: Result:1:2
+2018-04-25T15:48:14.609Z - info: Result:2:3
+2018-04-25T15:48:14.609Z - info: Result:3:4
+2018-04-25T15:48:14.610Z - info: Result:4:5
+2018-04-25T15:48:15.707Z - info: Web request statusCode:200
+2018-04-25T15:48:15.707Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:47:00 UTC","updatedISO":"2018-04-25T15:47:00+00:00","updateduk":"Apr 25, 2018 at 16:47 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,947.4663","description":"United States Dollar","rate_float":8947.4663},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,420.7286","description":"British Pound Sterling","rate_float":6420.7286},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,350.7014","description":"Euro","rate_float":7350.7014}}}
+2018-04-25T15:48:15.731Z - info: Web request statusCode:200
+2018-04-25T15:48:15.731Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:47:00 UTC","updatedISO":"2018-04-25T15:47:00+00:00","updateduk":"Apr 25, 2018 at 16:47 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,947.4663","description":"United States Dollar","rate_float":8947.4663},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,420.7286","description":"British Pound Sterling","rate_float":6420.7286},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,350.7014","description":"Euro","rate_float":7350.7014}}}
+2018-04-25T15:48:15.844Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:48:15.846Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:48:15.850Z - info: Our Min reward=1, to return=9
+2018-04-25T15:48:15.850Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:48:15.851Z - info: Our Min reward=1, to return=9
+2018-04-25T15:48:15.852Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:48:15.956Z - info: Final return after gas=33778
+2018-04-25T15:48:15.956Z - info: No refund due
+2018-04-25T15:48:15.958Z - info: Final return after gas=33778
+2018-04-25T15:48:15.958Z - info: No refund due
+2018-04-25T15:48:15.994Z - info: Web request statusCode:200
+2018-04-25T15:48:15.995Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:47:00 UTC","updatedISO":"2018-04-25T15:47:00+00:00","updateduk":"Apr 25, 2018 at 16:47 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,947.4663","description":"United States Dollar","rate_float":8947.4663},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,420.7286","description":"British Pound Sterling","rate_float":6420.7286},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,350.7014","description":"Euro","rate_float":7350.7014}}}
+2018-04-25T15:48:16.060Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:48:16.061Z - info: Our Min reward=1, to return=9
+2018-04-25T15:48:16.061Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:48:16.232Z - info: Final return after gas=33778
+2018-04-25T15:48:16.232Z - info: No refund due
+2018-04-25T15:48:16.380Z - info: Web request statusCode:200
+2018-04-25T15:48:16.381Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:47:00 UTC","updatedISO":"2018-04-25T15:47:00+00:00","updateduk":"Apr 25, 2018 at 16:47 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,947.4663","description":"United States Dollar","rate_float":8947.4663},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,420.7286","description":"British Pound Sterling","rate_float":6420.7286},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,350.7014","description":"Euro","rate_float":7350.7014}}}
+2018-04-25T15:48:16.427Z - info: Web request statusCode:200
+2018-04-25T15:48:16.428Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:47:00 UTC","updatedISO":"2018-04-25T15:47:00+00:00","updateduk":"Apr 25, 2018 at 16:47 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,947.4663","description":"United States Dollar","rate_float":8947.4663},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,420.7286","description":"British Pound Sterling","rate_float":6420.7286},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,350.7014","description":"Euro","rate_float":7350.7014}}}
+2018-04-25T15:48:16.455Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:48:16.457Z - info: Our Min reward=1, to return=9
+2018-04-25T15:48:16.457Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:48:16.540Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:48:16.541Z - info: Our Min reward=1, to return=9
+2018-04-25T15:48:16.542Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:48:16.564Z - info: Final return after gas=33778
+2018-04-25T15:48:16.564Z - info: No refund due
+2018-04-25T15:48:16.610Z - info: Final return after gas=33778
+2018-04-25T15:48:16.611Z - info: No refund due
+2018-04-25T15:49:40.817Z - info: Connecting to WebSocket
+2018-04-25T15:49:41.826Z - info: Starting reading master tasks...
+2018-04-25T15:49:42.533Z - info: Result:0:1
+2018-04-25T15:49:42.537Z - info: Result:1:2
+2018-04-25T15:49:42.537Z - info: Result:2:3
+2018-04-25T15:49:42.538Z - info: Result:3:4
+2018-04-25T15:49:42.538Z - info: Result:4:5
+2018-04-25T15:49:42.717Z - info: Web request statusCode:200
+2018-04-25T15:49:42.717Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:49:00 UTC","updatedISO":"2018-04-25T15:49:00+00:00","updateduk":"Apr 25, 2018 at 16:49 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,933.7188","description":"United States Dollar","rate_float":8933.7188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,410.8634","description":"British Pound Sterling","rate_float":6410.8634},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.4073","description":"Euro","rate_float":7339.4073}}}
+2018-04-25T15:49:42.726Z - info: Web request statusCode:200
+2018-04-25T15:49:42.727Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:49:00 UTC","updatedISO":"2018-04-25T15:49:00+00:00","updateduk":"Apr 25, 2018 at 16:49 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,933.7188","description":"United States Dollar","rate_float":8933.7188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,410.8634","description":"British Pound Sterling","rate_float":6410.8634},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.4073","description":"Euro","rate_float":7339.4073}}}
+2018-04-25T15:49:42.728Z - info: Web request statusCode:200
+2018-04-25T15:49:42.728Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:49:00 UTC","updatedISO":"2018-04-25T15:49:00+00:00","updateduk":"Apr 25, 2018 at 16:49 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,933.7188","description":"United States Dollar","rate_float":8933.7188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,410.8634","description":"British Pound Sterling","rate_float":6410.8634},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.4073","description":"Euro","rate_float":7339.4073}}}
+2018-04-25T15:49:42.770Z - info: Web request statusCode:200
+2018-04-25T15:49:42.770Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:49:00 UTC","updatedISO":"2018-04-25T15:49:00+00:00","updateduk":"Apr 25, 2018 at 16:49 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,933.7188","description":"United States Dollar","rate_float":8933.7188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,410.8634","description":"British Pound Sterling","rate_float":6410.8634},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.4073","description":"Euro","rate_float":7339.4073}}}
+2018-04-25T15:49:42.784Z - info: Web request statusCode:200
+2018-04-25T15:49:42.784Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:49:00 UTC","updatedISO":"2018-04-25T15:49:00+00:00","updateduk":"Apr 25, 2018 at 16:49 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,933.7188","description":"United States Dollar","rate_float":8933.7188},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,410.8634","description":"British Pound Sterling","rate_float":6410.8634},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,339.4073","description":"Euro","rate_float":7339.4073}}}
+2018-04-25T15:50:26.139Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:50:26.142Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:50:26.144Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:50:26.145Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:50:26.149Z - info: Our Min reward=1, to return=9
+2018-04-25T15:50:26.149Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:50:26.150Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:50:26.151Z - info: Our Min reward=1, to return=9
+2018-04-25T15:50:26.151Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:50:26.152Z - info: Our Min reward=1, to return=9
+2018-04-25T15:50:26.152Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:50:26.152Z - info: Our Min reward=1, to return=9
+2018-04-25T15:50:26.152Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:50:26.153Z - info: Our Min reward=1, to return=9
+2018-04-25T15:50:26.153Z - info: Is Address:true:0x6Fc2aaeBFB5e8bdc61939c4948d5659fae53a5B9
+2018-04-25T15:50:31.434Z - info: Final return after gas=-33769
+2018-04-25T15:50:31.434Z - info: No refund due
+2018-04-25T15:50:31.436Z - info: Final return after gas=-33769
+2018-04-25T15:50:31.436Z - info: No refund due
+2018-04-25T15:50:31.438Z - info: Final return after gas=-33769
+2018-04-25T15:50:31.438Z - info: No refund due
+2018-04-25T15:50:31.439Z - info: Final return after gas=-33769
+2018-04-25T15:50:31.439Z - info: No refund due
+2018-04-25T15:50:31.441Z - info: Final return after gas=-33769
+2018-04-25T15:50:31.441Z - info: No refund due
+2018-04-25T15:59:32.018Z - info: Connecting to WebSocket
+2018-04-25T15:59:32.858Z - info: Starting reading master tasks...
+2018-04-25T15:59:34.154Z - info: Result:0:1
+2018-04-25T15:59:34.157Z - info: Result:1:2
+2018-04-25T15:59:34.158Z - info: Result:2:3
+2018-04-25T15:59:34.158Z - info: Result:3:4
+2018-04-25T15:59:34.159Z - info: Result:4:5
+2018-04-25T15:59:34.301Z - info: Web request statusCode:200
+2018-04-25T15:59:34.301Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:59:00 UTC","updatedISO":"2018-04-25T15:59:00+00:00","updateduk":"Apr 25, 2018 at 16:59 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,957.3388","description":"United States Dollar","rate_float":8957.3388},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,427.8132","description":"British Pound Sterling","rate_float":6427.8132},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,358.8121","description":"Euro","rate_float":7358.8121}}}
+2018-04-25T15:59:34.311Z - info: Web request statusCode:200
+2018-04-25T15:59:34.311Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:59:00 UTC","updatedISO":"2018-04-25T15:59:00+00:00","updateduk":"Apr 25, 2018 at 16:59 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,957.3388","description":"United States Dollar","rate_float":8957.3388},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,427.8132","description":"British Pound Sterling","rate_float":6427.8132},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,358.8121","description":"Euro","rate_float":7358.8121}}}
+2018-04-25T15:59:34.314Z - info: Web request statusCode:200
+2018-04-25T15:59:34.314Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:59:00 UTC","updatedISO":"2018-04-25T15:59:00+00:00","updateduk":"Apr 25, 2018 at 16:59 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,957.3388","description":"United States Dollar","rate_float":8957.3388},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,427.8132","description":"British Pound Sterling","rate_float":6427.8132},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,358.8121","description":"Euro","rate_float":7358.8121}}}
+2018-04-25T15:59:34.321Z - info: Web request statusCode:200
+2018-04-25T15:59:34.321Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:59:00 UTC","updatedISO":"2018-04-25T15:59:00+00:00","updateduk":"Apr 25, 2018 at 16:59 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,957.3388","description":"United States Dollar","rate_float":8957.3388},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,427.8132","description":"British Pound Sterling","rate_float":6427.8132},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,358.8121","description":"Euro","rate_float":7358.8121}}}
+2018-04-25T15:59:34.338Z - info: Web request statusCode:200
+2018-04-25T15:59:34.338Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 15:59:00 UTC","updatedISO":"2018-04-25T15:59:00+00:00","updateduk":"Apr 25, 2018 at 16:59 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,957.3388","description":"United States Dollar","rate_float":8957.3388},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,427.8132","description":"British Pound Sterling","rate_float":6427.8132},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,358.8121","description":"Euro","rate_float":7358.8121}}}
+2018-04-25T15:59:35.338Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:59:35.341Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:59:35.346Z - info: Our Min reward=1, to return=9
+2018-04-25T15:59:35.347Z - info: Our Min reward=1, to return=9
+2018-04-25T15:59:35.348Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:59:35.348Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:59:35.349Z - info: Our Min reward=1, to return=9
+2018-04-25T15:59:35.350Z - info: Our Min reward=1, to return=9
+2018-04-25T15:59:35.382Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T15:59:35.389Z - info: Our Min reward=1, to return=9
+2018-04-25T15:59:35.588Z - info: Final return after gas=-33769
+2018-04-25T15:59:35.589Z - info: No refund due
+2018-04-25T15:59:35.598Z - info: Final return after gas=-33769
+2018-04-25T15:59:35.598Z - info: No refund due
+2018-04-25T15:59:35.602Z - info: Final return after gas=-33769
+2018-04-25T15:59:35.602Z - info: No refund due
+2018-04-25T15:59:35.604Z - info: Final return after gas=-33769
+2018-04-25T15:59:35.604Z - info: No refund due
+2018-04-25T15:59:35.612Z - info: Final return after gas=-33769
+2018-04-25T15:59:35.612Z - info: No refund due
+2018-04-25T16:00:26.445Z - info: Connecting to WebSocket
+2018-04-25T16:00:26.533Z - info: Starting reading master tasks...
+2018-04-25T16:00:28.258Z - info: Result:0:1
+2018-04-25T16:00:28.262Z - info: Result:1:2
+2018-04-25T16:00:28.262Z - info: Result:2:3
+2018-04-25T16:00:28.263Z - info: Result:3:4
+2018-04-25T16:00:28.263Z - info: Result:4:5
+2018-04-25T16:00:28.391Z - info: Web request statusCode:200
+2018-04-25T16:00:28.391Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:28.405Z - info: Web request statusCode:200
+2018-04-25T16:00:28.405Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:28.408Z - info: Web request statusCode:200
+2018-04-25T16:00:28.408Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:28.410Z - info: Web request statusCode:200
+2018-04-25T16:00:28.410Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:28.414Z - info: Web request statusCode:200
+2018-04-25T16:00:28.414Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:28.578Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:28.584Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:28.587Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:28.588Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:28.598Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:28.599Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:28.601Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:28.602Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:28.604Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:28.605Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:30.347Z - info: Final return after gas=-33769
+2018-04-25T16:00:30.347Z - info: No refund due
+2018-04-25T16:00:30.352Z - info: Final return after gas=-33769
+2018-04-25T16:00:30.352Z - info: No refund due
+2018-04-25T16:00:30.362Z - info: Final return after gas=-33769
+2018-04-25T16:00:30.362Z - info: No refund due
+2018-04-25T16:00:30.363Z - info: Final return after gas=-33769
+2018-04-25T16:00:30.364Z - info: No refund due
+2018-04-25T16:00:30.365Z - info: Final return after gas=-33769
+2018-04-25T16:00:30.365Z - info: No refund due
+2018-04-25T16:00:30.445Z - error: MySQL Error:Error: ER_BAD_FIELD_ERROR: Unknown column 'processed_time' in 'field list'
+2018-04-25T16:00:30.529Z - error: MySQL Error:Error: ER_BAD_FIELD_ERROR: Unknown column 'processed_time' in 'field list'
+2018-04-25T16:00:30.655Z - error: MySQL Error:Error: ER_BAD_FIELD_ERROR: Unknown column 'processed_time' in 'field list'
+2018-04-25T16:00:30.740Z - error: MySQL Error:Error: ER_BAD_FIELD_ERROR: Unknown column 'processed_time' in 'field list'
+2018-04-25T16:00:30.827Z - error: MySQL Error:Error: ER_BAD_FIELD_ERROR: Unknown column 'processed_time' in 'field list'
+2018-04-25T16:00:55.115Z - info: Connecting to WebSocket
+2018-04-25T16:00:55.202Z - info: Starting reading master tasks...
+2018-04-25T16:00:55.950Z - info: Result:0:1
+2018-04-25T16:00:55.954Z - info: Result:1:2
+2018-04-25T16:00:55.954Z - info: Result:2:3
+2018-04-25T16:00:55.955Z - info: Result:3:4
+2018-04-25T16:00:55.956Z - info: Result:4:5
+2018-04-25T16:00:56.079Z - info: Web request statusCode:200
+2018-04-25T16:00:56.079Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:56.088Z - info: Web request statusCode:200
+2018-04-25T16:00:56.088Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:56.090Z - info: Web request statusCode:200
+2018-04-25T16:00:56.090Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:56.135Z - info: Web request statusCode:200
+2018-04-25T16:00:56.136Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:56.142Z - info: Web request statusCode:200
+2018-04-25T16:00:56.142Z - info: Web request body:{"time":{"updated":"Apr 25, 2018 16:00:00 UTC","updatedISO":"2018-04-25T16:00:00+00:00","updateduk":"Apr 25, 2018 at 17:00 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","chartName":"Bitcoin","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"8,960.9950","description":"United States Dollar","rate_float":8960.995},"GBP":{"code":"GBP","symbol":"&pound;","rate":"6,430.4369","description":"British Pound Sterling","rate_float":6430.4369},"EUR":{"code":"EUR","symbol":"&euro;","rate":"7,361.8158","description":"Euro","rate_float":7361.8158}}}
+2018-04-25T16:00:56.192Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:56.198Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:56.199Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:56.201Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:56.202Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:56.203Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:56.270Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:56.271Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:56.276Z - error: Callback method error:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-04-25T16:00:56.277Z - info: Our Min reward=1, to return=9
+2018-04-25T16:00:56.372Z - info: Final return after gas=-33769
+2018-04-25T16:00:56.372Z - info: No refund due
+2018-04-25T16:00:56.373Z - info: Final return after gas=-33769
+2018-04-25T16:00:56.373Z - info: No refund due
+2018-04-25T16:00:56.376Z - info: Final return after gas=-33769
+2018-04-25T16:00:56.376Z - info: No refund due
+2018-04-25T16:00:56.402Z - info: Final return after gas=-33769
+2018-04-25T16:00:56.402Z - info: No refund due
+2018-04-25T16:00:56.404Z - info: Final return after gas=-33769
+2018-04-25T16:00:56.404Z - info: No refund due
+2018-04-25T16:00:56.477Z - info: Marked as processed
+2018-04-25T16:00:56.571Z - info: Marked as processed
+2018-04-25T16:00:56.669Z - info: Marked as processed
+2018-04-25T16:00:56.763Z - info: Marked as processed
+2018-04-25T16:00:56.854Z - info: Marked as processed

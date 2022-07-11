@@ -1,0 +1,14 @@
+# This config should be placed in following path:
+#   ~/.local/share/io.parity.ethereum/config.toml
+
+[parity]
+# Parity continously syncs the chain
+mode = "active"
+# Blockchain and settings will be stored in /ethsync/io.parity.ethereum.
+base_path = "/ethsync/io.parity.ethereum"
+# You will be identified as 'dappbridge' amongst other nodes..
+identity = "dappbridge"
+
+[misc]
+# Logs will be stored at /var/log/parity-testnet.
+log_file = "/var/log/parity-prod"

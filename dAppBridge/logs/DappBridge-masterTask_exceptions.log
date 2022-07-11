@@ -1,0 +1,215 @@
+2018-05-13T13:24:01.722Z - error: Error sending callback tx:Error: Returned error: replacement transaction underpriced
+2018-05-13T13:33:01.366Z - error: Error sending callback tx:Error: Returned error: replacement transaction underpriced
+2018-05-13T13:34:35.963Z - error: Error sending callback tx:23:Error: Returned error: replacement transaction underpriced
+2018-05-13T13:37:10.852Z - error: Error sending callback tx:22:Error: Returned error: replacement transaction underpriced
+2018-05-13T13:43:51.151Z - error: Error sending callback tx:23:Error: Returned error: replacement transaction underpriced
+2018-05-13T13:44:47.768Z - error: Error sending callback tx:22:Error: Returned error: replacement transaction underpriced
+2018-05-13T13:50:46.261Z - error: Error sending callback tx:23:Error: Returned error: replacement transaction underpriced
+2018-05-13T13:53:11.548Z - error: Error sending callback tx:22:Error: Returned error: replacement transaction underpriced
+2018-05-13T14:17:03.377Z - error: Error sending callback tx:23:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:17:03.391Z - error: Error sending callback tx:22:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:17:04.009Z - error: Error sending callback tx:24:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:17:04.070Z - error: Error sending callback tx:25:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:17:04.090Z - error: Error sending callback tx:26:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:19:00.208Z - error: Error sending callback tx:22:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:19:00.238Z - error: Error sending callback tx:23:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:19:00.852Z - error: Error sending callback tx:26:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:19:00.864Z - error: Error sending callback tx:25:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:19:00.894Z - error: Error sending callback tx:24:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:20:32.740Z - error: Error sending callback tx:23:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:20:32.759Z - error: Error sending callback tx:22:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:20:33.381Z - error: Error sending callback tx:25:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:20:33.424Z - error: Error sending callback tx:24:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:20:33.429Z - error: Error sending callback tx:26:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:21:10.726Z - error: Error sending callback tx:22:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:21:10.744Z - error: Error sending callback tx:23:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:21:11.145Z - error: Error sending callback tx:26:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:21:11.192Z - error: Error sending callback tx:25:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T14:21:11.255Z - error: Error sending callback tx:24:Error: Returned error: invalid argument 0: json: cannot unmarshal non-string into Go value of type hexutil.Bytes
+2018-05-13T19:53:49.972Z - error: Error sending callback tx:22:Error: Returned error: nonce too low
+2018-05-16T19:16:43.909Z - error: Error getting estimated gas for client callback:38:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T19:17:38.060Z - error: Error getting estimated gas for client callback:38:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T19:34:35.297Z - error: Error getting estimated gas for client callback:38:Error: Returned error: invalid argument 0: json: cannot unmarshal hex string without 0x prefix into Go struct field CallArgs.data of type hexutil.Bytes
+2018-05-16T19:35:05.957Z - error: Error getting estimated gas for client callback:38:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T19:41:26.048Z - error: Error getting estimated gas for client callback:38:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T19:44:14.510Z - error: Error getting estimated gas for client callback:38:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T20:05:25.702Z - error: Error sending callback tx:38:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-16T20:21:21.813Z - error: Error getting estimated gas for client callback:39:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T20:21:57.417Z - error: Error sending callback tx:39:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-16T20:22:46.305Z - error: Error getting estimated gas for client callback:39:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T20:23:12.266Z - error: Error getting estimated gas for client callback:39:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T20:24:25.788Z - error: Error getting estimated gas for client callback:39:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T20:27:25.109Z - error: Error getting estimated gas for client callback:39:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-16T20:32:55.569Z - error: Error getting estimated gas for client callback:39:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T15:13:12.217Z - error: Error getting estimated gas for client callback:41:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T15:14:24.764Z - error: Error getting estimated gas for client callback:41:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T15:22:47.228Z - error: Error getting estimated gas for client callback:41:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T16:27:54.671Z - error: Error getting estimated gas for client callback:43:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T16:32:30.522Z - error: Error getting estimated gas for client callback:43:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T16:42:19.904Z - error: Error sending callback tx:44:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-17T16:42:40.126Z - error: Error getting estimated gas for client callback:44:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T17:13:08.864Z - error: Error sending callback tx:45:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-17T17:19:11.108Z - error: Error getting estimated gas for client callback:45:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T17:23:10.095Z - error: Error getting estimated gas for client callback:45:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T17:23:42.108Z - error: Error sending callback tx:45:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-17T17:24:03.257Z - error: Error getting estimated gas for client callback:45:Error: Returned error: gas required exceeds allowance or always failing transaction
+2018-05-17T17:36:39.657Z - error: Error sending callback tx:45:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-17T18:11:44.092Z - error: Error sending callback tx:45:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-17T18:12:33.584Z - error: Error sending callback tx:45:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-17T18:12:45.325Z - error: Error sending callback tx:45:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-17T18:13:20.166Z - error: Error sending callback tx:45:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+2018-05-17T18:15:54.523Z - error: Error sending callback tx:45:Error: Returned error: replacement transaction underpriced
+    at Object.ErrorResponse (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at Object.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-core-requestmanager/src/index.js:140:36)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:100:44
+    at Array.forEach (<anonymous>)
+    at W3CWebSocket.WebsocketProvider.connection.onmessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/web3-providers-ws/src/index.js:77:36)
+    at W3CWebSocket._dispatchEvent [as dispatchEvent] (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/yaeti/lib/EventTarget.js:107:17)
+    at W3CWebSocket.onMessage (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:234:14)
+    at WebSocketConnection.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/W3CWebSocket.js:205:19)
+    at emitOne (events.js:116:13)
+    at WebSocketConnection.emit (events.js:211:7)
+    at WebSocketConnection.processFrame (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:547:26)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/websocket/lib/WebSocketConnection.js:321:40
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)

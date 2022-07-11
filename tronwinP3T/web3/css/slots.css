@@ -1,0 +1,85 @@
+.scratch_card.scratch_card_cells3 {
+	background: url(../images/slots/bg.png) 0 0 no-repeat;
+	height: 667px;
+}
+
+.scratch_card.scratch_card_cells9 {
+	background: none; /* This is not meant to be a thing!!!! */
+}
+
+.scratch_card.scratch_card_cells9:after {
+	content: "Sadly, the slots theme doesn't work with 9-cell games, only 3-cell. Sorry!";
+	font-size: 42px; text-align: center;
+}
+
+.scratch_card.scratch_card_cells9 .scratch_card_cells_container {
+	display: none;
+}
+
+.scratch_card_cells_container {
+	left: 132px;
+	top: 363px;
+}
+
+.scratch_card_cell {
+	border-width: 6px;
+	margin-right: 1px;
+}
+
+.scratch_card_scratch_area_image {
+	background: url(../images/slots/scratch_area.png) 0 0 no-repeat;
+}
+
+.scratch_card_cell_icon {
+	background: url(../images/slots/icons.png) 0 9999px repeat-x;
+	background-color: transparent;
+}
+
+
+
+.scratch_card.scratch_card_cells9 .scratch_card_dialog_overlay,
+.scratch_card.scratch_card_cells9 .scratch_card_dialog {
+	background: none; /* don't show the dialog, show the message behind saying no */
+	margin-left: -9999px;
+}
+
+.scratch_card.scratch_card_cells3 .scratch_card_dialog {
+	width: 664px; height: 472px;
+	top: 80px;
+	background-image: url(../images/slots/dialog_bg_large.png);
+	color: white;
+}
+
+.scratch_card_dialog h1 {
+	margin: 95px 65px 35px 110px;
+	color: #fbd768;
+	text-shadow: black 2px 3px 1px;
+}
+
+.scratch_card_dialog p {
+	margin: 20px 130px 20px 165px;
+}
+
+.scratch_card_dialog .scratch_card_dialog_buttons {
+	bottom: 90px;
+}
+
+
+.scratch_card_dialog .scratch_card_dialog_button {
+	height: 65px; width: 224px;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_play_now { background: url(../images/slots/dialog_btn_green_play_now.png) 0 0 no-repeat; }
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_play_again { background: url(../images/slots/dialog_btn_green_play_again.png) 0 0 no-repeat; }
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_refresh { background: url(../images/slots/dialog_btn_red_refresh.png) 0 0 no-repeat; }
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_collect_prize {
+	background: url(../images/slots/dialog_btn_green_collect_prize.png) 0 0 no-repeat;
+	width: 261px;
+}
+.scratch_card_dialog .scratch_card_dialog_button.scratch_card_dialog_button_load_balance {
+	background: url(../images/slots/dialog_btn_red_load_balance.png) 0 0 no-repeat;
+	width: 254px;
+}
+

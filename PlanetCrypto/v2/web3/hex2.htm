@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Own The Map</title>
+
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" ></script>
+
+<script src="https://api.mapbox.com/mapbox.js/plugins/turf/v2.0.2/turf.min.js"></script>
+
+<style type="text/css">
+
+html, body, #map {
+      height: 100%;
+      width:100%;
+      padding:0px;
+      margin:0px;
+} 
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+.legend .colorcircle {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-top: 0px;
+}
+
+</style>
+
+
+   
+</head>
+<body>
+
+    <div id="map"></div>
+
+
+
+ <script type="text/javascript">
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//setting up the map//
+/////////////////////////////////////////////////////////////////////////////////////////////
+// set center coordinates
+var lat = 35.15;
+var lng = 33.35;
+var R = 500;
+
+// set default zoom level
+var zoomLevel = 13;
+
+// initialize map
+var map = L.map('map').setView([lat, lng], zoomLevel);
+
+// set source for map tiles
+ATTR = '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+    '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> | ' +
+    '&copy; <a href="http://cartodb.com/attributions">CartoDB</a>';
+
+CDB_URL = 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+
+// add tiles to map
+L.tileLayer(CDB_URL, {
+    attribution: ATTR,
+    noWrap: true
+}).addTo(map);
+
+var b = new L.Circle([lat, lng], R).getBounds();
+var r = (b._northEast.lat - b._southWest.lat) / 2;
+var h = (b._northEast.lng - b._southWest.lng) / 2;
+var d = Math.sqrt(3 * h * h / 4);
+
+var grid_x = 100;
+var grid_y = 100;
+
+var la = lat;
+var lo = lng;
+var multiPolygonLatLongs = [];
+for (var i = 0; i < grid_x; i++) {
+    for (var j = 0; j < grid_y; j++) {
+        multiPolygonLatLongs.push([
+            [la + r, lo],
+            [la + r / 2, lo + d],
+            [la - r / 2, lo + d],
+            [la - r, lo],
+            [la - r / 2, lo - d],
+            [la + r / 2, lo - d]
+        ]);
+        lo += d * 2;
+    }
+    lo = i % 2 == 0 ? lng + d : lng;
+    la += r * 1.5;
+}
+
+var p1 = map.getPixelOrigin();
+var bounds =  map.getPixelBounds();
+
+var clipped = L.PolyUtil.clipPolygon(multiPolygonLatLongs, bounds);
+
+L.multiPolygon(clipped, {
+    weight: 1,
+    opacity: 0.2,
+    fill: false
+}).addTo(map);
+
+    </script>
+</body>
+</html>
+
+

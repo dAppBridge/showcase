@@ -1,0 +1,9 @@
+var Migrations = artifacts.require("./Migrations.sol");
+var PlanetCryptoCoin = artifacts.require("./PlanetCryptoToken3.sol");
+
+module.exports = function(deployer) {
+  deployer.deploy(Migrations);
+  deployer.deploy(PlanetCryptoCoin);
+};
+
+

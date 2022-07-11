@@ -1,0 +1,1703 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <title>TronGamer:Dice - The Ultimate TRON Dice Roll DApp Game - Real Dice - Real Winning - Real TRX Eernings!</title>
+    <meta name=keywords content="TRON DICE, DICE ROLL, Dice game, crypto dice, diceroll, TRX, FOMO, DApp, Idle,game, dapp, get rich, lottery, gambling, investment, returns, idle, trongamer, trongamernetwork "/>
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129173217-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-129173217-3');
+	</script>
+
+
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/jquery.toast.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Padauk" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
+    <link rel="stylesheet" href="css/odometer-min.css" />
+
+
+
+	<style type="text/css">
+	#betAmount {
+		border-radius: 4px;
+		width: 120px;
+		background-image: url(images/icon-tron-red-sm.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+.betBalance {
+	padding-top: 10px; left: 0px; position: relative;
+}
+.content {
+	padding-top: 20px;
+	width: 80%;
+	background-color: #141726;
+	border-radius: 8px;
+}
+
+.hideDiv{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+#_333game {
+	position: absolute; top: 420px;
+}
+#dicegame {
+	position: absolute; top: 420px;
+}
+#bankersgame {
+	position: absolute; top: 420px;	
+}
+.headerBanner {
+	background-image: url(images/headerBannerBg.jpg); height: 204px; text-align: left; padding-left: 40px; padding-right: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.headerTitle {
+	font-size: 34px; line-height: 42px; font-weight: bold; color: white;
+}
+.headerTxt {
+	font-size: 14px; line-height: 22px;
+}
+.headerImg {
+	float: right;
+}
+.winAmntCol {
+	color: #58e534;
+	font-weight: bold;
+}
+.tabButton {
+	background-color: #303859; border-radius: 100px; width: 168px; height: 40px; Font Family: Montserrat;
+	Font Style: Medium;
+	Font Size: 12px;
+	Line Height: 14px;
+	Line Height: 100%;
+	Align: Left;
+	Vertical Align: Center; color: white; cursor: pointer;
+}
+.tabButton:hover {
+	background-color: #4a5689;
+}
+
+.tabButton2 {
+	background-color: #C53027; border-radius: 100px; width: 168px; height: 40px; Font Family: Montserrat;
+	Font Style: Medium;
+	Font Size: 12px;
+	Line Height: 14px;
+	Line Height: 100%;
+	Align: Left;
+	Vertical Align: Center; color: white; cursor: pointer;
+}
+.tabButton2:hover{
+	background-color: #dd362c;
+}
+.headerBanner {
+	background-image: url(images/headerBannerBg.jpg); height: 204px; text-align: left; padding-left: 40px; padding-right: 40px;
+}
+.headerTitle {
+	font-size: 34px; line-height: 42px; font-weight: bold; color: white;
+}
+.headerTxt {
+	font-size: 14px; line-height: 22px;
+}
+.headerImg {
+
+}
+table tr:nth-of-type(even) {
+    background-color: #303859 !important;
+    color: white;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+}
+table tr:nth-of-type(odd) {
+    background-color: #303859 !important;
+    color: white;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+}
+table {
+	border-collapse: collapse;
+}
+table thead,
+  table tbody,
+  table tfoot {
+    border: 0px solid #e6e6e6; }
+
+	@font-face{
+	 font-family:'digital-clock-font';
+	 src: url('css/fonts/clock2.ttf');
+	}
+	@font-face{
+	 font-family:'digital-7-font';
+	 src: url('css/fonts/digital-7.ttf');
+	}
+	.standardWinEventRow {
+		color: black;
+		font-size: 0.9em;
+		font-weight: bold;
+	}
+
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  	-webkit-transform: translateZ(0);
+	font-family: Montserrat;
+}
+
+  .odometer-value{
+    width: 100%
+    }
+
+
+@-webkit-keyframes roll {
+  10% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  30% {
+    -webkit-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg) translateX(40px) translateY(40px);
+            transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg) translateX(40px) translateY(40px);
+  }
+  50% {
+    -webkit-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg) translateX(-40px) translateY(-40px);
+            transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg) translateX(-40px) translateY(-40px);
+  }
+  70% {
+    -webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(0deg);
+            transform: rotateX(360deg) rotateY(720deg) rotateZ(0deg);
+  }
+  90% {
+    -webkit-transform: rotateX(480deg) rotateY(960deg) rotateZ(0deg);
+            transform: rotateX(480deg) rotateY(960deg) rotateZ(0deg);
+  }
+}
+@keyframes roll {
+  10% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  30% {
+    -webkit-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg) translateX(40px) translateY(40px);
+            transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg) translateX(40px) translateY(40px);
+  }
+  50% {
+    -webkit-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg) translateX(-40px) translateY(-40px);
+            transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg) translateX(-40px) translateY(-40px);
+  }
+  70% {
+    -webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(0deg);
+            transform: rotateX(360deg) rotateY(720deg) rotateZ(0deg);
+  }
+  90% {
+    -webkit-transform: rotateX(480deg) rotateY(960deg) rotateZ(0deg);
+            transform: rotateX(480deg) rotateY(960deg) rotateZ(0deg);
+  }
+}
+
+
+.diceContent {
+  margin: auto auto;
+  position: relative;
+  left: -50px;
+  width: 75px;
+  height: 65px;
+  -webkit-perspective: 1500px;
+          perspective: 1500px;
+}
+
+
+.die {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  cursor: pointer;
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+}
+.die.reset {
+  transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+.die.rolling {
+  -webkit-animation: roll 2s ease-out;
+          animation: roll 2s ease-out;
+}
+.die[data-face="0"] {
+  -webkit-transform: rotateX(-45deg) rotateY(0deg);
+          transform: rotateX(-45deg) rotateY(0deg);
+}
+.die .face.face-0 {
+  -webkit-transform: rotateY(0deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+          transform: rotateY(0deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+}
+.die[data-face="1"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-72deg);
+          transform: rotateX(-225deg) rotateY(-72deg);
+}
+.die .face.face-1 {
+  top: 37.5px;
+  -webkit-transform: rotateY(72deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+          transform: rotateY(72deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+.die[data-face="2"] {
+  -webkit-transform: rotateX(-45deg) rotateY(72deg);
+          transform: rotateX(-45deg) rotateY(72deg);
+}
+.die .face.face-2 {
+  -webkit-transform: rotateY(-72deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+          transform: rotateY(-72deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+}
+.die[data-face="3"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-144deg);
+          transform: rotateX(-225deg) rotateY(-144deg);
+}
+.die .face.face-3 {
+  top: 37.5px;
+  -webkit-transform: rotateY(144deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+          transform: rotateY(144deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+.die[data-face="4"] {
+  -webkit-transform: rotateX(-45deg) rotateY(144deg);
+          transform: rotateX(-45deg) rotateY(144deg);
+}
+.die .face.face-4 {
+  -webkit-transform: rotateY(-144deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+          transform: rotateY(-144deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+}
+.die[data-face="5"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-216deg);
+          transform: rotateX(-225deg) rotateY(-216deg);
+}
+.die .face.face-5 {
+  top: 37.5px;
+  -webkit-transform: rotateY(216deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+          transform: rotateY(216deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+.die[data-face="6"] {
+  -webkit-transform: rotateX(-45deg) rotateY(216deg);
+          transform: rotateX(-45deg) rotateY(216deg);
+}
+.die .face.face-6 {
+  -webkit-transform: rotateY(-216deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+          transform: rotateY(-216deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+}
+.die[data-face="7"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-288deg);
+          transform: rotateX(-225deg) rotateY(-288deg);
+}
+.die .face.face-7 {
+  top: 37.5px;
+  -webkit-transform: rotateY(288deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+          transform: rotateY(288deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+.die[data-face="8"] {
+  -webkit-transform: rotateX(-45deg) rotateY(288deg);
+          transform: rotateX(-45deg) rotateY(288deg);
+}
+.die .face.face-8 {
+  -webkit-transform: rotateY(-288deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+          transform: rotateY(-288deg) translateZ(12.75px) translateY(2.61px) rotateX(45deg);
+}
+.die[data-face="9"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-360deg);
+          transform: rotateX(-225deg) rotateY(-360deg);
+}
+.die .face.face-9 {
+  top: 37.5px;
+  -webkit-transform: rotateY(360deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+          transform: rotateY(360deg) translateZ(-12.75px) translateY(-2.61px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+.die .face {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 -19.5px;
+  border-left: 19.5px solid transparent;
+  border-right: 19.5px solid transparent;
+  border-bottom: 37.5px solid rgba(30, 180, 20, 0.75);
+  width: 0px;
+  height: 0px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  counter-increment: steps 1;
+}
+.die2 {
+	left: 120px;
+}
+.die2 .face2 {
+	border-bottom: 37.5px solid rgba(244, 137, 66, 0.75);
+}
+.die .face:first-child {
+  counter-increment: steps 0;
+}
+.die .face:before {
+  content: counter(steps);
+  position: absolute;
+  top: 9.375px;
+  left: -19.5px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+  font-size: 22.5px;
+  text-align: center;
+  line-height: 37.5px;
+  width: 39px;
+  height: 37.5px;
+}
+.die .face:after {
+  content: "";
+  position: absolute;
+  bottom: -46.5px;
+  left: -19.5px;
+  border-left: 19.5px solid transparent;
+  border-right: 19.5px solid transparent;
+  border-top: 9px solid rgba(30, 180, 20, 0.75);
+  width: 0px;
+  height: 0px;
+}
+
+.die2 .face2:after {
+	border-top: 9px solid rgba(244, 137, 66, 0.75);
+}
+
+
+
+
+	@font-face{
+	 font-family:'digital-clock-font';
+	 src: url('css/fonts/clock2.ttf');
+	}
+	@font-face{
+	 font-family:'digital-7-font';
+	 src: url('css/fonts/digital-7.ttf');
+	}
+
+   #flag-english {
+    width: 50px;
+   }
+   #flag-russian {
+    width: 50px
+   }
+   #flag-chinese {
+    width: 50px
+   }
+
+
+	.smallTxt {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.smallTxt2 {
+		font-size: 0.7em;
+	}
+	.standardEventRow {
+		color: black;
+		font-size: 0.8em;
+	}
+
+
+	.addBtn {
+		background: #303859;
+		border-radius: 3px;
+		width: 60px;
+		height: 30px;
+
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+		text-align: center;
+		color: #FFFFFF;
+		padding-top: 5px;
+		cursor: pointer;
+	}
+	.addBtn:hover {
+		background-color: #5866a3;
+	}
+
+	.successBtn {
+		width: 254px;
+		height: 30px;
+		background: #C53027;
+		border-radius: 3px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		padding-top: 5px;
+	}
+	.button.successBtn:hover, .button.successBtn:focus {
+		background: #db342b;
+	}
+
+
+	.warningBtn {
+		width: 254px;
+		height: 30px;
+		background: #27AE60;
+		border-radius: 3px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		padding-top: 5px;
+	}
+	.button.warningBtn:hover, .button.warningBtn:focus {
+		background: #2bce70;
+	}
+
+	#introDiv {
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 20px;
+		text-align: left;
+		color: white;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		
+	}
+
+
+	.input-group {
+		width: 70%;
+	} 
+
+	.infoDiv {
+		border: 1px solid white;
+		border-radius: 15px;
+
+		background: rgba(0,0,0,0.3);
+		padding: 10px;
+	}
+
+	#rollNumber {
+		font-size: 100px;
+		line-height: 100px;
+	}
+	#rollResult {
+		font-size: 100px;
+		line-height: 100px;
+		color: grey;
+	}
+
+	.keysLabel {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 40px;
+		text-align: left;
+		color: white;
+	}
+	.bonusKeys {
+		font-size: 0.7em;
+		color: red;
+	}
+	.small2 {
+		font-size: 0.7em;
+	}
+
+	.codeResults {
+		border: 0px; 
+		background-color: black; 
+		color: green; 
+		display: inline-block;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 30px;
+		text-align: center;
+		color: #27AE60;
+		width: 60px; height: 50px;  text-align: center;
+		-wap-input-format: 'N'
+	}
+	.codeResults:disabled {
+		background-color: black;
+		color: grey;
+	}
+
+	.codeGreen {
+		border: 0px; background-color: black; color: green; 
+		display: inline-block;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 30px;
+		text-align: center;
+		color: #27AE60;
+		width: 60px; height: 50px;  text-align: center;
+		-wap-input-format: 'N'
+	}
+	.codeGreen:disabled{
+		background-color: black;
+		color: grey;
+	}
+
+
+
+	html {
+		font-family: sans-serif;
+	    line-height: 1.15;
+	}
+
+	body{
+	    color: #ebeaf5;
+		font-family: Montserrat;
+		font-style: normal;
+		font-size: 12pt;
+
+	    line-height: 1.5;
+	    background-color: #1C2137;
+	}
+
+
+	.reveal{
+		color: black;
+		margin-top: 10px;
+	}
+	.reveal:focus {
+		outline: none;
+	}
+
+	.sticky {
+	  width: 100%;
+	}
+	.top-bar2 {
+		background-color: #333A65;
+		text-align: left;
+		padding: 5px;
+		height: 48px;
+	}
+	.logo {
+		position: relative;
+		left: 46px;
+		top: -3px;
+	}
+	.tronGamerLogo {
+		font-family: 'Padauk';
+		font-style: normal;
+		font-weight: bolder;
+		font-size: 23px;
+		line-height: 24px;
+		color: #fff;
+		left: 40px;
+		top: 2px;
+		color: #54bd1c;
+
+		position: relative;
+		width: 77px;
+		height: 24px;
+	}
+	#content {
+		aposition: relative;
+		aheight: 180px;
+		padding-top: 40px;
+	}
+	.winEventRow {
+		color: red;
+	}
+	.roundWinner{
+		color: white;
+		font-size: 24px;
+		font-weight: bold;
+		vertical-align: middle;
+		text-align: center;
+		
+	}
+	.roundCountdown {
+
+		color: white;
+		font-size: 24px;
+		font-weight: bold;
+		vertical-align: middle;
+
+  		display: inline-block;
+		width: 90px;
+		height: 60px;
+		aborder: 1px solid white;
+		text-align: left;
+		
+
+	}
+	.roundCountdownDark {
+		width: 100px;
+		color: red;
+
+	   animation-name: roundCountdownDark;
+	    animation-duration: 0.5s;
+	    animation-timing-function: linear;
+	    animation-iteration-count: infinite;
+	    animation-direction: alternate;
+	    animation-play-state: running;
+		
+	}
+	@keyframes roundCountdownDark {
+	    from {color: red;}
+	    to {color: black;}
+	}
+
+	.gameHeaderTxt {
+		color: white;
+		font-size: 26px;
+		line-height: 30px;
+		font-weight: bold;
+
+	}
+
+	.headerTxt2 {
+		color: white;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: bold;
+
+	}
+
+	.betDetailTitle {
+		color: white;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.betDetailStat {
+		color: white;
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: bold;	
+	}
+
+	.fullSize {
+		font-size: 24px;
+		line-height: 26px;
+		position: relative;
+		top: 5px;
+	}
+
+	.fullSize2 {
+		font-size: 22px;
+		line-height: 24px;
+		position: relative;
+		top: 5px;		
+	}
+
+
+	.reveal {
+		border-radius: 15px;
+	}
+
+	.yourProfileInner {
+		width: 100%; height: 100%; border-radius: 8px;background: #141726; padding: 8px;
+	}
+	.currentRoundInner{
+		width: 100%; height: 100%; border-radius: 8px;background: #141726; padding: 8px;
+	}
+	.yourProfileOuter {
+		margin: 0px; padding-right: 8px;
+	}
+	.currentRoundOuter {
+		margin: 0px; padding-left: 8px;
+	}
+
+	h4 {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+
+
+
+
+
+// RANGE SLIDER
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.range-slider {
+  margin: 20px 0 0 0%;
+}
+
+.range-slider {
+  width: 100%;
+}
+
+.range-slider2 {
+  margin: 0px 0 0 0%;
+}
+
+.range-slider2 {
+  width: 100%;
+}
+
+.range-slider__range {
+  -webkit-appearance: none;
+  width: calc(100% - (273px));
+  height: 10px;
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.range-slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  transition: background .15s ease-in-out;
+}
+.range-slider__range::-webkit-slider-thumb:hover {
+  background: #1abc9c;
+}
+.range-slider__range:active::-webkit-slider-thumb {
+  background: #1abc9c;
+}
+.range-slider__range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  transition: background .15s ease-in-out;
+}
+.range-slider__range::-moz-range-thumb:hover {
+  background: #1abc9c;
+}
+.range-slider__range:active::-moz-range-thumb {
+  background: #1abc9c;
+}
+.range-slider__range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+}
+
+.range-slider__value {
+  display: none;
+  position: relative;
+  width: 60px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+.range-slider__value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+  content: '';
+}
+
+::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+
+.betSliderDiv {
+	width: 70%; padding-bottom: 10px;
+}
+
+@media (max-width: 667px) {
+.betBalance {
+	padding-top: 10px; padding-left: 10px; position: relative;
+}
+.betSliderDiv {
+	width: 90%; padding-bottom: 10px;
+}
+.headerImg {
+	float: none;
+}
+.content {
+	width: 90%;
+}
+.tabButton {
+border-radius: 100px; width: 108px; height: 40px;
+font-size: 10px;
+}
+
+.tabButton2 {
+border-radius: 100px; width: 108px; height: 40px;
+font-size: 10px;
+}
+.headerBanner {
+	background-image: url(images/headerBannerBg.jpg); height: 304px; text-align: left; padding-left: 20px; padding-right: 20px;
+}
+.headerTitle {
+	font-size: 24px; line-height: 32px; font-weight: bold; color: white;
+}
+.headerTxt {
+	font-size: 14px; line-height: 22px;
+}
+.headerImg {
+	width: 150;
+}
+
+	#betAmount {
+		width: 120px;
+	}
+.range-slider__range {
+  -webkit-appearance: none;
+  width: calc(100% - (53px));
+  height: 10px;
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+	#rollResultTitle {
+		padding-top: 30px;
+	}
+
+	#introDiv {
+		top: 0px; position: relative;
+	}
+
+	.yourProfileOuter {
+		margin: 0px; padding-right: 0px;
+	}
+	.currentRoundOuter {
+		margin: 0px; padding-left: 0px;
+	}
+	.currentRoundInner{
+		margin-top: 10px;
+	}
+	
+	.prizeTotals {
+		font-size: 20px;
+	}
+	
+	.keysLabel {
+		font-size: 1.2em; color: white;
+		text-align: center;
+		margin-top: 2px;
+	}
+	.infoDiv {
+		width: 80%;
+	}
+
+   #flag-english {
+    width: 30px;
+   }
+   #flag-russian {
+    width: 30px
+   }
+   #flag-chinese {
+    width: 30px
+   }
+   #introDiv {
+   	margin-left: 10px;
+   	margin-right: 10px;
+   }
+}
+
+
+
+.goog-te-banner-frame {display:none;}
+
+#goog-gt-tt {display:none!important;visibility:hidden!important;}
+
+.google_translate_element {
+  position: relative;
+  left: 350px;
+  top: -40px;
+  /*
+  position: absolute;
+  bottom: 2px;
+  right: 16px!important;
+  */
+  z-index: 99999;
+
+}
+
+.google_translate_element_final {
+
+  position: absolute;
+  bottom: 2px;
+  right: 16px!important;
+
+  z-index: 99999;
+}
+
+
+.goog-te-gadget {
+
+  font-family: Roboto, 'Open Sans', sans-serif!important;
+  text-transform: uppercase;
+}
+.goog-te-gadget-simple  {
+  background-color: rgba(200,200,200,0.20)!important;
+  border: 1px solid rgba(100,100,100,0.50) !important;
+  padding: 8px!important;
+  border-radius: 4px!important;
+  font-size: 1rem!important;
+  line-height:1.2rem!important;
+  display: inline-block;
+  cursor: pointer;
+  zoom: 1;
+
+}
+.goog-te-menu2 {
+  max-width: 100%;
+  height: 100%;
+
+}
+.goog-te-menu-value {
+
+  color: #444 !important;
+    &:before {
+    font-family: 'Material Icons';
+    content: "\E927";
+    margin-right: 16px;
+    font-size: 1rem;
+    vertical-align: -10px;
+  } 
+}
+.goog-te-menu-value span:nth-child(5) {
+  display:none;
+}
+.goog-te-menu-value span:nth-child(3) {
+  border:none!important;
+  font-family: 'Material Icons';
+  &:after {
+    font-family: 'Material Icons';
+    content: "\E5C5";
+    font-size: 1rem;
+    avertical-align: -6px;
+  }  
+}
+
+/*
+.goog-te-gadget-icon {
+    background-image: url(https://placehold.it/32)!important;
+    background-position: 0px 0px;
+    height: 0px;f
+    width: 0px;
+    margin-right: 8px!important;
+    display: none;
+}
+*/
+
+// ============ HIDE TOP BAR ============ 
+.goog-te-banner-frame.skiptranslate {display: none!important;} 
+body {top: 0px!important;}
+
+
+
+
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+<div id="page">
+
+
+  <div style="position: fixed; width: 100%; z-index: 99999; height: 48px;">
+      <div class="top-bar2">
+	    <img src="images/trongamer-logo.png" width="200" class="logo"/><span class="tronGamerLogo">.DICE</span>
+
+	    <div clas="flags" style="position: fixed; right: 15px; top:0px;">
+	      <img src="images/flag-english.png" id="flag-english"/>
+	      <img src="images/flag-russian.png" id="flag-russian"/>
+	      <img src="images/flag-chinese.png" id="flag-chinese"/>
+	    </div>
+	  </div>
+  </div>
+
+  	<br/><br/><br/>
+
+
+  	<center>
+  		<div class="column row content headerBanner">
+
+  			<h1 class="headerTitle" id="headerTitle">The Ultimate <span class="notranslate">FOMO</span></h1>
+  			<img src="images/hashfomo.png" class="headerImg" />
+  			<p class="headerTxt" id="headerIntro">
+  				-> The dividend game with the highest community giveback - 95%<br/>
+  				-> Dice with the lowest house edge - 1%<br/>
+  				-> Dice and Bankers Card profit goes to the dividend pool to sustain dividends<br/>
+  				-> Grand Pot rewards big players
+  			</p>
+  		</div>
+  	</center>
+  	<br/>
+  	<center>
+  		<button class="tabButton notranslate" id="333Btn" onclick="document.location.href='trongamerbankers.htm';">333</button>
+
+  		<button class="tabButton2 notranslate" id="DiceBtn" onclick="document.location.href='trongamerdice.htm';">Dice</button>
+
+  		<button class="tabButton notranslate" id="BankersBtn" onclick="document.location.href='trongamerpoker.htm';">Bankers Cards</button>
+  	</center>
+  	<br/>
+
+	<center>
+	<div class="column row content hide" style="padding: 8px;" >
+		<div class="grid-x text-left" >
+			<div class="cell small-12 ">
+				<h3 style="font-size: 18px; line-height: 22px; font-weight: bold; color: white; padding-top: 10px;" id="socialTitle">Dice Down For Maintenance</h3>
+
+
+
+			  	<div class="cell">
+			  		<br/>
+			  		<p class="smallTxt">
+			  			We'll be back soon!
+			  		</p>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	</center>
+	<br/>
+
+
+	<center>
+	<div class="column row content" >
+		<div class="grid-x text-center notranslate"  >
+
+		  <div class="cell small-6 medium-3" style="padding-bottom: 10px;" >
+		  	<span id="totalRolls">Total Rolls</span>
+		  	
+		  	<br/>
+		  	<span id="totalPlays" class="gameHeaderTxt notranslate odometer">423</span>
+		  	<!--<span id="maxWin" class="headerTxt notranslate">-</span><span class="fullSize"> TRX</span>-->
+
+		  </div>
+
+		  <div class="cell small-6 medium-3" style="padding-bottom: 10px;" >
+		  	<span id="totalWonLabel">Total Won</span>
+		  	
+		  	<br/>
+		  	
+		  	<span id="totalWon" class="gameHeaderTxt notranslate odometer">13543.23</span><span class="fullSize"> TRX</span>
+		  	
+		  </div>
+
+
+		  <div class="cell small-6 medium-3" style="padding-bottom: 10px;">
+
+		  	<span id="topWinLabel">Top Win</span>
+		  	<br/>
+		  	<span id="topWin" class="gameHeaderTxt odometer">1432.32</span><span class="fullSize"> TRX</span>
+
+		  </div>
+		  <div class="cell small-6 medium-3 currentWinnerRow" style="padding-bottom: 10px;">
+
+		  	<span id="topPlayerLabel">Top Player</span>
+		  	<br/>
+		  	<span id="topPlayer" class="gameHeaderTxt">TRVkMHsWLx...</span></div>
+
+		</div>
+
+	</div>
+</center>
+<br/>
+
+<center>
+<div class="column row content">
+
+	<div class="grid-x text-center notranslate"  >
+		<div class="cell small-6 medium-3 text-center" style="font-size: 14px; padding-top: 0px; padding-bottom: 20px;">
+		  	<span id="houseMoneyLabel">House Money</span>
+		  	<br/>
+		  	<span id="houseMoney" class="headerTxt2 odometer">4234764.23</span><span class="fullSize2"> TRX</span>
+		</div>
+		<div class="cell small-6 medium-3 text-center" style="font-size: 14px; padding-top: 0px; padding-bottom: 20px;">
+		  	<span id="divsTo333">24 Hr Dividends to GAME Holders</span>
+		  	<br/>
+		  	<span id="totalDivs" class="headerTxt2 odometer">20423</span><span class="fullSize2"> TRX</span>
+		</div>
+		<div class="cell small-12 medium-6 text-left">
+			<div id="introDiv" class="translate">
+<strong>~ Part of TronGamer Network</strong><br/>
+~ Profits feed back into the TronGamer Dividend Pool!<br/>
+			</div>
+		</div>
+	</div>
+</div>
+</center>
+<br/>
+
+<center>
+<div class="column content" >
+
+	<div class="grid-x text-center notranslate"  >
+		<div class="cell small-12 ">
+			<h3 style="font-size: 24px; line-height: 30px; font-weight: bold; color: white; padding-top: 10px;" id="realDiceTitle">REALDice</h3>
+
+		</div>
+
+		<div class="cell small-12 medium-12 large-6 ">
+			<h4 id="rollTypeTitle">ROLL UNDER TO WIN</h4>
+			<span id="rollUnderToWin" class="hide">ROLL UNDER TO WIN</span>
+			<span id="rollOverToWin" class="hide">ROLL OVER TO WIN</span>
+
+			<span id="rollNumber">50</span>
+
+			<div class="range-slider">
+			  <input class="range-slider__range" id="rangeSelector" type="range" value="50" min="0" max="99">
+			  <span class="range-slider__value hide" id="slider__value">0</span>
+			</div>
+
+			<center>
+			<label id="rollType" class="switch-light switch-candy" onclick="" 
+			style="width: 50%; padding-top: 10px; cursor: pointer;">
+			  <input type="checkbox" id="rollTypeInput" >
+			  <strong style="color: white;" id="rollTypeLabel">
+			    Roll Type
+			  </strong>
+			  <span>
+			    <span id="under">Under</span>
+			    <span id="over">Over</span>
+			    <a></a>
+			  </span>
+			</label>
+			</center>
+
+			<div class="show-for-small-only" style="margin-top: 20px; background-color: #1C2137; width: 100%; height: 15px;">&nbsp;</div>
+		</div>
+
+		<div class="cell small-12 medium-12 large-6 ">
+
+			<h4 id="rollResultTitle">ROLL RESULT</h4>
+			<span id="rollResult" class="odometer">0</span>
+
+			<div class="diceContent">
+			  <div class="die" id="die1">
+			    <figure class="face face-0"></figure>
+			    <figure class="face face-1"></figure>
+			    <figure class="face face-2"></figure>
+			    <figure class="face face-3"></figure>
+			    <figure class="face face-4"></figure>
+			    <figure class="face face-5"></figure>
+			    <figure class="face face-6"></figure>
+			    <figure class="face face-7"></figure>
+			    <figure class="face face-8"></figure>
+			    <figure class="face face-9"></figure>
+			  </div>
+			  
+			  <div class="die die2" id="die2">
+			    <figure class="face face-0 face2"></figure>
+			    <figure class="face face-1 face2"></figure>
+			    <figure class="face face-2 face2"></figure>
+			    <figure class="face face-3 face2"></figure>
+			    <figure class="face face-4 face2"></figure>
+			    <figure class="face face-5 face2"></figure>
+			    <figure class="face face-6 face2"></figure>
+			    <figure class="face face-7 face2"></figure>
+			    <figure class="face face-8 face2"></figure>
+			    <figure class="face face-9 face2"></figure>
+			  </div>
+			</div>
+
+
+
+			<div class="grid-x text-center notranslate"  >
+				<div class="cell small-4 medium-4 large-4 betDetailTitle" id="payoutMultiplier">
+					Payout multiplier
+				</div>
+
+				<div class="cell small-4 medium-4 large-4 betDetailTitle" id="winChanceLabel">
+					Win Chance %
+				</div>
+
+				<div class="cell small-4 medium-4 large-4 betDetailTitle" id="expectedPayout">
+					Expected Payout
+				</div>
+				<div class="cell small-4 medium-4 large-4 betDetailStat">
+					<span id="multiplier">x1.98</span>
+				</div>
+
+				<div class="cell small-4 medium-4 large-4 betDetailStat">
+					<span id="winChance">50%</span>
+				</div>
+
+				<div class="cell small-4 medium-4 large-4 betDetailStat">
+					<span id="payout">9.9</span> TRX
+				</div>
+			</div>
+	
+
+
+		</div>
+		<br/>&nbsp;
+		<br/>
+		<div class="cell small-12 medium-12 large-12 " >
+			<center>
+			<div class="grid-x notranslate" >
+				<div class="small-1 medium-4"></div>
+				<div class="small-1 text-right">
+					<label for="betAmount"  style="font-size: 16px; font-weight: bold; line-height: 40px; color: white;" onchanhge="betChange();" id="betLabel">Bet:&nbsp;</label>
+				</div>
+				<div class="small-4 medium-2 text-left" style="float: left; padding-left: 15px;">
+					<input type="number" id="betAmount" step="5" min="5" value="5"/>
+				</div>
+				<div class="small-6 medium-5 text-left smallTxt betBalance notranslate"  >
+				 (<span id="balanceLabel">Balance</span>: <span id="balance" class="notranslate">-</span> TRX)</div>
+			</div>
+			</center>
+		</div>
+
+		<div class="cell small-12 medium-12 large-12 " >
+			<center>
+				<div class="grid-x notranslate betSliderDiv"  >
+
+					<div class="small-4 medium-4 text-right" style="padding-right: 20px;" >
+						<span id="rangeSliderMin" >5 TRX</span>
+					</div>
+					<div class="small-4 medium-4 "  >
+						<center>
+							<div class="range-slider2">
+							  <input class="range-slider__range" style="width: 100%;" id="rangeSelector2" type="range" value="5" min="5" max="100" step="5">
+							  <span class="range-slider__value hide" id="slider__value2">0</span>
+							</div>
+						</center>
+					</div>
+					<div class="small-4 medium-4 " style="text-align: left; padding-left: 10px;" >
+						<span id="rangeSliderMax">100 TRX</span>
+					</div>
+					<div class="small-12">
+						<span class="smallTxt" style="padding-bottom: 0px; padding-top: 0px; margin-top: 0px;" id="maxBetLabel">
+						(Max bet limited to win no more than 1/200 of house money)
+						</span>						
+					</div>
+				</div>
+
+
+			</center>
+
+		</div>
+
+
+		<div class="cell small-12 medium-12 large-12 ">
+			<button class="button success" style="width: 200px;" id="roll">ROLL</button>
+
+			
+		</div>
+		
+	</div>
+</div>
+</center>
+<br/>
+<center>
+<div class="column row content" style="padding: 8px;" >
+	<div class="grid-x text-left" >
+		<div class="cell small-12 ">
+
+			<h3 style="font-size: 18px; line-height: 22px; font-weight: bold; color: white; padding-top: 10px;">Dice Rolls</h3>
+					
+
+	  		<div id="eventsParent" style="height: 350px;">
+
+		  		<table class="table2 smallTxt notranslate" id="eventsTable">
+		  			<thead >
+		  				<tr  style="padding-bottom: 0px; padding-top: 0px; background: #141726; color: rgba(255,255,255,0.5); border: 0px;">
+		  				<td style="width: 120px;" id="resultsPlayer">Player</td>
+		  				<td style="width: 80px;" id="resultsPrediction">Prediction</td>
+		  				<td style="width: 80px; text-align: left;" id="resultsResults">Result</td>
+		  				<td style="width: 80px;" id="resultsBet">Bet</td>
+		  				<td style="width: 80px;" id="resultsPayout">Payout</td>
+		  				</tr>
+
+		  			</thead>
+		  			<tbody style="text-align: left;">
+		  			</tbody>
+		  		</table>
+		  	</div>
+
+
+
+		</div>
+	</div>
+</div>
+</center>
+
+	<br/>
+
+<center>
+<div class="column row content" style="padding: 8px; ">
+
+	<div class="grid-x text-center notranslate"  >
+
+		<div class="cell small-12 ">
+			<h3 style="font-size: 18px; line-height: 22px; font-weight: bold; color: white; padding-top: 10px;" id="yourProfile">Your Profile</h3>
+		</div>
+
+		<div class="cell small-12 medium-6 ">
+			<div style="text-align: left; padding: 10px;">
+				<span id="yourAddress">Address</span>: <span class="notranslate" id="playerAddress">0x00</span><br/>
+				<span id="vanityName">Vanity Name</span>: <span class="notranslate" id="vanityNameDisplay" style="color:red;">--</span> 
+				<button class="tiny button" style="height: 20px; padding: 2px; margin-top: 4px; margin-bottom: 0px;" id="buyVanity">Purchase</button>
+				<a href="#" onclick="showVanityHelp();"><img src="images/icon-info.png" style="left: -2px; top: -2px; position: relative;" width="15" height="15" border="0"/></a>
+				<br/>
+
+				<span id="yourTotalRolls">Total Rolls</span>: <span class="notranslate" id="playerRolls">-</span><br/>
+				<span id="yourTotalStaked">Total Staked</span>: <span class="notranslate" id="playerStaked">-</span> TRX<br/>
+				<span id="yourTotalWon">Total Won</span>: <span class="notranslate" id="playerWon">-</span> TRX<br/>
+				<span id="yourTotalLosses">Total Losses</span>: <span class="notranslate" id="playerLosses">-</span> TRX<br/>
+				<br/>
+			</div>
+
+			<div class="show-for-small-only" style="margin-top: 20px; background-color: #1C2137; width: 100%; height: 15px;">&nbsp;</div>
+		</div>
+
+		<div class="cell small-12 medium-6 ">
+			<div style="text-align: left; padding: 10px;">
+				<strong id="yourRefURL">Your Referral URL</strong>
+				<br/>
+  				<span id="refTxt">Earn 3% Referral Bonus on Every Investment into the main 333 Game!</span>
+				<div class="input-group" >
+				  <input type="text" style="width: 120px; font-size: 1em; height: 30px;" class="input-group-field" id="refidmobile" value="https://trongamer.network/?tron="/>
+				  <div class="input-group-button">
+				    <button class="btn button" data-clipboard-target="#refidmobile" type="reset" id="copyRefMobile" ><i class="far fa-copy"></i>
+				    </button>
+				  </div>
+				</div>
+
+			</div>
+		  	
+		</div>
+
+	</div>
+</div>
+</center>
+<br/>
+
+
+
+	<center>
+	<div class="column row content " style="padding: 8px;" >
+		<div class="grid-x text-left" >
+			<div class="cell small-12 ">
+				<h3 style="font-size: 18px; line-height: 22px; font-weight: bold; color: white; padding-top: 10px;" id="socialTitle">Social Media Channels</h3>
+
+
+
+			  	<div class="cell">
+			  		<br/>
+			  		<p id="socialContent">
+			  			Join us on our Telegram channel for tips, news and more game chat: <a href="https://t.me/TronGamerNetwork" target="_new">https://t.me/TronGamerNetwork</a>
+			  		</p>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</div>
+	</center>
+
+	<br/>
+	<center>
+	<div class="column row content " style="padding: 8px;" >
+		<div class="grid-x text-left" >
+			<div class="cell small-12 ">
+				<h3 style="font-size: 18px; line-height: 22px; font-weight: bold; color: white; padding-top: 10px;" id="socialTitle">Contracts</h3>
+
+
+
+			  	<div class="cell">
+			  		<br/>
+			  		<p class="smallTxt">
+			  			TRONWIN:333 <a href="https://tronscan.org/#/contract/TEKw3NeRZZEiAj8SpvsMV8j8XWiC2813d3" target="_new">TEKw3NeRZZEiAj8SpvsMV8j8XWiC2813d3</a>
+			  			<br/><br/>
+			  			TRONWIN:DICE <a href="https://tronscan.org/#/contract/TRUkR1AUsPTd6PovKgQ89H3pPmqQPRWTgu" target="_new">TRUkR1AUsPTd6PovKgQ89H3pPmqQPRWTgu</a>
+			  			<br/><br/>
+			  			<strong>Verification</strong><br/>
+			  			All contracts have been security audited and approved by the P3T Team.  <!--You can also review the full source code of the main TRONWIN:333 contract yourself which available through TronEye below:-->
+			  			<!--<br/><br/>
+			  			Public Verification: <a href="https://troneye.com/reveal?address=TEKw3NeRZZEiAj8SpvsMV8j8XWiC2813d3" target="_new">TronEye</a>-->
+			  		</p>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	</center>
+
+</div>
+
+
+<br/><br/>
+
+<div class="reveal" id="notConnectedModel" aria-labelledby="notConnectedHeader" data-reveal>
+
+	<h4 >Not Connected to Tron Mainnet</h4>
+	<p class="smallTxt">
+		It looks like your not connected to the Tron Mainnet at the moment!
+	</p>
+	<p class="smallTxt">
+		To play <strong>TronWin</strong> you must be connected to the Tron Blockchain mainnet - using an Wallet or Browser such as Metamask.
+	</p>
+	<p class="smallTxt">
+		If you already are using a Tron enabled browser or wallet please ensure you are logged into your account and using the Mainnet - and then refresh this page.
+	</p>
+	<p class="smallTxt">
+		The main game features will be disabled, and no game stats will be displayed until you connect.
+	</p>
+
+	<center><button type="button" aria-label="Close" data-close class="small2 button rounded2 bordered shadow warning">Continue</button></center>
+
+	<p class="smallTxt">
+		Contact us if you need any help:<br/>
+		<center  class="smallTxt">
+			<a href="mailto:support@tronwin.app">support@tronwin.app</a>
+				&nbsp;-&nbsp;
+			<a href="https://t.me/TronWinApp" target="_new">Telegram</a>
+				<!--&nbsp;-&nbsp;
+			<a href="https://discord.gg/" target="_new">Discord</a>-->
+		</center>
+	</p>
+	<button class="close-button" data-close aria-label="Close" type="button">
+	<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+
+
+
+
+<div id="google_translate_element" style="display:none"></div>
+
+<div class="reveal" id="vanityHelp" aria-labelledby="completeHeader" data-reveal>
+
+	<h4>Vanity Names</h4>
+	<p class="smallTxt">
+		Vanity Names allow you use a name of your choice within the game instead of your Tron Wallet address.  You can then use this on your Referral links that you share (To earn 3% commission on the main 333 game!).
+	</p>
+	<p class="smallTxt">
+		Buy a Vanity Name for just 100 $TRX!
+	</p>
+
+
+	<center>
+		<button class="success button" id="buyVanity2" style="width: 200px;">Buy Vanity Name</button>
+		<button type="button" style="width: 200px;" aria-label="Close" data-close class="button warning">Back</button></center>
+
+	<p class="smallTxt">
+		Contact us if you need any help:<br/>
+		<center  class="smallTxt">
+			<a href="mailto:support@tronWin.app">support@tronwin.app</a>
+				&nbsp;-&nbsp;
+			<a href="https://t.me/TronWinApp" target="_new">Telegram</a>
+				<!--&nbsp;-&nbsp;
+			<a href="https://discord.gg/" target="_new">Discord</a>-->
+		</center>
+	</p>	
+	<button class="close-button" data-close aria-label="Close" type="button">
+	<span aria-hidden="true">&times;</span>
+	</button>
+
+</div>
+
+<div class="reveal" id="vanityBuyDiv" aria-labelledby="completeHeader" data-reveal>
+
+	<h4>Vanity Names</h4>
+	<p class="smallTxt">
+		Vanity Names allow you use a name of your choice within the game instead of your Tron Wallet address.  You can then use this on your Referral links that you share (To earn 3% commission on the main 333 game!).
+	</p>
+	<p class="smallTxt">
+		Buy a Vanity Name for just 100 $TRX!
+	</p>
+
+	<input type="text" name="vanityName" id="vanityName" size="32" maxlength="32" width="32" style="width: 200px; font-size: 1em; height: 25px;" />
+	
+
+	<br/>
+
+	<center>
+		<button class="button success" style="width: 150px;"  id="unlockVanity" >Submit Name</button>  	
+		<button type="button" style="width: 150px;" aria-label="Close" data-close class="button warning">Cancel</button></center>
+
+
+
+	<p class="smallTxt">
+		Contact us if you need any help:<br/>
+		<center  class="smallTxt">
+			<a href="mailto:support@tronwin.app">support@tronwin.app</a>
+				&nbsp;-&nbsp;
+			<a href="https://t.me/TronWinApp" target="_new">Telegram</a>
+				<!--&nbsp;-&nbsp;
+			<a href="https://discord.gg/" target="_new">Discord</a>-->
+		</center>
+	</p>	
+	<button class="close-button" data-close aria-label="Close" type="button">
+	<span aria-hidden="true">&times;</span>
+	</button>
+
+</div>
+
+
+
+  <div class="reveal topReveal" id="errorMessage" aria-labelledby="errorHeader" data-reveal>
+
+        <h5>
+          <span id="errorHeader"></span>
+        </h5>
+
+        <p id="errorContent">
+          
+        </p>
+
+
+        <span class="smallTxt">
+			<strong>Your Referral URL</strong>
+			<br/>
+				Earn 3% Referral Bonus on Every Purchase Made into the main 333 Game!
+
+			<div class="input-group">
+			  <input type="text" style="width: 120px; font-size: 1em; height: 30px;" class="input-group-field" id="refid2" value="https://tronwin.app/?tron="/>
+			  <div class="input-group-button">
+			    <button class="btn button" data-clipboard-target="#refid2" type="reset" id="copyRef2" ><i class="far fa-copy"></i>
+			    </button>
+
+
+			    <div id="ThreeJS" style="position: absolute; left:0px; top:0px"></div>
+
+			  </div>
+			</div>
+		</span>
+
+
+        <center class="smallTxt" >
+            <button type="button" id="errorContinue" class="small button bordered success" data-close>CONTINUE</button>
+            <br/>
+            
+              <a href="mailto:support@
+              .app">support@tronwin.app</a>
+                &nbsp;-&nbsp;
+              <a href="https://t.me/TronWinApp" target="_new">Telegram</a>
+                <!--&nbsp;-&nbsp;
+              <a href="https://discord.gg/" target="_new">Discord</a>-->
+
+
+        </center>
+
+
+  </div>
+
+<button class="button" onclick="finalizeBet();">finalizeBet</button>
+<button class="button" onclick="getPlayerHash();">getPlayerHash</button>
+<button class="button" onclick="debug_genResult();">debug_genResult</button>
+<button class="button" onclick="getPlayerHashAtPos();">getPlayerHashAtPos</button>
+<button class="button" onclick="pendingPlayerRollsLen();">pendingPlayerRollsLen</button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+<script src="js/tronweb3.1.31.js"></script>
+
+
+
+<script src="js/abi.js?a=2"></script>
+<script src="js/abiDice.js?a=3"></script>
+<script src="js/abiVault.js?a=1"></script>
+
+<script src="js/vendor/jquery.js"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="js/jquery.i18n.js"></script>
+<script type="text/javascript" src="js/jquery.i18n.properties.js"></script>
+
+
+
+<script src="js/jquery.toast.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/jquery.timeago.js" type="text/javascript"></script>
+<script src="js/tableHeadFixer.js" type="text/javascript"></script>
+<script src="js/odometer.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.2.5/polyfill.min.js"></script>
+
+<script src="js/mainTronWinDice.js?a=22"></script>
+
+
+
+</body>
+</html>

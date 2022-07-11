@@ -1,0 +1,594 @@
+2018-05-12T11:55:40.656Z - info: Restarting at block#:2249336
+2018-05-12T11:55:44.601Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265486, transactionHash=0x092455d5064a892dae872d02bdfd2aa1fa687810c1a2e8932e71462813afc777, transactionIndex=5, blockHash=0x485c0ed99e7744241675a7bd6cec74592bb5c25379df9266cd18bd4fb0527b2c, logIndex=6, removed=false, id=log_652cb871, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:55:44.604Z - info: Block #:2265486
+2018-05-12T11:55:44.604Z - info: VARS:
+2018-05-12T11:55:44.604Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:55:44.604Z - info: :100
+2018-05-12T11:55:44.605Z - info: :randomNumberCallback
+2018-05-12T11:55:44.605Z - info: :.
+2018-05-12T11:55:44.605Z - info: :int
+2018-05-12T11:55:44.605Z - info: :0
+2018-05-12T11:55:44.606Z - info: :100
+2018-05-12T11:55:44.606Z - info: :0
+2018-05-12T11:55:44.606Z - info: END
+2018-05-12T11:55:44.910Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265488, transactionHash=0x59c3287ce5392b4fb7a8e3552d002f5958051518f751ea25d60bd53910c03047, transactionIndex=50, blockHash=0x3daa8a72713041c89301531bdd9a03a461e7e8eab4cb9666cbb9a07b8fc07a3e, logIndex=53, removed=false, id=log_68f63cdc, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:55:44.917Z - info: Block #:2265488
+2018-05-12T11:55:44.918Z - info: VARS:
+2018-05-12T11:55:44.921Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:55:44.923Z - info: :100
+2018-05-12T11:55:44.951Z - info: :randomStringCallback
+2018-05-12T11:55:44.952Z - info: :.
+2018-05-12T11:55:44.953Z - info: :str
+2018-05-12T11:55:44.953Z - info: :100
+2018-05-12T11:55:44.953Z - info: :0
+2018-05-12T11:55:44.954Z - info: :0
+2018-05-12T11:55:44.954Z - info: END
+2018-05-12T11:55:45.060Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265644, transactionHash=0x60c7450ba928fe9aacbf728e9246b09afc6f78e6efc617442de77e131a711e18, transactionIndex=44, blockHash=0xfacc747b44c05fe584cdc395f81741adf85546625a568ff36249d9cb5ceac0c3, logIndex=41, removed=false, id=log_29e9faaa, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:55:45.062Z - info: Block #:2265644
+2018-05-12T11:55:45.062Z - info: VARS:
+2018-05-12T11:55:45.075Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:55:45.088Z - info: :100
+2018-05-12T11:55:45.088Z - info: :randomNumberCallback
+2018-05-12T11:55:45.125Z - info: :.
+2018-05-12T11:55:45.130Z - info: :int
+2018-05-12T11:55:45.156Z - info: :0
+2018-05-12T11:55:45.156Z - info: :100
+2018-05-12T11:55:45.157Z - info: :0
+2018-05-12T11:55:45.157Z - info: END
+2018-05-12T11:55:45.242Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265698, transactionHash=0x4ab849790aaed51b656d966889dfcd3fa3121702fb15eb123cbcbce3dcc44f97, transactionIndex=27, blockHash=0x6e334d9b744e7a76f9539c1f8c512dfb9a36abbaf75623c770ef616fd3a44869, logIndex=8, removed=false, id=log_69d605df, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:55:45.243Z - info: Block #:2265698
+2018-05-12T11:55:45.243Z - info: VARS:
+2018-05-12T11:55:45.244Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:55:45.244Z - info: :100
+2018-05-12T11:55:45.259Z - info: :randomNumberCallback
+2018-05-12T11:55:45.259Z - info: :.
+2018-05-12T11:55:45.272Z - info: :int
+2018-05-12T11:55:45.273Z - info: :0
+2018-05-12T11:55:45.273Z - info: :100
+2018-05-12T11:55:45.274Z - info: :0
+2018-05-12T11:55:45.274Z - info: END
+2018-05-12T11:55:46.310Z - error: SQS Error InvalidParameterValue: Value 0x4ab849790aaed51b656d966889dfcd3fa3121702fb15eb123cbcbce3dcc44f97 for parameter MessageDeduplicationId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:55:46.384Z - error: SQS Error InvalidParameterValue: Value 0x60c7450ba928fe9aacbf728e9246b09afc6f78e6efc617442de77e131a711e18 for parameter MessageDeduplicationId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:55:46.407Z - error: SQS Error InvalidParameterValue: Value 0x092455d5064a892dae872d02bdfd2aa1fa687810c1a2e8932e71462813afc777 for parameter MessageDeduplicationId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:55:46.418Z - error: SQS Error InvalidParameterValue: Value 0x59c3287ce5392b4fb7a8e3552d002f5958051518f751ea25d60bd53910c03047 for parameter MessageDeduplicationId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:56:18.450Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265486, transactionHash=0x092455d5064a892dae872d02bdfd2aa1fa687810c1a2e8932e71462813afc777, transactionIndex=5, blockHash=0x485c0ed99e7744241675a7bd6cec74592bb5c25379df9266cd18bd4fb0527b2c, logIndex=6, removed=false, id=log_652cb871, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:56:18.452Z - info: Block #:2265486
+2018-05-12T11:56:18.453Z - info: VARS:
+2018-05-12T11:56:18.453Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:56:18.454Z - info: :100
+2018-05-12T11:56:18.455Z - info: :randomNumberCallback
+2018-05-12T11:56:18.456Z - info: :.
+2018-05-12T11:56:18.456Z - info: :int
+2018-05-12T11:56:18.457Z - info: :0
+2018-05-12T11:56:18.457Z - info: :100
+2018-05-12T11:56:18.458Z - info: :0
+2018-05-12T11:56:18.458Z - info: END
+2018-05-12T11:56:18.485Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265488, transactionHash=0x59c3287ce5392b4fb7a8e3552d002f5958051518f751ea25d60bd53910c03047, transactionIndex=50, blockHash=0x3daa8a72713041c89301531bdd9a03a461e7e8eab4cb9666cbb9a07b8fc07a3e, logIndex=53, removed=false, id=log_68f63cdc, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:56:18.486Z - info: Block #:2265488
+2018-05-12T11:56:18.486Z - info: VARS:
+2018-05-12T11:56:18.487Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:56:18.487Z - info: :100
+2018-05-12T11:56:18.487Z - info: :randomStringCallback
+2018-05-12T11:56:18.488Z - info: :.
+2018-05-12T11:56:18.488Z - info: :str
+2018-05-12T11:56:18.488Z - info: :100
+2018-05-12T11:56:18.488Z - info: :0
+2018-05-12T11:56:18.489Z - info: :0
+2018-05-12T11:56:18.489Z - info: END
+2018-05-12T11:56:18.507Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265644, transactionHash=0x60c7450ba928fe9aacbf728e9246b09afc6f78e6efc617442de77e131a711e18, transactionIndex=44, blockHash=0xfacc747b44c05fe584cdc395f81741adf85546625a568ff36249d9cb5ceac0c3, logIndex=41, removed=false, id=log_29e9faaa, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:56:18.508Z - info: Block #:2265644
+2018-05-12T11:56:18.509Z - info: VARS:
+2018-05-12T11:56:18.509Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:56:18.509Z - info: :100
+2018-05-12T11:56:18.509Z - info: :randomNumberCallback
+2018-05-12T11:56:18.510Z - info: :.
+2018-05-12T11:56:18.510Z - info: :int
+2018-05-12T11:56:18.510Z - info: :0
+2018-05-12T11:56:18.510Z - info: :100
+2018-05-12T11:56:18.510Z - info: :0
+2018-05-12T11:56:18.511Z - info: END
+2018-05-12T11:56:18.558Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265698, transactionHash=0x4ab849790aaed51b656d966889dfcd3fa3121702fb15eb123cbcbce3dcc44f97, transactionIndex=27, blockHash=0x6e334d9b744e7a76f9539c1f8c512dfb9a36abbaf75623c770ef616fd3a44869, logIndex=8, removed=false, id=log_69d605df, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:56:18.560Z - info: Block #:2265698
+2018-05-12T11:56:18.561Z - info: VARS:
+2018-05-12T11:56:18.562Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:56:18.563Z - info: :100
+2018-05-12T11:56:18.563Z - info: :randomNumberCallback
+2018-05-12T11:56:18.578Z - info: :.
+2018-05-12T11:56:18.578Z - info: :int
+2018-05-12T11:56:18.579Z - info: :0
+2018-05-12T11:56:18.579Z - info: :100
+2018-05-12T11:56:18.579Z - info: :0
+2018-05-12T11:56:18.579Z - info: END
+2018-05-12T11:56:18.842Z - error: SQS Error InvalidParameterValue: Value 0x092455d5064a892dae872d02bdfd2aa1fa687810c1a2e8932e71462813afc777 for parameter MessageDeduplicationId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:56:18.886Z - error: SQS Error InvalidParameterValue: Value 0x60c7450ba928fe9aacbf728e9246b09afc6f78e6efc617442de77e131a711e18 for parameter MessageDeduplicationId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:56:18.904Z - error: SQS Error InvalidParameterValue: Value 0x59c3287ce5392b4fb7a8e3552d002f5958051518f751ea25d60bd53910c03047 for parameter MessageDeduplicationId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:56:18.919Z - error: SQS Error InvalidParameterValue: Value 0x4ab849790aaed51b656d966889dfcd3fa3121702fb15eb123cbcbce3dcc44f97 for parameter MessageDeduplicationId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:58:24.895Z - info: Restarting at block#:2249336
+2018-05-12T11:58:26.656Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265486, transactionHash=0x092455d5064a892dae872d02bdfd2aa1fa687810c1a2e8932e71462813afc777, transactionIndex=5, blockHash=0x485c0ed99e7744241675a7bd6cec74592bb5c25379df9266cd18bd4fb0527b2c, logIndex=6, removed=false, id=log_652cb871, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:58:26.728Z - info: Block #:2265486
+2018-05-12T11:58:26.731Z - info: VARS:
+2018-05-12T11:58:26.735Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:58:26.735Z - info: :100
+2018-05-12T11:58:26.735Z - info: :randomNumberCallback
+2018-05-12T11:58:26.735Z - info: :.
+2018-05-12T11:58:26.736Z - info: :int
+2018-05-12T11:58:26.736Z - info: :0
+2018-05-12T11:58:26.736Z - info: :100
+2018-05-12T11:58:26.736Z - info: :0
+2018-05-12T11:58:26.738Z - info: END
+2018-05-12T11:58:27.153Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265488, transactionHash=0x59c3287ce5392b4fb7a8e3552d002f5958051518f751ea25d60bd53910c03047, transactionIndex=50, blockHash=0x3daa8a72713041c89301531bdd9a03a461e7e8eab4cb9666cbb9a07b8fc07a3e, logIndex=53, removed=false, id=log_68f63cdc, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:58:27.154Z - info: Block #:2265488
+2018-05-12T11:58:27.155Z - info: VARS:
+2018-05-12T11:58:27.155Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:58:27.155Z - info: :100
+2018-05-12T11:58:27.155Z - info: :randomStringCallback
+2018-05-12T11:58:27.156Z - info: :.
+2018-05-12T11:58:27.156Z - info: :str
+2018-05-12T11:58:27.156Z - info: :100
+2018-05-12T11:58:27.156Z - info: :0
+2018-05-12T11:58:27.157Z - info: :0
+2018-05-12T11:58:27.157Z - info: END
+2018-05-12T11:58:27.205Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265644, transactionHash=0x60c7450ba928fe9aacbf728e9246b09afc6f78e6efc617442de77e131a711e18, transactionIndex=44, blockHash=0xfacc747b44c05fe584cdc395f81741adf85546625a568ff36249d9cb5ceac0c3, logIndex=41, removed=false, id=log_29e9faaa, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:58:27.206Z - info: Block #:2265644
+2018-05-12T11:58:27.206Z - info: VARS:
+2018-05-12T11:58:27.206Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:58:27.207Z - info: :100
+2018-05-12T11:58:27.207Z - info: :randomNumberCallback
+2018-05-12T11:58:27.207Z - info: :.
+2018-05-12T11:58:27.207Z - info: :int
+2018-05-12T11:58:27.207Z - info: :0
+2018-05-12T11:58:27.208Z - info: :100
+2018-05-12T11:58:27.208Z - info: :0
+2018-05-12T11:58:27.208Z - info: END
+2018-05-12T11:58:27.214Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265698, transactionHash=0x4ab849790aaed51b656d966889dfcd3fa3121702fb15eb123cbcbce3dcc44f97, transactionIndex=27, blockHash=0x6e334d9b744e7a76f9539c1f8c512dfb9a36abbaf75623c770ef616fd3a44869, logIndex=8, removed=false, id=log_69d605df, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T11:58:27.215Z - info: Block #:2265698
+2018-05-12T11:58:27.215Z - info: VARS:
+2018-05-12T11:58:27.216Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T11:58:27.216Z - info: :100
+2018-05-12T11:58:27.216Z - info: :randomNumberCallback
+2018-05-12T11:58:27.216Z - info: :.
+2018-05-12T11:58:27.216Z - info: :int
+2018-05-12T11:58:27.217Z - info: :0
+2018-05-12T11:58:27.217Z - info: :100
+2018-05-12T11:58:27.217Z - info: :0
+2018-05-12T11:58:27.217Z - info: END
+2018-05-12T11:58:27.808Z - error: SQS Error InvalidParameterValue: Value setRandomTriger_event for parameter MessageGroupId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:58:27.841Z - error: SQS Error InvalidParameterValue: Value setRandomTriger_event for parameter MessageGroupId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:58:27.857Z - error: SQS Error InvalidParameterValue: Value setRandomTriger_event for parameter MessageGroupId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T11:58:27.867Z - error: SQS Error InvalidParameterValue: Value setRandomTriger_event for parameter MessageGroupId is invalid. Reason: The request include parameter that is not valid for this queue type.
+    at Request.extractError (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/protocol/query.js:47:29)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:683:14)
+    at Request.transition (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/request.js:685:12)
+    at Request.callListeners (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+    at callNextListener (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at IncomingMessage.onEnd (/Users/danfield/Documents/df/eth/dev/DappBridge/node_modules/aws-sdk/lib/event_listeners.js:269:13)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+2018-05-12T12:02:50.917Z - info: Restarting at block#:2249336
+2018-05-12T12:02:53.968Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265486, transactionHash=0x092455d5064a892dae872d02bdfd2aa1fa687810c1a2e8932e71462813afc777, transactionIndex=5, blockHash=0x485c0ed99e7744241675a7bd6cec74592bb5c25379df9266cd18bd4fb0527b2c, logIndex=6, removed=false, id=log_652cb871, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T12:02:53.972Z - info: Block #:2265486
+2018-05-12T12:02:53.973Z - info: VARS:
+2018-05-12T12:02:53.973Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T12:02:53.974Z - info: :100
+2018-05-12T12:02:53.974Z - info: :randomNumberCallback
+2018-05-12T12:02:53.974Z - info: :.
+2018-05-12T12:02:53.974Z - info: :int
+2018-05-12T12:02:53.975Z - info: :0
+2018-05-12T12:02:53.975Z - info: :100
+2018-05-12T12:02:53.975Z - info: :0
+2018-05-12T12:02:53.976Z - info: END
+2018-05-12T12:02:54.411Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265488, transactionHash=0x59c3287ce5392b4fb7a8e3552d002f5958051518f751ea25d60bd53910c03047, transactionIndex=50, blockHash=0x3daa8a72713041c89301531bdd9a03a461e7e8eab4cb9666cbb9a07b8fc07a3e, logIndex=53, removed=false, id=log_68f63cdc, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T12:02:54.412Z - info: Block #:2265488
+2018-05-12T12:02:54.413Z - info: VARS:
+2018-05-12T12:02:54.413Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T12:02:54.413Z - info: :100
+2018-05-12T12:02:54.414Z - info: :randomStringCallback
+2018-05-12T12:02:54.414Z - info: :.
+2018-05-12T12:02:54.415Z - info: :str
+2018-05-12T12:02:54.416Z - info: :100
+2018-05-12T12:02:54.416Z - info: :0
+2018-05-12T12:02:54.416Z - info: :0
+2018-05-12T12:02:54.417Z - info: END
+2018-05-12T12:02:54.450Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265644, transactionHash=0x60c7450ba928fe9aacbf728e9246b09afc6f78e6efc617442de77e131a711e18, transactionIndex=44, blockHash=0xfacc747b44c05fe584cdc395f81741adf85546625a568ff36249d9cb5ceac0c3, logIndex=41, removed=false, id=log_29e9faaa, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T12:02:54.451Z - info: Block #:2265644
+2018-05-12T12:02:54.452Z - info: VARS:
+2018-05-12T12:02:54.452Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T12:02:54.452Z - info: :100
+2018-05-12T12:02:54.453Z - info: :randomNumberCallback
+2018-05-12T12:02:54.453Z - info: :.
+2018-05-12T12:02:54.453Z - info: :int
+2018-05-12T12:02:54.455Z - info: :0
+2018-05-12T12:02:54.456Z - info: :100
+2018-05-12T12:02:54.456Z - info: :0
+2018-05-12T12:02:54.456Z - info: END
+2018-05-12T12:02:54.479Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265698, transactionHash=0x4ab849790aaed51b656d966889dfcd3fa3121702fb15eb123cbcbce3dcc44f97, transactionIndex=27, blockHash=0x6e334d9b744e7a76f9539c1f8c512dfb9a36abbaf75623c770ef616fd3a44869, logIndex=8, removed=false, id=log_69d605df, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T12:02:54.484Z - info: Block #:2265698
+2018-05-12T12:02:54.484Z - info: VARS:
+2018-05-12T12:02:54.485Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T12:02:54.489Z - info: :100
+2018-05-12T12:02:54.490Z - info: :randomNumberCallback
+2018-05-12T12:02:54.496Z - info: :.
+2018-05-12T12:02:54.498Z - info: :int
+2018-05-12T12:02:54.498Z - info: :0
+2018-05-12T12:02:54.499Z - info: :100
+2018-05-12T12:02:54.500Z - info: :0
+2018-05-12T12:02:54.501Z - info: END
+2018-05-12T12:02:55.612Z - info: SQS Success d00c5016-3c73-4d54-bdff-ca9ed0135f7f
+2018-05-12T12:02:55.923Z - info: SQS Success 5902f5bb-1a01-464e-b2cc-e92cf3ea61d2
+2018-05-12T12:02:56.012Z - info: SQS Success e562bd36-9792-445b-886a-d9e0ddb11421
+2018-05-12T12:02:56.018Z - info: SQS Success a56d1ddf-fb41-4c7b-bef7-1e7f9df6ca2f
+2018-05-12T12:37:54.458Z - info: Restarting at block#:2265489
+2018-05-12T12:37:55.158Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265644, transactionHash=0x60c7450ba928fe9aacbf728e9246b09afc6f78e6efc617442de77e131a711e18, transactionIndex=44, blockHash=0xfacc747b44c05fe584cdc395f81741adf85546625a568ff36249d9cb5ceac0c3, logIndex=41, removed=false, id=log_29e9faaa, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T12:37:55.161Z - info: Block #:2265644
+2018-05-12T12:37:55.161Z - info: VARS:
+2018-05-12T12:37:55.161Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T12:37:55.162Z - info: :100
+2018-05-12T12:37:55.162Z - info: :randomNumberCallback
+2018-05-12T12:37:55.162Z - info: :.
+2018-05-12T12:37:55.162Z - info: :int
+2018-05-12T12:37:55.163Z - info: :0
+2018-05-12T12:37:55.163Z - info: :100
+2018-05-12T12:37:55.163Z - info: :0
+2018-05-12T12:37:55.163Z - info: END
+2018-05-12T12:37:55.285Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2265698, transactionHash=0x4ab849790aaed51b656d966889dfcd3fa3121702fb15eb123cbcbce3dcc44f97, transactionIndex=27, blockHash=0x6e334d9b744e7a76f9539c1f8c512dfb9a36abbaf75623c770ef616fd3a44869, logIndex=8, removed=false, id=log_69d605df, 0=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, 1=100, 2=randomNumberCallback, 3=int, 4=0, 5=100, 6=0, sender=0xfa8f6F12F719fa2046EC2b193041336F9ad61387, reward=100, callback_method=randomNumberCallback, random_type=int, param1=0, param2=100, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x000000000000000000000000fa8f6f12f719fa2046ec2b193041336f9ad61387000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d4e756d62657243616c6c6261636b0000000000000000000000000000000000000000000000000000000000000003696e740000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T12:37:55.286Z - info: Block #:2265698
+2018-05-12T12:37:55.287Z - info: VARS:
+2018-05-12T12:37:55.287Z - info: :0xfa8f6F12F719fa2046EC2b193041336F9ad61387
+2018-05-12T12:37:55.287Z - info: :100
+2018-05-12T12:37:55.287Z - info: :randomNumberCallback
+2018-05-12T12:37:55.288Z - info: :.
+2018-05-12T12:37:55.288Z - info: :int
+2018-05-12T12:37:55.288Z - info: :0
+2018-05-12T12:37:55.289Z - info: :100
+2018-05-12T12:37:55.289Z - info: :0
+2018-05-12T12:37:55.289Z - info: END
+2018-05-12T12:37:55.300Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2270569, transactionHash=0x25d2216a247d085b7614ad1451a93f14029dda8f644efa9e9143a45605ba727f, transactionIndex=3, blockHash=0x638739a98c4600a4618d8617238411cf632ee7d7c2db22ca1a4d79e1889b9461, logIndex=5, removed=false, id=log_2d9d35f0, 0=0x6B735F91b51255Fb616d0157292E4D44A832645D, 1=100, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0x6B735F91b51255Fb616d0157292E4D44A832645D, reward=100, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x0000000000000000000000006b735f91b51255fb616d0157292e4d44a832645d000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T12:37:55.301Z - info: Block #:2270569
+2018-05-12T12:37:55.301Z - info: VARS:
+2018-05-12T12:37:55.301Z - info: :0x6B735F91b51255Fb616d0157292E4D44A832645D
+2018-05-12T12:37:55.302Z - info: :100
+2018-05-12T12:37:55.302Z - info: :randomStringCallback
+2018-05-12T12:37:55.302Z - info: :.
+2018-05-12T12:37:55.302Z - info: :str
+2018-05-12T12:37:55.303Z - info: :100
+2018-05-12T12:37:55.303Z - info: :0
+2018-05-12T12:37:55.303Z - info: :0
+2018-05-12T12:37:55.303Z - info: END
+2018-05-12T12:37:56.029Z - info: SQS Success 9cc165cf-f2b5-4206-9284-55e83875e6cf
+2018-05-12T12:37:56.045Z - info: SQS Success 37f06334-988c-436d-8915-847ef6dbd374
+2018-05-12T12:37:56.049Z - info: SQS Success ef5b0b3b-d2b8-439f-bdab-fbd77518ff89
+2018-05-12T13:11:38.109Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2270709, transactionHash=0x39b4b7f50af137b638ae7d3dd39d9d1dcbe667c38a52e25b778e907d85f3a760, transactionIndex=5, blockHash=0xe368a04c5b1291449b29bf03cd88de91ddf1e9303a58247bd6b09fdde21b08e9, logIndex=6, removed=false, id=log_1ee9d558, 0=0x6B735F91b51255Fb616d0157292E4D44A832645D, 1=100, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0x6B735F91b51255Fb616d0157292E4D44A832645D, reward=100, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x0000000000000000000000006b735f91b51255fb616d0157292e4d44a832645d000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T13:11:38.141Z - info: Block #:2270709
+2018-05-12T13:11:38.143Z - info: VARS:
+2018-05-12T13:11:38.143Z - info: :0x6B735F91b51255Fb616d0157292E4D44A832645D
+2018-05-12T13:11:38.143Z - info: :100
+2018-05-12T13:11:38.144Z - info: :randomStringCallback
+2018-05-12T13:11:38.144Z - info: :.
+2018-05-12T13:11:38.144Z - info: :str
+2018-05-12T13:11:38.144Z - info: :100
+2018-05-12T13:11:38.145Z - info: :0
+2018-05-12T13:11:38.145Z - info: :0
+2018-05-12T13:11:38.145Z - info: END
+2018-05-12T13:11:38.656Z - info: SQS Success 0a816436-aafd-4381-a347-847555858413
+2018-05-12T13:17:50.097Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2270734, transactionHash=0x5a975d6b2f4de1238fcfda74ef4f76898154ab1ace294acc7ba682ca9c2a949b, transactionIndex=6, blockHash=0x60754171cb3d061e721c7812d5b55aa1f29217e49663354ec0bb949eb14aeaa0, logIndex=6, removed=false, id=log_327585fc, 0=0x6B735F91b51255Fb616d0157292E4D44A832645D, 1=100, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0x6B735F91b51255Fb616d0157292E4D44A832645D, reward=100, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x0000000000000000000000006b735f91b51255fb616d0157292e4d44a832645d000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T13:17:50.101Z - info: Block #:2270734
+2018-05-12T13:17:50.101Z - info: VARS:
+2018-05-12T13:17:50.101Z - info: :0x6B735F91b51255Fb616d0157292E4D44A832645D
+2018-05-12T13:17:50.102Z - info: :100
+2018-05-12T13:17:50.102Z - info: :randomStringCallback
+2018-05-12T13:17:50.102Z - info: :.
+2018-05-12T13:17:50.103Z - info: :str
+2018-05-12T13:17:50.103Z - info: :100
+2018-05-12T13:17:50.103Z - info: :0
+2018-05-12T13:17:50.103Z - info: :0
+2018-05-12T13:17:50.103Z - info: END
+2018-05-12T13:17:50.808Z - info: SQS Success 2bb4ab1f-0d4c-4949-b5f0-08bbc5585a4b
+2018-05-12T13:20:20.757Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2270744, transactionHash=0x9f6825b6e439fb64af8ffdb376d4df618a739fd253667b9a082e2a0270693e68, transactionIndex=7, blockHash=0x22981a335fd822ad03499127f0d8de986c6ce152b870c573c3c7c86f766fe085, logIndex=5, removed=false, id=log_03fad96f, 0=0x6B735F91b51255Fb616d0157292E4D44A832645D, 1=100, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0x6B735F91b51255Fb616d0157292E4D44A832645D, reward=100, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x0000000000000000000000006b735f91b51255fb616d0157292e4d44a832645d000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T13:20:20.761Z - info: Block #:2270744
+2018-05-12T13:20:20.761Z - info: VARS:
+2018-05-12T13:20:20.761Z - info: :0x6B735F91b51255Fb616d0157292E4D44A832645D
+2018-05-12T13:20:20.762Z - info: :100
+2018-05-12T13:20:20.762Z - info: :randomStringCallback
+2018-05-12T13:20:20.762Z - info: :.
+2018-05-12T13:20:20.762Z - info: :str
+2018-05-12T13:20:20.762Z - info: :100
+2018-05-12T13:20:20.763Z - info: :0
+2018-05-12T13:20:20.763Z - info: :0
+2018-05-12T13:20:20.763Z - info: END
+2018-05-12T13:20:21.307Z - info: SQS Success c98797aa-9bcb-4092-b691-edc146fc1f4f
+2018-05-12T13:28:05.107Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2270775, transactionHash=0xaa4692b17d143e34d9252ca8b5bbaa19354751e2befc5f59f08c1f69e6fba677, transactionIndex=4, blockHash=0xa05161b6b0c56fb4436bbd8a3277fadaca71c738518649ec4a0c9aec6da1617b, logIndex=6, removed=false, id=log_468d3fc3, 0=0x6B735F91b51255Fb616d0157292E4D44A832645D, 1=100, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0x6B735F91b51255Fb616d0157292E4D44A832645D, reward=100, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x0000000000000000000000006b735f91b51255fb616d0157292e4d44a832645d000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T13:28:05.110Z - info: Block #:2270775
+2018-05-12T13:28:05.110Z - info: VARS:
+2018-05-12T13:28:05.110Z - info: :0x6B735F91b51255Fb616d0157292E4D44A832645D
+2018-05-12T13:28:05.111Z - info: :100
+2018-05-12T13:28:05.111Z - info: :randomStringCallback
+2018-05-12T13:28:05.111Z - info: :.
+2018-05-12T13:28:05.112Z - info: :str
+2018-05-12T13:28:05.112Z - info: :100
+2018-05-12T13:28:05.112Z - info: :0
+2018-05-12T13:28:05.112Z - info: :0
+2018-05-12T13:28:05.112Z - info: END
+2018-05-12T13:28:05.714Z - info: SQS Success 25edf68c-6e02-47a9-99df-45cd0bb53858
+2018-05-12T13:30:49.179Z - info:  address=0x720bEbf5E8Fe4c7302F8dab8742aAD06421C8905, blockNumber=2270786, transactionHash=0xd8d5f40cc0ff1a940110557db3f19297d0ae47a0f9fe78bae915cec684279ddd, transactionIndex=3, blockHash=0x0e0842ee3758fa46cfc2fcc9bd1eb1ee60ca5d37a1f252cc64d6a077849b0f1a, logIndex=5, removed=false, id=log_e56a13b1, 0=0x6B735F91b51255Fb616d0157292E4D44A832645D, 1=30000, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0x6B735F91b51255Fb616d0157292E4D44A832645D, reward=30000, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x0000000000000000000000006b735f91b51255fb616d0157292e4d44a832645d000000000000000000000000000000000000000000000000000000000000753000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T13:30:49.183Z - info: Block #:2270786
+2018-05-12T13:30:49.183Z - info: VARS:
+2018-05-12T13:30:49.183Z - info: :0x6B735F91b51255Fb616d0157292E4D44A832645D
+2018-05-12T13:30:49.184Z - info: :30000
+2018-05-12T13:30:49.184Z - info: :randomStringCallback
+2018-05-12T13:30:49.184Z - info: :.
+2018-05-12T13:30:49.185Z - info: :str
+2018-05-12T13:30:49.185Z - info: :100
+2018-05-12T13:30:49.185Z - info: :0
+2018-05-12T13:30:49.185Z - info: :0
+2018-05-12T13:30:49.186Z - info: END
+2018-05-12T13:30:49.653Z - info: SQS Success 036786d4-0f1f-4876-a814-c64651e00bf7
+2018-05-12T14:03:28.682Z - info: Restarting at block#:2270787
+2018-05-12T14:04:51.211Z - info:  address=0x6555D39ecCDFb7B7bB7cc18f5558d90Bfd7190f8, blockNumber=2270922, transactionHash=0x231a48ba7be97ba2a2a034f0ae1d4b612319d9cb86aa92d1af5e94a92354ee0a, transactionIndex=8, blockHash=0xe23f97c16f535c77c67d0f41d7c329eec86926220ea83f4de4c44eb61159ce1c, logIndex=13, removed=false, id=log_7c729f26, 0=0x78f28c106657c622a0587ba2A1EEd7cD0Dd8ECa5, 1=30000, 2=randomStringCallback, 3=str, 4=100, 5=0, 6=0, sender=0x78f28c106657c622a0587ba2A1EEd7cD0Dd8ECa5, reward=30000, callback_method=randomStringCallback, random_type=str, param1=100, param2=0, timeout=0, event=setRandomTriger_event, signature=0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e, data=0x00000000000000000000000078f28c106657c622a0587ba2a1eed7cd0dd8eca5000000000000000000000000000000000000000000000000000000000000753000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000114000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001472616e646f6d537472696e6743616c6c6261636b00000000000000000000000000000000000000000000000000000000000000037374720000000000000000000000000000000000000000000000000000000000, topics=[0xf3fc880801debe0229e16742539beefefa4dcfbd336fbd293dd2b1cd4172249e]
+2018-05-12T14:04:51.218Z - info: Block #:2270922
+2018-05-12T14:04:51.219Z - info: VARS:
+2018-05-12T14:04:51.220Z - info: :0x78f28c106657c622a0587ba2A1EEd7cD0Dd8ECa5
+2018-05-12T14:04:51.220Z - info: :30000
+2018-05-12T14:04:51.220Z - info: :randomStringCallback
+2018-05-12T14:04:51.220Z - info: :.
+2018-05-12T14:04:51.220Z - info: :str
+2018-05-12T14:04:51.221Z - info: :100
+2018-05-12T14:04:51.221Z - info: :0
+2018-05-12T14:04:51.221Z - info: :0
+2018-05-12T14:04:51.221Z - info: END
+2018-05-12T14:04:51.953Z - info: SQS Success d3e6d891-6c47-41d5-ac78-14e3f3b99f93

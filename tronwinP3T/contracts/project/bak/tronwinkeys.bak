@@ -1,0 +1,1713 @@
+pragma solidity^0.4.25;
+
+/**
+*
+*
+*  Telegram: https://t.me/TronWinApp
+*  Discord: https://discord.gg/uJhnKcE
+*  Email: support (at) tronwin.app
+*
+* PLAY NOW: https://tronwin.app/
+*  
+* --- TRON WIN.APP ------------------------------------------------
+*
+* Hold the final key to win the entire vault funds!
+*
+* But its not as simple as that!
+*
+* When the timer reaches approx 4 minutes the game enters the dark phase 
+* and nobody know who the final key holder is - so its a game of skill
+* and nerves!  Dare you chance one more buy or will that buy push the
+* clock back up!!
+* 
+* = Passive income while the vault time lock runs down - as others buy into the 
+* game you earn $TRX! 
+* 
+* = Every key buy gives you a FREE entry into the INSTANT WIN prize!
+*
+* = Buy 10 keys for Bonus Keys!
+*
+* = Every active player each day also receives a share of the Daily Divs Pot!
+*
+* = Use your Referral Master Node to earn even more $TRX!!
+*
+*
+* It is the BIGGEST GAME for TRON yet!
+*
+*
+*
+* *
+*
+* --- COPYRIGHT ----------------------------------------------------------------
+* 
+*   This source code is provided for verification and audit purposes only and 
+*   no license of re-use is granted.
+*   
+*   (C) Copyright 2019 TronWin - A FutureConcepts Production
+*   
+*   
+*   Sub-license, white-label, solidity, Eth, Tron, Tomo development enquiries 
+*   please contact support (at) tronwin.app
+*   
+*   
+* PLAY NOW: https://tronwin.app/
+* 
+*/
+
+
+
+library SafeMath {
+    function mul(uint256 a, uint256 b) internal pure returns (uint256) {
+        uint256 c = a * b;
+        assert(a == 0 || c / a == b);
+        return c;
+    }
+
+    function div(uint256 a, uint256 b) internal pure returns (uint256) {
+        // assert(b > 0); // Solidity automatically throws when dividing by 0
+        uint256 c = a / b;
+        // assert(a == b * c + a % b); // There is no case in which this doesn't hold
+        return c;
+    }
+
+    function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+        assert(b <= a);
+        return a - b;
+    }
+
+    function add(uint256 a, uint256 b) internal pure returns (uint256) {
+        uint256 c = a + b;
+        assert(c >= a);
+        return c;
+    }
+}
+
+library Percent {
+
+  struct percent {
+    uint num;
+    uint den;
+  }
+  function mul(percent storage p, uint a) internal view returns (uint) {
+    if (a == 0) {
+      return 0;
+    }
+    return a*p.num/p.den;
+  }
+
+  function div(percent storage p, uint a) internal view returns (uint) {
+    return a/p.num*p.den;
+  }
+
+  function sub(percent storage p, uint a) internal view returns (uint) {
+    uint b = mul(p, a);
+    if (b >= a) return 0;
+    return a - b;
+  }
+
+  function add(percent storage p, uint a) internal view returns (uint) {
+    return a + mul(p, a);
+  }
+}
+
+
+
+interface P3TInterface {
+ function buy(address _referredBy) external payable returns (uint256);
+ function exit() external;
+}
+
+
+contract TronWinKeys {
+    
+    using SafeMath for uint256;
+    using Percent for Percent.percent;
+
+
+
+    // Events
+    // event_type
+    // 0 = keys issued, 1 = vault won, 2 = instant won, 3 = trx dist, 4 = daily dist
+    // 5 = vanityname purchased, 5 referral earned
+    event Action (
+        uint16 indexed event_type,
+        address indexed from,
+        address     to,
+        uint256     amnt, // keys, $trx dist or won etc
+        uint256     instant_guess, 
+        string      instant_results,  
+        uint256     instant_prize, 
+        uint256     uint_data1, // also lucky_key_percent
+        uint256     uint_data2, // also winners_start_percent
+        uint256     uint_data3, // also winners_end_percent
+        uint256     uint_data4, // also round_final_keys
+        string      data,
+        uint256     timestamp
+        );
+
+
+
+
+    address owner;
+    address devAddress;
+
+    // RANDO
+    // settings
+    uint16[] private randos;
+    uint256 private max_randos = 50000000;
+    mapping (address => uint256) user_idx;
+
+
+    // settings
+    uint256 public HARD_DEADLINE_DURATION = (14 days);  
+    uint256 public PRICE_INCREASE_PERIOD = (1 hours); 
+
+    uint256 public roundDuration = (2 hours); // (24 hours); DEBUG 
+    uint public soft_deadline_duration = (2 hours); // (24 hours); // // max soft deadline  DEBUG
+    uint m_DarkMinutes = 4 minutes; 
+
+    uint   public dayBonusLength = (2 hours); // (24 hours); DEBUG 
+
+    uint256 public STARTING_KEY_PRICE = 5 trx;
+    
+    uint256 public minInvestment = STARTING_KEY_PRICE;
+    uint256 public maxInvestment = STARTING_KEY_PRICE * 10000;
+    
+
+
+    uint256 public keysPerInstantWin = 100;
+    
+    uint256 internal time_per_key = (30 seconds); 
+    uint256 internal base_time_per_key = (10 seconds);
+    uint256 internal bonus_potential_key_time = (15 seconds);
+
+    
+
+
+    
+/*
+70% instant divs
+2% vault safe
+2% daily divs pot
+15% Instant Win Fund
+1% Next Round Seed
+2% Ref
+---
+5% Dev Fund
+2% P3T
+*/
+
+
+
+
+
+
+    Percent.percent private m_investorsPercent = Percent.percent(70, 100); // dividend split
+    Percent.percent private m_currentRoundJackpotPercent = Percent.percent(2, 100);
+    Percent.percent private m_currentDailyTopPlayersPercent = Percent.percent(2, 100);
+        Percent.percent private m_currentDailySplitPercent = Percent.percent(80, 100); // how much of the above it distributed each day
+    Percent.percent private m_instantwinPercent = Percent.percent(15, 100); 
+    
+    Percent.percent private m_nextRoundSeedPercent = Percent.percent(1, 100); 
+    Percent.percent private m_refPercent = Percent.percent(2, 100);    
+    Percent.percent private m_devMarketingPercent = Percent.percent(5, 100); // dev + marketing
+    Percent.percent private m_p3tHoldersPercent = Percent.percent(2, 100);
+
+
+
+    
+    
+    struct GameRound {
+        uint totalInvested;        
+        uint jackpot;
+        uint totalKeys;
+
+        uint hardDeadline;
+        uint softDeadline;
+        uint price;
+        uint lastPriceIncreaseTime;
+        uint distributedReturns;
+        address lastInvestor;
+        bool finalized;
+        mapping (address => uint) safeBreakerKeys;
+        uint startTime;
+    }
+
+    
+    struct Vault {
+        uint totalReturns; // Total balance = returns + referral returns + jackpots/bonus Prize 
+        uint refReturns; // how much of the total is from referrals
+    }
+
+
+
+    struct NumOfKeys {
+        address player;
+        uint    keys;
+    }
+
+
+/*
+** NEW SECTION
+*/
+    /////mapping(address => uint256) internal playersFundsOwed; 
+    // use vaults[_safeBreaker].totalReturns instead
+
+    uint256 public VANITY_PRICE    = 100 trx; 
+    mapping(bytes32 => address) public listVanityAddress; // key is vanity of address
+    mapping(address => PlayerVanity) public playersVanity;
+    struct PlayerVanity {
+        string vanity;
+        bool vanityStatus;
+    }
+
+
+    uint256 public trx_distributed;
+    uint256 public trx_invested;
+
+
+    //
+    // DAY BONUS SYSTEM
+    //
+
+    struct dayBonus {
+      uint      keysBoughtTotals;
+      bool      processed;
+      uint      bonus;
+      mapping(address=>uint)  player_keysBought;
+      address[] activePlayers;
+      uint      startTS;
+    }
+
+    uint32 public currentDay;
+    
+
+    mapping(uint32 => dayBonus) public day_dayBonuses;
+
+
+
+
+    function day_dayBonusKeysBought(uint32 _day, address _address) public view returns(uint) {
+      return day_dayBonuses[_day].player_keysBought[_address];
+    }
+    function day_dayBonusActivePlayers(uint32 _day) public view returns(address[] memory) {
+      return day_dayBonuses[_day].activePlayers;
+    }
+    function dayBonusAvail(uint32 _day) public view returns(uint) {
+      return m_currentDailySplitPercent.mul(day_dayBonuses[_day].bonus);
+    }
+
+
+
+/*
+** END OF NEW
+*/
+
+
+    mapping(uint => address[]) playersInCurrentRound;
+
+
+    modifier validPlayer() {
+        require(msg.sender == tx.origin);
+        _;
+    }
+
+
+
+
+
+    function getRoundPlayersInRound(uint round) public view returns(address[] memory) {
+        return playersInCurrentRound[round];
+    }
+    function getRoundPlayersInRoundKeys(uint round, address player) public view returns(uint) {
+        return rounds[round].safeBreakerKeys[player];
+    }
+
+    mapping (address => Vault) vaults;
+    mapping (address => uint)  lastDailyFreeKeyTime;
+
+    uint public latestRoundID;// the first round has an ID of 0
+    GameRound[] rounds;
+
+    uint public dailyTotalPot;
+    
+
+
+
+    bool public gamePaused = false;
+    bool public limitedReferralsMode = true; 
+    uint public MAX_JACKPOT_ROLLOVERS = 10; 
+
+
+    uint public instantWinChance = 1000;  // == 0->9 // 3 numbers = 0->999 number range
+    
+    
+
+    mapping(address => uint) public round_final_keys;
+    address[] public playersInFinalDraw;
+    uint public totalFinalKeys = 0;
+    uint private lastKeySizePurchase = 0;
+
+    mapping(address => bool) private m_referrals; // we only pay out on the first set of referrals
+    
+    
+    // Game vars
+    uint public jackpotSeed = 0;// Jackpot from previous rounds
+    uint public instantWinJackpot = 0;
+    uint public instantWin_startRnd = 0;
+
+    
+    uint public unclaimedReturns = 0;
+    //uint public constant MULTIPLIER = RAY;
+    
+    // Main stats:
+    uint public totalJackpotsWon = 0;
+    uint public totalInstantWinsWon = 0;
+    
+    uint public totalKeysSold = 0;
+    uint public totalEarningsGenerated = 0;
+    uint public totalDistributedReturns = 0;
+
+    
+    // modifiers
+    modifier onlyOwner() {
+        require(msg.sender == owner);
+        _;
+    }
+    
+    modifier notOnPause() {
+        require(gamePaused == false, "Game Paused");
+        _;
+    }
+    
+
+
+/*
+*
+* Daily  Div Functions
+*
+*/
+
+    function updatePlayersDailyEmpirePos(address _player, uint _score, bool _inc) internal {
+      if(_inc == true) {
+        if(day_dayBonuses[currentDay].player_keysBought[_player] == 0) {
+          
+          day_dayBonuses[currentDay].activePlayers.push(_player);
+        }
+
+        day_dayBonuses[currentDay].player_keysBought[_player] = day_dayBonuses[currentDay].player_keysBought[_player] + _score;
+
+        day_dayBonuses[currentDay].keysBoughtTotals = day_dayBonuses[currentDay].keysBoughtTotals + _score;
+      } else {
+        if(_score > day_dayBonuses[currentDay].keysBoughtTotals)
+          day_dayBonuses[currentDay].keysBoughtTotals;
+
+        if(day_dayBonuses[currentDay].player_keysBought[_player] == 0) {
+
+          return;
+        }
+        if(_score > day_dayBonuses[currentDay].player_keysBought[_player]) {
+          day_dayBonuses[currentDay].player_keysBought[_player] = 0;
+        } else {
+          
+          day_dayBonuses[currentDay].keysBoughtTotals = day_dayBonuses[currentDay].keysBoughtTotals - _score;
+          day_dayBonuses[currentDay].player_keysBought[_player] = day_dayBonuses[currentDay].player_keysBought[_player] - _score;
+        }
+      }
+
+    }
+
+    modifier checkCurrentDay() {
+      if(day_dayBonuses[currentDay].startTS + dayBonusLength < now) // day has passed
+        finaliseDay();
+
+      _;
+    }
+
+    function incDay() public {
+      require(day_dayBonuses[currentDay].startTS + dayBonusLength < now, "Day Not Yet Ended!");
+
+      currentDay++;
+      day_dayBonuses[currentDay].startTS = now;
+    }
+
+    function finaliseDay() public {
+      require(day_dayBonuses[currentDay].startTS + dayBonusLength < now, "Day Not Yet Ended!");
+      incDay();
+      distPreviousDaysBonus();
+    }
+    
+    
+
+    function distPreviousDaysBonus() public {
+      require(currentDay > 0);
+      require(day_dayBonuses[currentDay-1].processed == false);
+      require(day_dayBonuses[currentDay-1].startTS + dayBonusLength < now, "Day Not Yet Ended!");
+      
+      uint _playersPercent;
+      uint _playerShare;
+
+      uint _todaysAward = m_currentDailySplitPercent.mul(day_dayBonuses[currentDay-1].bonus);
+      
+      for(uint16 c=0; c< day_dayBonuses[currentDay-1].activePlayers.length; c++) {
+
+        _playersPercent = percent(
+                            day_dayBonuses[currentDay-1].player_keysBought[ day_dayBonuses[currentDay-1].activePlayers[c] ],
+                            day_dayBonuses[currentDay-1].keysBoughtTotals,6);
+
+
+        _playerShare = _todaysAward * _playersPercent / 1000000;
+
+
+        // transfer the _playerShare as it's a daily bonus...
+        vaults[day_dayBonuses[currentDay-1].activePlayers[c]].totalReturns
+            = vaults[day_dayBonuses[currentDay-1].activePlayers[c]].totalReturns.add(_playerShare);
+
+
+        trx_distributed = trx_distributed.add(_playerShare);
+        
+
+        //emit bonusDistributed(_playerShare, day_dayBonuses[currentDay-1].activePlayers[c], now);
+        emit Action(4, 
+              day_dayBonuses[currentDay-1].activePlayers[c],
+              address(0),
+              _playerShare,
+              0,"",0,0,0,0,0,'', now
+            );
+      }
+
+
+
+
+      day_dayBonuses[currentDay-1].bonus = day_dayBonuses[currentDay-1].bonus.sub(_todaysAward);
+      // seed current days bonus...
+      day_dayBonuses[currentDay].bonus = day_dayBonuses[currentDay].bonus + day_dayBonuses[currentDay-1].bonus;
+      day_dayBonuses[currentDay-1].processed = true;
+
+      
+    }
+
+
+
+
+    P3TInterface public P3TToken;
+
+    constructor() public {
+
+        owner = address(msg.sender);
+        devAddress = owner;
+
+
+        
+        rounds.length++;
+        
+        latestRoundID = 0;
+
+        rounds[0].lastInvestor = msg.sender;
+        rounds[0].price = STARTING_KEY_PRICE;
+        rounds[0].hardDeadline = now + HARD_DEADLINE_DURATION;
+        rounds[0].softDeadline = now + soft_deadline_duration;
+        jackpotSeed = 0; 
+        rounds[0].jackpot = jackpotSeed;
+
+        rounds[0].startTime = now;
+        
+
+
+        day_dayBonuses[currentDay].startTS = now;
+        
+    }
+    function receiveInstantWinSeed() public payable {
+        instantWinJackpot = instantWinJackpot.add(msg.value);
+    }
+
+    function() payable public {   
+    }
+    function pay() public payable {
+    }
+
+
+
+
+
+
+    function investorInfo(address investor, uint roundID) external view
+    returns(uint keys, uint totalReturns, uint refReturns) 
+    {
+        keys = rounds[roundID].safeBreakerKeys[investor];
+        totalReturns = vaults[investor].totalReturns;
+        refReturns = vaults[investor].refReturns;
+    }
+
+
+    function investorFinalkeyInfo(address investor) external view returns (
+            uint roundFinalKeys,
+            uint roundFinalStartPercent,
+            uint roundFinalEndPercent,
+            uint roundTotalFinalKeys){
+
+        roundFinalKeys = round_final_keys[investor];
+
+        if(roundFinalKeys > 0) {
+
+            uint _current_start_percent = 0;
+            for(uint i=0; i< playersInFinalDraw.length; i++) {
+                // 1000000000000000 = max
+                // 100000 = 1 to 100,000 key difference
+                uint _current_percent = 
+                    round_final_keys[playersInFinalDraw[i]] * 100000 
+                        /  totalFinalKeys;
+                
+
+                if(playersInFinalDraw[i] == investor) {
+
+                    roundFinalStartPercent = _current_start_percent;
+                    roundFinalEndPercent = (_current_percent + _current_start_percent);
+                    break;
+
+                }
+
+                _current_start_percent = _current_start_percent + _current_percent;
+
+            } 
+        }
+        else{
+            roundFinalKeys = 0;
+            roundFinalStartPercent = 0;
+            roundFinalEndPercent = 0;
+        }
+            
+
+        roundTotalFinalKeys = totalFinalKeys;
+
+
+
+
+    }
+
+    function investorInfoFull(address investor, uint roundID) external view returns (
+            uint keys, uint totalReturns, uint refReturns,
+            uint roundFinalKeys,
+            uint roundFinalStartPercent,
+            uint roundFinalEndPercent,
+            uint roundTotalFinalKeys
+        ) {
+
+        keys = rounds[roundID].safeBreakerKeys[investor];
+        totalReturns = vaults[investor].totalReturns;
+        refReturns = vaults[investor].refReturns;
+
+
+
+        roundFinalKeys = round_final_keys[investor];
+        if(roundFinalKeys > 0) {
+
+            uint _current_start_percent = 0;
+            for(uint i=0; i< playersInFinalDraw.length; i++) {
+                // 1000000000000000 = max
+                // 100000 = 1 to 100,000 key difference
+                uint _current_percent = 
+                    round_final_keys[playersInFinalDraw[i]] * 100000 
+                        /  totalFinalKeys;
+                
+
+                if(playersInFinalDraw[i] == investor) {
+
+                    roundFinalStartPercent = _current_start_percent;
+                    roundFinalEndPercent = (_current_percent + _current_start_percent);
+                    break;
+
+                }
+
+                _current_start_percent = _current_start_percent + _current_percent;
+
+            } 
+        }
+        else{
+            roundFinalKeys = 0;
+            roundFinalStartPercent = 0;
+            roundFinalEndPercent = 0;
+        }
+            
+
+        roundTotalFinalKeys = totalFinalKeys;
+    }
+
+
+
+    function roundInfoInGame(uint roundID) external view 
+        returns(
+            address leader, 
+            uint jackpot,  
+            uint keys, 
+            uint totalInvested,
+            uint distributedReturns,
+            uint _hardDeadline,
+            uint _softDeadline,
+            bool finalized,
+            uint startTime,
+            bool isDark,
+    
+            uint _instantWinJackpot,
+            string leader_vanity
+        )
+    {   
+
+        _hardDeadline = rounds[roundID].hardDeadline;
+
+        // rnd.softDeadline is the time round ends
+        // if within the last 2 minutes we enter blind phase and don't output it!
+
+        if(isRoundOnDark()) {
+            _softDeadline = 0;
+            leader = address(0x0);
+
+            isDark = true;
+            leader_vanity = "";
+
+
+        } else {
+            _softDeadline = rounds[roundID].softDeadline;
+            leader = rounds[roundID].lastInvestor;
+
+            isDark = false;
+
+            leader_vanity = playersVanity[leader].vanity;
+        }
+
+        totalInvested = rounds[roundID].totalInvested;
+        distributedReturns = rounds[roundID].distributedReturns; // m_currentRoundJackpotPercent.mul(rnd.totalInvested);
+        jackpot = rounds[roundID].jackpot;
+        keys = rounds[roundID].totalKeys;
+        
+        finalized = rounds[roundID].finalized;
+
+        startTime = rounds[roundID].startTime;
+
+        _instantWinJackpot = instantWinJackpot;
+    } 
+
+        
+    function roundKeyPrice(uint roundID) external view returns(uint) {
+        return rounds[roundID].price;
+    }
+    
+    function roundInfo(uint roundID) external view 
+    returns(
+        address leader, 
+        uint price,
+        uint jackpot,  
+        uint keys, 
+        uint totalInvested,
+        uint distributedReturns,
+        uint _hardDeadline,
+        uint _softDeadline,
+        bool finalized,
+        uint startTime,
+        bool isDark,
+
+        uint _instantWinJackpot
+
+        )
+    {
+        //GameRound storage rnd = rounds[roundID];
+        
+        price = rounds[roundID].price;
+        
+
+        _hardDeadline = rounds[roundID].hardDeadline;
+
+        // rnd.softDeadline is the time round ends
+        // if within the last 2 minutes we enter blind phase and don't output it!
+
+        if(isRoundOnDark()) {
+            _softDeadline = 0;
+            leader = address(0x0);
+
+            isDark = true;
+
+
+
+        } else {
+            _softDeadline = rounds[roundID].softDeadline;
+            leader = rounds[roundID].lastInvestor;
+
+            isDark = false;
+
+
+        }
+
+        totalInvested = rounds[roundID].totalInvested;
+        distributedReturns = rounds[roundID].distributedReturns; // m_currentRoundJackpotPercent.mul(rnd.totalInvested);
+        jackpot = rounds[roundID].jackpot;
+        keys = rounds[roundID].totalKeys;
+        
+        finalized = rounds[roundID].finalized;
+
+        startTime = rounds[roundID].startTime;
+
+        _instantWinJackpot = instantWinJackpot;
+        
+
+
+        
+    }
+
+    // WORKING
+
+
+    function isRoundOnDark() internal view returns (bool) {
+        if(rounds[latestRoundID].softDeadline - now <= m_DarkMinutes 
+                && rounds[latestRoundID].softDeadline - now > 0 seconds) {  
+            return true;
+        } else {
+
+            return false;
+
+        }
+    }
+
+
+
+    
+    function totalsInfo() external view 
+    returns(
+        uint totalReturns,
+        uint totalKeys,
+        uint totalJackpots,
+        uint totalInstantWins,
+        uint _totalDistributedReturns
+    ) {
+
+        GameRound storage rnd = rounds[latestRoundID];
+        if(rnd.softDeadline > now) {
+            totalKeys = totalKeysSold + rnd.totalKeys;
+            totalReturns = totalEarningsGenerated + m_currentRoundJackpotPercent.mul(rnd.totalInvested); 
+            // wmul(rnd.totalInvested, RETURNS_FRACTION);
+        } else {
+            totalKeys = totalKeysSold;
+            totalReturns = totalEarningsGenerated;
+        }
+        totalJackpots = totalJackpotsWon;
+        totalInstantWins = totalInstantWinsWon;
+        _totalDistributedReturns = totalDistributedReturns;
+    }
+
+    function reinvestReturns(uint value, address ref, uint _instantWinCode) public validPlayer  {        
+        GameRound storage rnd = rounds[latestRoundID];
+        
+        require(vaults[msg.sender].totalReturns >= value, "Can't spend what you don't have");        
+        vaults[msg.sender].totalReturns = vaults[msg.sender].totalReturns.sub(value);
+        vaults[msg.sender].refReturns = min(vaults[msg.sender].refReturns, vaults[msg.sender].totalReturns);
+        unclaimedReturns = unclaimedReturns.sub(value);
+
+
+        if(rounds[latestRoundID].safeBreakerKeys[msg.sender] > 0) {
+
+        } else {
+            playersInCurrentRound[latestRoundID].push(msg.sender);
+        }
+
+        
+        _purchase(rnd, value, ref, _instantWinCode, true);
+    }
+
+
+    function playerReturns(address investor) public view validPlayer 
+    returns (uint totalReturns, uint refReturns) 
+    {
+        totalReturns = vaults[investor].totalReturns;
+        refReturns = vaults[investor].refReturns;
+    }
+
+    function withdrawReturns() public validPlayer {
+        require(vaults[msg.sender].totalReturns > 0, "Nothing to withdraw!");
+
+        uint256 _totalReturns = vaults[msg.sender].totalReturns; // includes referral bonus
+        
+        vaults[msg.sender].totalReturns = 0;
+        vaults[msg.sender].refReturns = 0;
+        
+        msg.sender.transfer(_totalReturns);
+    }
+
+
+
+
+
+
+    
+    function finalizeLastRound() public {
+        GameRound storage rnd = rounds[latestRoundID];
+        _finalizeRound(rnd);
+    }
+
+
+    function finalizeAndRestart(address _referer, uint _instantWinCode) public payable validPlayer {
+        finalizeLastRound();
+        startNewRound(_referer, _instantWinCode);
+    }
+    
+    
+    function startNewRound(address _referer, uint _instantWinCode) public payable checkCurrentDay validPlayer {
+        
+        require(rounds[latestRoundID].finalized, "Previous round not finalized");
+        require(rounds[latestRoundID].softDeadline < now, "Previous round still running");
+        
+
+
+        uint _rID = rounds.length++; // first round is 0
+        GameRound storage rnd = rounds[_rID];
+        latestRoundID = _rID;
+
+        rnd.lastInvestor = msg.sender;
+        rnd.price = STARTING_KEY_PRICE;
+        rnd.hardDeadline = now + HARD_DEADLINE_DURATION;
+        rnd.softDeadline = now + soft_deadline_duration;
+        rnd.startTime = now;
+
+        // clear final draw keys
+        for(uint i=0; i< playersInFinalDraw.length; i++) {
+            delete round_final_keys[playersInFinalDraw[i]];
+        }
+        delete playersInFinalDraw;
+        totalFinalKeys = 0;
+
+
+        if(rounds[latestRoundID].safeBreakerKeys[msg.sender] > 0) {
+        } else {
+            playersInCurrentRound[latestRoundID].push(msg.sender);
+        }
+
+        if(latestRoundID - instantWin_startRnd > MAX_JACKPOT_ROLLOVERS) {
+            // can't rollover instantWinJackpot more than MAX_JACKPOT_ROLLOVERS rounds!
+            jackpotSeed = jackpotSeed.add(instantWinJackpot);
+
+            instantWinJackpot = 0;
+            instantWin_startRnd = latestRoundID;
+
+        }
+
+        rnd.jackpot = jackpotSeed;
+        jackpotSeed = 0; 
+
+        _purchase(rnd, msg.value, _referer, _instantWinCode, true);
+
+    }
+    
+
+    function lastFreeKeyTime(address _player) validPlayer public view returns (uint _lastFreeKeyTime) {
+        return lastDailyFreeKeyTime[_player];
+    }
+    function timeToFreeKey(address _player) validPlayer public view  returns(uint _timeToFreeKey) {
+        return now - lastDailyFreeKeyTime[_player];
+    }
+    
+
+
+    
+    function dailyFreeKey(uint _instantWinCode) public notOnPause checkCurrentDay validPlayer {
+        // check last time free key was awarded for this player for > 24 hours ago...
+        require(now - lastDailyFreeKeyTime[msg.sender] > 24 hours);
+        // round mustn't be in dark phase...
+        require(isRoundOnDark() == false);
+        // round mustn't be on price double phase...
+        require(rounds[latestRoundID].hardDeadline > now);
+        // player must of purchased one key in this round to claim a free key...
+        require(rounds[latestRoundID].safeBreakerKeys[msg.sender] > 0);
+        
+        lastDailyFreeKeyTime[msg.sender] = now;
+
+        if(rounds.length > 0) {
+            GameRound storage rnd = rounds[latestRoundID];   
+
+
+            _purchase(rnd, minInvestment, address(0x0), _instantWinCode, false); // false = no funds added to the pot
+        } else {
+            revert("Not yet started");
+        }
+    }
+
+
+
+
+    function buyKeys(address _referer, uint _instantWinCode) public payable notOnPause validPlayer  checkCurrentDay {
+        require(msg.value >= minInvestment);
+        if(rounds.length > 0) {
+            GameRound storage rnd = rounds[latestRoundID];   
+
+
+            if(rounds[latestRoundID].safeBreakerKeys[msg.sender] > 0) {
+
+            } else {
+                playersInCurrentRound[latestRoundID].push(msg.sender);
+            }
+
+            _purchase(rnd, msg.value, _referer, _instantWinCode, true);
+        } else {
+            revert("Not yet started");
+        }
+        
+    }
+    
+    
+
+
+    function _purchase(GameRound storage rnd, uint value, address referer, uint _instantWinCode, bool _hasFunds) internal  {
+
+        require(now >= rnd.startTime, "Round not started!");
+        require(rnd.softDeadline >= now, "After deadline!");
+        require(value >= rnd.price, "Not enough TRX!");
+
+
+        if(_hasFunds == true){
+            rnd.totalInvested = rnd.totalInvested.add(value);
+            trx_invested = trx_invested.add(value);
+        }
+
+
+        // Set the last investor (to win the jackpot after the deadline if no final keys bought)
+        rnd.lastInvestor = msg.sender;
+
+
+        uint instantWinPrize;
+        //uint instantWinResult;
+        string memory instantWinPrizesStr;
+        string memory instantWinResultsStr;
+
+        
+        uint newKeys = _issueKeys(rnd, msg.sender, value);
+
+
+
+        if(newKeys >= keysPerInstantWin) {
+            uint instantWinPlays = newKeys.div(keysPerInstantWin);
+
+            (instantWinPrize,instantWinResultsStr) = _instantWin(_instantWinCode, instantWinPlays);
+
+        }
+        
+
+        
+
+
+ 
+
+
+        if(_hasFunds == true){
+            _splitRevenue(rnd, value, referer);
+        }
+
+
+
+        
+
+
+        
+        updatePlayersDailyEmpirePos(msg.sender, newKeys, true);
+
+
+        if(!isRoundOnDark())
+            // in case there are no final keys bought....
+            lastKeySizePurchase = newKeys;
+        else {
+
+            // add the players keys to the final draw system...
+            // final draw keys are then valid for the entire round! 
+            if(round_final_keys[msg.sender] == 0){
+                playersInFinalDraw.push(msg.sender);
+                round_final_keys[msg.sender] = newKeys;
+            } else {
+                round_final_keys[msg.sender] = round_final_keys[msg.sender] + newKeys;
+            }
+            totalFinalKeys = totalFinalKeys + newKeys;
+        }
+
+
+
+
+        uint newDeadline = rnd.softDeadline.add( newKeys.mul(get_time_per_key()));
+        
+        rnd.softDeadline = min(newDeadline, now + soft_deadline_duration);
+        // If after hard deadline, double the price every price increase periods
+        if(now > rnd.hardDeadline) {
+            if(now > rnd.lastPriceIncreaseTime + PRICE_INCREASE_PERIOD) {
+                rnd.price = rnd.price * 2;
+                rnd.lastPriceIncreaseTime = now;
+            }
+        }
+
+
+
+        emit Action(0, msg.sender, address(0), newKeys, _instantWinCode, instantWinResultsStr, instantWinPrize, 0,0,0,0, "", now);
+    }
+
+
+
+
+    function TIME_PER_KEY() public view returns (uint) {
+        if(isRoundOnDark()) {
+            return 0; // Can't be viewed when the game goes Dark!
+        } else {
+            return time_per_key;
+        }
+    }
+
+    // WORKING
+    function get_time_per_key() internal returns (uint) {
+        if(isRoundOnDark()) { 
+
+            uint _bonus_time = getRandoUInt(30, msg.sender);
+
+            return base_time_per_key + _bonus_time;
+
+        } else {
+            return time_per_key;
+        }
+        
+    }
+    function _issueKeys(GameRound storage rnd, address _safeBreaker, uint value
+
+        ) internal returns(uint) { 
+
+
+        uint newKeys = value.div(rnd.price);
+        if(newKeys < 1)
+            newKeys = 1;
+        
+        //bonuses:
+        if(newKeys >= 1000) {
+            newKeys = newKeys.add(newKeys/2);//50% bonus
+        } else if(newKeys >= 100) { 
+            newKeys = newKeys.add(newKeys/3);//33% bonus
+        } else if(newKeys >= 10) { 
+            newKeys = newKeys.add(newKeys/10);//10% bonus
+        }
+
+        rnd.safeBreakerKeys[_safeBreaker] = rnd.safeBreakerKeys[_safeBreaker].add(newKeys);
+        rnd.totalKeys = rnd.totalKeys.add(newKeys);
+        
+
+
+        return newKeys;
+    }    
+
+
+    function _splitRevenue(GameRound storage rnd, uint value, address ref) internal {
+
+        uint _trxToP3t = sendProfitToP3T(m_p3tHoldersPercent.mul(value));
+        
+        uint dev_value = value.sub(_trxToP3t);
+
+
+        uint roundReturns = m_investorsPercent.mul(value); // how much to pay in dividends to round players
+        dev_value = dev_value.sub(roundReturns);
+
+        uint _referralEarning;
+
+        if(ref != address(0x0)) {
+            
+            if(
+                (!m_referrals[msg.sender] && limitedReferralsMode == true)
+                ||
+                limitedReferralsMode == false
+                ) {
+            
+
+            
+                _referralEarning = m_refPercent.mul(value);
+
+                unclaimedReturns = unclaimedReturns.add(_referralEarning);
+                vaults[ref].totalReturns = vaults[ref].totalReturns.add(_referralEarning);
+                vaults[ref].refReturns = vaults[ref].refReturns.add(_referralEarning);
+                
+               ////// value = value.sub(_referralEarning);
+                
+                m_referrals[msg.sender] = true;
+
+                dev_value = dev_value.sub(_referralEarning);
+
+                emit Action (5, msg.sender, ref, _referralEarning, 0,"",0,0,0,0,0,"", now);
+
+            }
+        } else {
+        }
+
+
+
+        
+
+        if(_referralEarning == 0) {
+            // no referrer = more divs!!
+            _referralEarning = m_refPercent.mul(value);
+            dev_value = dev_value.sub(_referralEarning);
+            roundReturns = roundReturns.add(_referralEarning);
+            
+        }
+
+
+        uint _dailyDivsBonus = m_currentDailyTopPlayersPercent.mul(value);
+
+        day_dayBonuses[currentDay].bonus = 
+                day_dayBonuses[currentDay].bonus.add(_dailyDivsBonus);
+        dailyTotalPot = dailyTotalPot.add(_dailyDivsBonus);
+        unclaimedReturns = unclaimedReturns.add(_dailyDivsBonus);
+        
+        dev_value = dev_value.sub(_dailyDivsBonus);
+        
+
+        
+        // if this is the first purchase, roundReturns goes to jackpot (no one can claim these returns otherwise)
+        if(rnd.totalKeys == 0) {
+            rnd.jackpot = rnd.jackpot.add(roundReturns);
+        } else {
+            _disburseReturns(rnd, roundReturns);
+        }
+        
+        instantWinJackpot = instantWinJackpot.add(m_instantwinPercent.mul(value));
+        rnd.jackpot = rnd.jackpot.add(m_currentRoundJackpotPercent.mul(value));
+
+
+
+        dev_value = dev_value.sub(m_instantwinPercent.mul(value));
+        dev_value = dev_value.sub(m_currentRoundJackpotPercent.mul(value));
+
+        devAddress.transfer(dev_value);
+
+
+    }
+
+    // value = divs
+    // WORKING
+    function _disburseReturns(GameRound storage rnd, uint value) internal {
+
+
+        uint256 _playerPercent;
+        uint256 _playerShare;
+        for(uint16 c=0; c< playersInCurrentRound[latestRoundID].length; c++) {
+
+
+            _playerPercent = percent(
+                                rnd.safeBreakerKeys[playersInCurrentRound[latestRoundID][c]],
+                                rnd.totalKeys,6);
+
+            _playerShare = value * _playerPercent / 1000000;
+
+            if(_playerShare > 0){
+                unclaimedReturns = unclaimedReturns.add(_playerShare);
+
+                vaults[playersInCurrentRound[latestRoundID][c]].totalReturns 
+                    = vaults[playersInCurrentRound[latestRoundID][c]].totalReturns.add(_playerShare);
+            }
+
+
+        }
+
+        rnd.distributedReturns = rnd.distributedReturns.add(value);
+        totalDistributedReturns = totalDistributedReturns.add(value);
+
+        emit Action(
+                3,
+                address(0),
+                address(0),
+                value,
+                0,"",0,0,0,0,0,"", now
+            );
+
+        return;
+
+    }
+
+
+
+
+    // receive & distribute external divs from additional games (Dice etc)
+    function receiveExternalDivs() external payable {
+        _disburseReturns(rounds[latestRoundID], msg.value);
+    }
+
+
+    function _instantWin(uint _instantWinCode, uint _count) internal returns (uint _instantWinPrize, string _instantWinResultsStr) {
+
+
+        uint256[10000] memory _results;
+        _results = getRandoUInts(instantWinChance, msg.sender, _count);
+
+        for(uint c=0; c< _count; c++) {
+            uint prize = 0;
+
+            if(c>0){
+                _instantWinResultsStr = strConcat(_instantWinResultsStr, "|", uint2str(_results[c]));
+            } else {
+                _instantWinResultsStr = uint2str(_results[c]);
+            }
+
+            if(_results[c] == _instantWinCode) {
+                prize = instantWinJackpot;
+                instantWinJackpot = 0;
+                vaults[msg.sender].totalReturns = vaults[msg.sender].totalReturns.add(prize);
+                unclaimedReturns = unclaimedReturns.add(prize);
+                totalInstantWinsWon = totalInstantWinsWon.add(prize);
+
+                _instantWinPrize = prize;
+                break; // prize can only be won once per play as then the pot is then empty!
+            }
+
+        }
+
+
+    }
+
+
+
+
+
+
+    function _processPlayerDayBonus(address _player, uint _amnt) internal {
+            vaults[_player].totalReturns = vaults[_player].totalReturns.add(_amnt);
+            
+    }
+
+
+
+    
+    function _finalizeRound(GameRound storage rnd) internal {
+        require(!rnd.finalized, "Already finalized!");
+        require(rnd.softDeadline < now, "Round still running!");
+
+
+        // find vault winner
+
+        if(rnd.jackpot > 0){
+            if(playersInFinalDraw.length == 0){
+                // use last key bought as the winner...
+                vaults[rnd.lastInvestor].totalReturns = vaults[rnd.lastInvestor].totalReturns.add(rnd.jackpot);
+                unclaimedReturns = unclaimedReturns.add(rnd.jackpot);
+                
+//                emit JackpotWon(latestRoundID, rnd.lastInvestor, rnd.jackpot, 0,0,0,0, now);
+            
+
+                emit Action(1, rnd.lastInvestor, address(0), 
+                    rnd.jackpot,
+                    0,"",0,0,0,0,0,"", now);
+
+
+
+
+                totalJackpotsWon = totalJackpotsWon.add(rnd.jackpot);
+
+            } else {
+                //uint _lucky_key_num = getRandoUInt(totalFinalKeys, msg.sender);
+                // 1000000
+                // 
+                uint _lucky_key_percent = getRandoUInt(100000, msg.sender); // = 100.000 %
+                
+                uint _current_start_percent = 0;
+
+                // keys is long val
+                //
+                for(uint i=0; i< playersInFinalDraw.length; i++) {
+                    // 1000000000000000 = max
+                    // 100000 = 1 to 100,000 key difference
+                    uint _current_percent = 
+                        round_final_keys[playersInFinalDraw[i]] * 100000 
+                            /  totalFinalKeys;
+                    
+
+                    if(_lucky_key_percent > _current_start_percent  &&
+                        _lucky_key_percent <= (_current_percent + _current_start_percent) 
+                        ) {
+                        // winner
+                        vaults[playersInFinalDraw[i]].totalReturns = vaults[playersInFinalDraw[i]].totalReturns.add(rnd.jackpot);
+                        unclaimedReturns = unclaimedReturns.add(rnd.jackpot);
+                        
+                        /*
+                        emit JackpotWon(latestRoundID, playersInFinalDraw[i], rnd.jackpot, 
+                                            _lucky_key_percent, 
+                                            _current_start_percent,
+                                            (_current_percent + _current_start_percent),
+                                            round_final_keys[playersInFinalDraw[i]], 
+                                            now);
+                        */
+
+                        emit Action(1,playersInFinalDraw[i], address(0), rnd.jackpot,
+                            0,
+                            "",
+                            0,
+                            _lucky_key_percent, 
+                            _current_start_percent,
+                            (_current_percent + _current_start_percent),
+                            round_final_keys[playersInFinalDraw[i]],
+                            "",
+                             now
+                         );
+
+
+
+                        totalJackpotsWon = totalJackpotsWon.add(rnd.jackpot);
+                        break;                        
+                    }
+
+                    _current_start_percent = _current_start_percent + _current_percent;
+
+                }        
+            }
+        }
+
+        
+        if(rnd.totalInvested > 0){
+            // transfer the leftover to the next round's jackpot
+            jackpotSeed = jackpotSeed.add( m_nextRoundSeedPercent.mul(rnd.totalInvested));        
+        }
+
+            
+
+        totalKeysSold = totalKeysSold.add(rnd.totalKeys);
+
+        if(rnd.totalInvested > 0)
+            totalEarningsGenerated = totalEarningsGenerated.add(m_currentRoundJackpotPercent.mul(rnd.totalInvested));
+
+        rnd.finalized = true;
+    }
+
+
+
+
+    /**
+    * Action by vanity
+    * Vanity referral links (Show vanity in cardholder box)
+    */
+    function buyVanity(string _vanity) public payable validPlayer {
+        /*--------------------- validate --------------------------------*/
+        require(msg.value >= VANITY_PRICE);
+        require(isVanityExisted(_vanity) == false);
+        /*--------------------- handle --------------------------------*/
+        playersVanity[msg.sender].vanity = _vanity;
+        playersVanity[msg.sender].vanityStatus = true;
+        // update list vanity address
+        listVanityAddress[convertStringToBytes32(_vanity)] = msg.sender;
+        /*--------------------- event --------------------------------*/
+
+        devAddress.transfer(msg.value);
+
+
+        emit Action(5, msg.sender, address(0), msg.value, 0,"",0,0,0,0,0, _vanity, now);
+    }
+
+
+
+
+    function isVanityExisted(string _vanity) public view returns(bool) {
+        if (listVanityAddress[convertStringToBytes32(_vanity)] != address(0)) {
+          return true; 
+        }
+        return false;
+    }
+    function convertStringToBytes32(string key) private pure returns (bytes32 ret) {
+        if (bytes(key).length > 32) {
+          revert();
+        }
+
+        assembly {
+          ret := mload(add(key, 32))
+        }
+    }
+    function vanityToAddress(string _vanity) public view returns(address) {
+      return listVanityAddress[convertStringToBytes32(_vanity)];
+    }
+    function addressToVanity(address _player) public view returns(string) {
+      return playersVanity[_player].vanity;
+    }
+
+
+
+    
+    // Owner only functions    
+    function p_setNewOwners(uint16 _type, address _addr) public onlyOwner {
+        if(_type==0){
+            owner = _addr;
+        }
+        if(_type==1){
+            devAddress = _addr;    
+        }
+    }
+
+
+
+
+
+
+
+    function p_setMinInvestment(uint _minInvestment) public onlyOwner {
+        minInvestment = _minInvestment;
+    }
+    function p_setMaxInvestment(uint _maxInvestment) public onlyOwner {
+        maxInvestment = _maxInvestment;
+    }
+    function p_setGamePaused(bool _gamePaused) public onlyOwner {
+        gamePaused = _gamePaused;
+    }
+    function p_setRoundDuration(uint256 _roundDuration) public onlyOwner {
+        roundDuration = _roundDuration;
+    }
+    function p_setRoundStartTime(uint256 _round, uint256 _startTime) public onlyOwner {
+        rounds[_round].startTime = _startTime;
+        rounds[_round].hardDeadline = _startTime + HARD_DEADLINE_DURATION;
+        rounds[_round].softDeadline = _startTime + soft_deadline_duration;
+    }
+
+    function p_setLimitedReferralsMode(bool _limitedReferralsMode) public onlyOwner {
+        limitedReferralsMode = _limitedReferralsMode;
+    }
+    function p_setSoft_deadline_duration(uint _soft_deadline_duration) public onlyOwner {
+        soft_deadline_duration = _soft_deadline_duration;
+    }
+
+    function p_setMaxJackpotRollovers(uint _MAX_JACKPOT_ROLLOVERS) public onlyOwner {
+        MAX_JACKPOT_ROLLOVERS = _MAX_JACKPOT_ROLLOVERS;
+    }
+
+
+    
+    function p_setInstantWinChance(uint _instantWinChance) public onlyOwner {
+        instantWinChance = _instantWinChance;
+    }
+
+
+
+
+    function p_settings(uint _type, uint _val) public onlyOwner {
+        if(_type==0)
+            unclaimedReturns = _val;
+        if(_type==1)
+            STARTING_KEY_PRICE = _val;
+        if(_type==2)
+            HARD_DEADLINE_DURATION = _val;
+        if(_type==3)
+            PRICE_INCREASE_PERIOD = _val;
+
+        if(_type==20){
+            m_currentRoundJackpotPercent = Percent.percent(_val, 100);
+        }
+        if(_type==21){
+            m_currentDailyTopPlayersPercent = Percent.percent(_val, 100);
+        }
+        if(_type==22){
+            m_currentDailySplitPercent = Percent.percent(_val, 100);
+        }
+
+        if(_type==23){
+            keysPerInstantWin = _val;
+        }
+
+        if(_type==24){
+            m_investorsPercent = Percent.percent(_val, 100);
+        }
+        if(_type==25){
+            m_nextRoundSeedPercent = Percent.percent(_val, 100); 
+        }
+
+        if(_type==27){
+            m_instantwinPercent = Percent.percent(_val, 100);
+        }
+        if(_type==28){
+            m_devMarketingPercent = Percent.percent(_val, 100);
+        }
+        if(_type==29){
+            m_refPercent = Percent.percent(_val, 100);
+        }
+        if(_type==30){
+            VANITY_PRICE = _val;
+        }
+
+
+        if(_type==40){
+            m_DarkMinutes = _val;
+        }
+
+    }
+
+    function p_updateTimes(uint _type, uint _val) public onlyOwner {
+        if(_type==0) {
+            time_per_key = _val;   
+        }
+        if(_type==1) {
+            base_time_per_key = _val;
+        }
+        if(_type==2) {
+            bonus_potential_key_time = _val;
+        }
+    }
+
+    function updateP3Tshare(uint _val) public onlyOwner {
+        m_p3tHoldersPercent = Percent.percent(_val,100);
+    }
+
+
+
+    function getContractBalance() internal view returns (uint) {
+      return address(this).balance;
+    }
+
+/**
+    *  Action set P3T interface
+*/
+
+    function setP3TInterface(address _p3tcontract) public onlyOwner {
+        P3TToken = P3TInterface(_p3tcontract);  
+    }
+ 
+    function sendProfitToP3T(uint256 _profit) private returns(uint256 _trxToP3t) {
+        uint256 balanceBeforeSend = getContractBalance();
+        buyP3T(calTrxSendToP3T(_profit));
+        uint256 balanceAfterSend = getContractBalance();
+        _trxToP3t = balanceBeforeSend - balanceAfterSend;
+    }
+    
+    function calTrxSendToP3T(uint256 _trx) private pure returns(uint256 _value) {
+        _value = SafeMath.div(SafeMath.mul(_trx, 100), 13);
+    }
+
+    function buyP3T(uint256 _value) private {
+      P3TToken.buy.value(_value)(owner);
+      exitP3T();
+    }
+ 
+    function exitP3T() private {
+        P3TToken.exit();
+    }
+
+
+
+    // Util functions
+    function min(uint x, uint y) internal pure returns (uint z) {
+        return x <= y ? x : y;
+    }
+
+    function percent(uint numerator, uint denominator, uint precision) internal pure returns(uint quotient) {
+         // caution, check safe-to-multiply here
+        uint _numerator  = numerator * 10 ** (precision+1);
+        // with rounding of last digit
+        uint _quotient =  ((_numerator / denominator) + 5) / 10;
+        return ( _quotient);
+    }
+
+
+
+    
+    uint op;
+    function gameOp() external {
+        op++;
+    }
+
+
+
+
+
+    function strConcat(string _a, string _b, string _c, string _d, string _e) public pure returns (string) {
+        bytes memory _ba = bytes(_a);
+        bytes memory _bb = bytes(_b);
+        bytes memory _bc = bytes(_c);
+        bytes memory _bd = bytes(_d);
+        bytes memory _be = bytes(_e);
+        string memory abcde = new string(_ba.length + _bb.length + _bc.length + _bd.length + _be.length);
+        bytes memory babcde = bytes(abcde);
+        uint k = 0;
+        for (uint i = 0; i < _ba.length; i++) babcde[k++] = _ba[i];
+        for (i = 0; i < _bb.length; i++) babcde[k++] = _bb[i];
+        for (i = 0; i < _bc.length; i++) babcde[k++] = _bc[i];
+        for (i = 0; i < _bd.length; i++) babcde[k++] = _bd[i];
+        for (i = 0; i < _be.length; i++) babcde[k++] = _be[i];
+        return string(babcde);
+    }
+    function strConcat(string _a, string _b, string _c, string _d) public pure returns (string) {
+        return strConcat(_a, _b, _c, _d, "");
+    }
+    function strConcat(string _a, string _b, string _c) public pure returns (string) {
+        return strConcat(_a, _b, _c, "", "");
+    }
+    function strConcat(string _a, string _b) public pure returns (string) {
+        return strConcat(_a, _b, "", "", "");
+    }
+    function uint2str(uint i) public pure returns (string){
+        if (i == 0) return "0";
+        uint j = i;
+        uint len;
+        while (j != 0){
+            len++;
+            j /= 10;
+        }
+        bytes memory bstr = new bytes(len);
+        uint k = len - 1;
+        while (i != 0){
+            bstr[k--] = byte(48 + i % 10);
+            i /= 10;
+        }
+        return string(bstr);
+    }
+
+
+    // RANDO FUNCS
+    //https://qrng.anu.edu.au/API/api-demo.php
+    function pushRandos(uint16[] memory _newRandos) public onlyOwner {
+        for(uint c=0; c< _newRandos.length; c++) {
+            randos.push(_newRandos[c]);
+            if(randos.length > max_randos) {
+                delete randos[0];    
+            }
+        }
+    }
+    function setMaxRanods(uint256 _max_randos) public onlyOwner {
+        max_randos = _max_randos;
+    }
+
+
+    function getRandoUInt(uint _max, address _sender) public returns(uint random_val) {
+        random_val = getRando(_max, _sender);
+    }
+
+    // helpers...
+    function getRandoUInts(uint _max, address _sender, uint _count) public returns(uint[10000] memory random_vals) {
+
+        for(uint c=0; c< _count; c++) {
+            random_vals[c] = getRando(_max, _sender);
+        }
+
+    }
+
+    function getRando(uint _max, address _sender) internal returns (uint random_val) {
+        random_val = (
+            uint(keccak256(
+                        abi.encodePacked(
+                                    randos[user_idx[_sender]], 
+                                    user_idx[_sender], 
+                                    _sender,
+                                    blockhash(getBlockOffset()))
+                                    )
+                         ) % _max);
+
+        user_idx[_sender]++;
+
+        if(user_idx[_sender]>=randos.length)
+            user_idx[_sender]=0;    
+    }
+
+    function getBlockOffset() internal view returns (uint) {
+        uint _randosUint;
+        if(user_idx[msg.sender] > 0)
+            _randosUint = randos[user_idx[msg.sender]-1];
+        else 
+            _randosUint = randos[user_idx[msg.sender]];
+
+        uint _offset =  (uint(keccak256(
+                        abi.encodePacked(
+                                    _randosUint,
+                                    msg.sender,
+                                    blockhash(block.number)
+                                    )
+                         )) % 255);
+
+        return block.number - (_offset);
+    }
+
+}

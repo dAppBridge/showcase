@@ -1,0 +1,16 @@
+.scratch_card.scratch_card_cells3 {
+	background: url(../images/magic_lamp/bg_3by1.png) 0 0 no-repeat;
+}
+
+.scratch_card.scratch_card_cells9 {
+	background: url(../images/magic_lamp/bg_3by3.png) 0 0 no-repeat;
+}
+
+.scratch_card_scratch_area_image {
+	background: url(../images/magic_lamp/scratch_area1.png) 0 0 no-repeat;
+}
+
+.scratch_card_cell_icon {
+	background: url(../images/magic_lamp/icons.png) 0 9999px repeat-x;
+	background-color: rgba(0,0,0,0.3);
+}

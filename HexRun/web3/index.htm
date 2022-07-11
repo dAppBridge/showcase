@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html class=no-js lang=en>
+<html>
+<head>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href=/favicon.ico>
+<title>HEX RUN : Double your HEX Tokens</title>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin=anonymous>
+<link href="https://fonts.googleapis.com/css?family=Padauk" rel=stylesheet>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel=stylesheet>
+<link href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet integrity=sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN crossorigin=anonymous>
+<link href=css/jquery.toast.min.css rel=stylesheet>
+<style>body:before{content:"";display:block;position:fixed;left:0;top:0;width:100%;height:100%;z-index:-10;background:url(images/back1.png) no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}body{background-color:#000;color:#fff;font-size:14pt;font-family:Padauk,sans-serif}h1{font-size:18pt;font-weight:bolder;text-transform:uppercase;color:#ff3cbe}h2{font-size:16pt;font-weight:bolder;color:#ffd201}h3{font-size:16pt;font-weight:bolder;color:#ff3cbe}h4{font-size:12pt;color:#555}button{font-family:Padauk,sans-serif}table{width:40%}table thead{color:#555!important;font-size:12pt}table tr{background-color:rgba(0,0,0,.9)!important;text-align:center;font-weight:700}.eventsRow{font-size:10pt;font-weight:400!important}.hexIcon{width:20px;height:20px;margin:5px;top:-2px;position:relative}.orange{color:#ff3cbe}.yellow{color:#ffd201}.infoPanel{background-color:rgba(0,0,0,.5);padding:5px;border-color:#fff;border:2px solid;line-height:12pt;margin-bottom:10px}.infoPanel2{background-color:rgba(255,210,1,.3);padding:5px;border-color:#fff;border:2px solid;line-height:12pt;margin-bottom:10px}.depthPanel{background-color:rgba(0,0,0,.5);padding:5px;border-color:#fff;border:2px solid;border-radius:100px;line-height:12pt;margin-bottom:10px}.depthInactive h3{color:#444}.depthInactive{color:#444}.depthRow6 h3{font-size:8pt}body,html{heigth:100%;width:100%;overflow:none}.comment{font-size:10pt;color:#aaa;width:40%;background-color:rgba(0,0,0,.5);padding:5px;border-color:#fff;border:2px solid}.top-bar{width:100%;position:fixed;top:0}#canvas{z-index:-1;top:0;left:0;width:100%;height:100%;position:fixed;background-color:rgba(0,0,0,.6)}.footer{font-size:10pt;color:#aaa;width:100%;line-height:8pt}// Share URL Component .shareUrl{width:50%;padding:40px 20px;text-align:center}.shareUrl-header{margin-bottom:40px}.shareUrl-headerText{margin-top:0;margin-bottom:10px;font-size:22px}.shareUrl-subtext{margin-top:0;top:-5px;position:relative;font-size:14px}.shareUrl-body{margin-bottom:70px}.shareUrl-input{width:50%!important;padding:10px 0;border:2px solid rgba(255,255,255,.59);text-align:center;font-size:26px;font-weight:700;color:rgba(255,255,255,.9);background-color:#000;border-radius:3px;transition:all .3s ease;&:hover,&:focus,&:active { border-color: rgba(0,0,0,.3); background-color: rgba(0,0,0,.5); }}input,textarea{background-color:#000!important;color:#fff!important;width:70%!important}input:read-only{background-color:#000}input:-moz-read-only{background-color:#000}.shareUrl-input:focus{background-color:#000}// Only necessary change from a UX perspective .shareUrl-input{cursor:pointer}.userInfo{font-size:16pt}.reveal{background-color:rgba(0,0,0,.5);font-size:12pt;line-height:12pt}.revealSmall{font-size:10pt}.loadingSpinner{position:fixed;top:200px;left:45%;background-image:url(images/loading2.gif);width:256px;height:256px;transform:scale(.8);z-index:2015;font-size:20pt;background-color:rgba(0,0,0,.5);border-radius:10px;border-color:#fff;border:1px solid;color:#ffd201}.profilePanel{width:50%;text-align:left;line-height:16pt}@media (max-width:1024px){table{width:90%;font-size:16pt}}@media (pointer:coarse){.comment{width:90%}.profilePanel{width:90%}table{width:90%;font-size:10pt}body{font-size:12pt}.logo{width:200px;padding-bottom:10px}h1{font-size:14pt}h2{font-size:14pt}h3{font-size:13pt}h4{font-size:12pt}.shareUrl{width:80%}.shareUrl-input{width:80%!important;font-size:12pt}}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167352337-1"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-167352337-1")</script>
+</head>
+<body>
+<div class="top-bar hide" style=z-index:9999>
+<div class=top-bar-left>
+<ul class="dropdown menu" data-dropdown-menu>
+<li class=menu-text>Site Title</li>
+<li>
+<a href=#>One</a>
+</li>
+<li><a href=#>Two</a></li>
+<li><a href=#>Three</a></li>
+</ul>
+</div>
+<div class=top-bar-right>
+<ul class=menu>
+</ul>
+</div>
+</div>
+<center style=padding-top:50px>
+<br>
+<img src=images/HexRun-Logo.png width=500 class=logo style=z-index:999>
+<br>
+<h1>The Fastest, Easiest and Risk-Free way to Multiply your HEX every 30 days</h1>
+<strong class=orange>The worlds first ERC20 token multiplier smart-contract!<br></strong>
+<br>
+<div class=infoPanel2 style=width:50%>
+<br>
+~ ALSO LAUNCHING SOON FOR ETHEREUM PLAYERS! ~
+<br>
+Check out <a href=https://ETHMATRIX.network target=_new style=color:#fff;text-decoration:underline>ETHMATRIX.network</a> for details
+<br>
+<br>
+</div>
+<button type=button class="warning button small" id=gameGudeBtn>DOWNLOAD GAME GUIDE</button>
+<div id=registrationDiv>
+<h2>2000 HEX registration fee buys you into level 1 ~ gives you 4000 HEX return!!!</h2>
+Fully secured Ethereum Smart-Contract DOA ~ HEX is never stored ~ Always sent direct to your wallet P2P
+<br><br>
+<span class=userInfo>Referred By: <span id=refBy class=yellow>searching...</span><br></span>
+<button type=button class="success button large" id=registerBtn>REGISTER NOW</button>
+</div>
+<div id=loggedInDiv class="hide userInfo infoPanel profilePanel">
+<center><h3>PROFILE</h3></center>
+Referred By: <span id=refBy2 class=yellow></span><br>
+Matrix Referral: <span id=refByTrue class=yellow></span><br>
+Your Address: <span id=userAddress class=yellow></span><br>
+Highest Unexpired Level: <span id=currentLvl class=yellow>1</span><br>
+Your Referral Link:
+<center>
+<input class="shareUrl-input js-shareUrl" id=refURL readonly>
+<p class=shareUrl-subtext>Click above to copy the link.</p>
+<button type=button class="success button large" id=buyNxtLvlBtn>BUY LVL 2</button>
+&nbsp;&nbsp;
+<button type=button class="primary button large" id=dashboardBtn>DASHBOARD</button>
+&nbsp;
+<button type=button class="primary button large" id=matrixBtn>MATRIX</button>
+</center>
+</div>
+<h2>PROFIT TABLE</h2>
+<table class=unstriped>
+<tbody>
+<tr>
+<td>
+<h4>Level</h4>
+#1
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>2,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+2
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>4,000</span> HEX
+</td>
+</tr>
+<tr>
+<td>
+<h4>Level</h4>
+#2
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>4,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+4
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>16,000</span> HEX
+</td>
+</tr>
+<tr>
+<td>
+<h4>Level</h4>
+#3
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>8,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+8
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>64,000</span> HEX
+</td>
+</tr>
+<tr>
+<td>
+<h4>Level</h4>
+#4
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>16,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+16
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>256,000</span> HEX
+</td>
+</tr>
+<tr>
+<td>
+<h4>Level</h4>
+#5
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>32,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+32
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>1,024,000</span> HEX
+</td>
+</tr>
+<tr>
+<td>
+<h4>Level</h4>
+#6
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>64,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+2
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>128,000</span> HEX
+</td>
+</tr>
+<tr>
+<td>
+<h4>Level</h4>
+#7
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>128,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+4
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>512,000</span> HEX
+</td>
+</tr>
+<tr>
+<td>
+<h4>Level</h4>
+#8
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>256,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+8
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>2,048,000</span> HEX
+</td>
+</tr>
+<tr>
+<td>
+<h4>Level</h4>
+#9
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>512,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+16
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>8,192,000</span> HEX
+</td>
+</tr>
+<tr>
+<td>
+<h4>Level</h4>
+#10
+</td>
+<td>
+<h4>Price</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=orange>1,024,000</span> HEX
+</td>
+<td>
+<h4>Referral Payments</h4>
+32
+</td>
+<td>
+<h4>Income</h4>
+<img src=images/hex-icon-sm.png class=hexIcon><span class=yellow>32,768,000</span> HEX
+</td>
+</tr>
+</tbody>
+</table>
+<h2 style=color:#fff>YOUR TOTAL PROFIT: <img src=images/hex-icon-sm.png class=hexIcon>
+<span class=yellow>45,012,000</span>
+HEX EVERY 30 DAYS<sup>*</sup></h2>
+<div class=comment>
+* 45,012,000 HEX profit is the maximum profit theoretical possible ~ using a repeat passage through every level of HEXRUN. In practice, and in tested conditions it is very realistic to expect a return of HALF of this amount and more with a simple pass through each level.
+</div>
+<br>
+<a href=/HEXRun.pdf target=_new class=yellow style=text-decoration:underline>Download Game Guide</a>
+</center>
+<br>
+<div class="grid-x grid-margin-x">
+<div class="cell small-12 medium-12 large-3 large-offset-3 infoPanel">
+<h3>Zero Risk Smart Contract</h3>
+The admin of the smart-contract does not have any access to your HEX ~ all profits are instantly transfered to your wallet, P2P!
+<br><br>
+There is zero risk involved in using the HEXRUN smart-contract because it hold no funds!
+</div>
+<div class="cell small-12 medium-12 large-3 infoPanel">
+<h3>Full Decentralization</h3>
+No one controls HEXRUN!<br><br>
+It has been deployed to the Ethereum mainnet and runs fully autonomously ~ it cannot be stopped ~ it cannot be changed! It is fully immutable!
+</div>
+<div class="cell small-12 medium-12 large-3 large-offset-3 infoPanel">
+<h3>Earn from your Referrals Uplines!</h3>
+When people you invite have filled up their referral slots new referrals of theirs become invites of yours earning you more!
+<br><br>
+</div>
+<div class="cell small-12 medium-12 large-3 infoPanel">
+<h3>No Referrals?</h3>
+No need to worry if you have trouble filling up your own referral slots ~ the system will find referrals for you using it's automatic referral system.
+<br><br>
+New players who join without a referral are distributed evenly amongst users starting from existing users who previously bought level 1!
+</div>
+<div class="cell small-12 medium-12 large-6 large-offset-3 infoPanel">
+<h3>Zero Commission ~ Zero Fees</h3>
+The contract has been deployed and set free to run autonomously!
+<br><br>
+There are no commissions to pay to the admin or exit fees ~ all HEX transfers go direct to your upline directly and are never kept within the contract!
+</div>
+</div>
+<br>
+<div class="grid-x grid-margin-x">
+<div class="cell large-auto"></div>
+<div class="cell small-12 medium-12 large-3 infoPanel">
+<center>
+<h1 id=totalUsersDisp class=yellow>0</h1>
+total participants
+</center>
+<br>
+<div class="grid-x grid-margin-x">
+<div class="cell small-4 small-offset-2">
+Lvl 1: <span class=yellow id=usersActiveLvl1>0</span><br>
+<br>
+</div>
+<div class="cell small-4 small-offset-2">
+Lvl 2: <span class=yellow id=usersActiveLvl2>0</span><br>
+</div>
+<div class="cell small-4 small-offset-2">
+Lvl 3: <span class=yellow id=usersActiveLvl3>0</span><br>
+<br>
+</div>
+<div class="cell small-4 small-offset-2">
+Lvl 4: <span class=yellow id=usersActiveLvl4>0</span><br>
+</div>
+<div class="cell small-4 small-offset-2">
+Lvl 5: <span class=yellow id=usersActiveLvl5>0</span><br>
+<br>
+</div>
+<div class="cell small-4 small-offset-2">
+Lvl 6: <span class=yellow id=usersActiveLvl6>0</span><br>
+</div>
+<div class="cell small-4 small-offset-2">
+Lvl 7: <span class=yellow id=usersActiveLvl7>0</span><br>
+<br>
+</div>
+<div class="cell small-4 small-offset-2">
+Lvl 8: <span class=yellow id=usersActiveLvl8>0</span><br>
+</div>
+<div class="cell small-4 small-offset-2">
+Lvl 9: <span class=yellow id=usersActiveLvl9>0</span><br>
+<br>
+</div>
+<div class="cell small-4 small-offset-2">
+Lvl 10: <span class=yellow id=usersActiveLvl10>0</span><br>
+</div>
+</div>
+<center>
+<button type=button class="primary button" id=dashboardBtn2>YOUR DASHBOARD</button>
+</center>
+</div>
+<div class="cell small-12 medium-12 large-3 infoPanel">
+<center>
+<h2>HEX HODL'rs Online</h2>
+<script src="https://rf.revolvermaps.com/0/0/4.js?i=5flmil68dcv&amp;m=5&amp;h=128&amp;c=ffd201&amp;r=0" async></script>
+<br><br>
+HEXRUN active: <span class=yellow id=activeDays>0 days</span><br>
+<br>
+<br>
+<button type=button class="primary button" id=scanFreeRefs>SCAN NEXT FREE REF</button>
+</center></div>
+<div class="cell small-12 medium-12 large-3 infoPanel">
+<center>
+<img src=images/hex-icon-sm.png width=100><br>
+<h2 id=gameTotalHex>0 HEX</h2>
+total transactions
+<br><br>
+equivilant to ETH: <span class=yellow id=totalETH>0 ETH</span><br>
+equivilant to BTC: <span class=yellow id=totalBTC>0 BTC</span><br>
+equivilant to $: <span class=yellow id=totalBTCUSD>0 $</span><br>
+<br>
+<button type=button class="primary button" id=viewContractBtn>VIEW CONTRACT</button>
+</center></div>
+<div class="cell large-auto"></div>
+</div>
+<br>
+<center><h2>Latest Transactions</h2></center>
+<center>
+<table class=unstriped id=eventsTable>
+<thead>
+<tr>
+<td>Date</td>
+<td>Details</td>
+<td>Amount</td>
+<td>Tx</td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</center>
+<div class=reveal id=registrationPanel data-reveal>
+<h1 class=yellow>Get started with HEXRun and earn!</h1>
+<p class=lead>Register now to start multiplying your HEX!</p>
+<p>Buy in to the first level for just 2k HEX, this will then turn into 4000 before you then continue onto the next level.</p>
+<div class="grid-x grid-margin-x">
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h2>Current HEX Holdings</h2>
+<b>Step 1: Approve your HEX</b><br>
+<br>
+HEX in Wallet: <span id=walletHex class=yellow>0</span><br>
+Approved for HEXRun: <span id=approvedHex class=yellow>0</span><br>
+<i class=revealSmall>2000 approved HEX Required to Register</i><br>
+<br>
+Change Approved HEX Limit to:
+<center><input type=number value=2000 min=2000 id=registrationHexApprove></center>
+<center><button type=button class="primary button small" id=registrationApproveHexBtn>APPROVE HEX</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h2>Register for Level 1!</h2>
+<b>Step 2: Register to start mutiplying!</b><br>
+<br>
+Cost for Registration: <span id=registrationCost class=yellow>2000 HEX</span><br>
+<br>
+<center><button type=button class="success button medium disabled" id=regCompleteBtn>REGISTER NOW</button></center>
+<div id=approveNotice><center><i class=revealSmall>(Approve 2000 HEX first)</i></center></div>
+</div>
+</div>
+<br>
+<center><button type=button class="warning button small" data-close aria-label="Close modal">CANCEL</button></center>
+<button class=close-button data-close aria-label="Close modal" type=button>
+<span aria-hidden=true>&times;</span>
+</button>
+</div>
+<div class=reveal id=buyLvlPanel data-reveal>
+<h1 class=yellow>Upgrade your Lvl and Earn More HEX!</h1>
+<p class=lead>Ready to earn some serious HEX!</p>
+<p>Increase your level and boost your HEX earning potential ~ each level expires after 30 days but gives you a mssive income boost!</p>
+<div class="grid-x grid-margin-x">
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h2>Current HEX Holdings</h2>
+<b>Step 1: Approve your HEX</b><br>
+<br>
+HEX in Wallet: <span id=buyWalletHex class=yellow>0</span><br>
+Approved for HEXRun: <span id=buyApprovedHex class=yellow>0</span><br>
+<i class=revealSmall><span id=buyHexApproveRequirements>4000</span> approved HEX Required</i><br>
+<br>
+Change Approved HEX Limit to:
+<center><input type=number value=4000 min=4000 id=buyHexApprove></center>
+<center><button type=button class="primary button small" id=buyApproveHexBtn>APPROVE HEX</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h2 id=buyPanelLvlTitle>Buy Level 2!</h2>
+<b>Step 2: Buy the level upgrade</b><br>
+<br>
+Cost for Level: <span id=buyLvlCost class=yellow>4000 HEX</span><br>
+<br>
+<center><button type=button class="success button medium disabled" id=buyCompleteBtn>BUY LVL NOW</button></center>
+<div id=buyApproveNotice><center><i class=revealSmall>(Approve <span id=buyApproveTxt>4000</span> HEX first)</i></center></div>
+</div>
+</div>
+<br>
+<center><button type=button class="warning button small" data-close aria-label="Close modal">CANCEL</button></center>
+<button class=close-button data-close aria-label="Close modal" type=button>
+<span aria-hidden=true>&times;</span>
+</button>
+</div>
+<div class=reveal id=buyLvlPanel2 data-reveal>
+<h1 class=yellow>Upgrade your Lvl and Earn More HEX!</h1>
+<p class=lead>Ready to earn some serious HEX!</p>
+<p>Increase your level and boost your HEX earning potential ~ each level expires after 30 days but gives you a mssive income boost!</p>
+<div class="grid-x grid-margin-x">
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h2>Current HEX Holdings</h2>
+<b>Step 1: Approve your HEX</b><br>
+<br>
+HEX in Wallet: <span id=buyWalletHex2 class=yellow>0</span><br>
+Approved for HEXRun: <span id=buyApprovedHex2 class=yellow>0</span><br>
+<i class=revealSmall><span id=buyHexApproveRequirements2>2000</span> approved HEX Required</i><br>
+<br>
+Change Approved HEX Limit to:
+<center><input type=number value=2000 min=2000 id=buyHexApprove2></center>
+<center><button type=button class="primary button small" id=buyApproveHexBtn2>APPROVE HEX</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h2 id=buyPanelLvlTitle2>Buy Level 2!</h2>
+<b>Step 2: Buy the level upgrade</b><br>
+<br>
+Cost for Level: <span id=buyLvlCost2 class=yellow>2000 HEX</span><br>
+<br>
+<center><button type=button class="success button medium disabled" id=buyCompleteBtn2>BUY LVL NOW</button></center>
+<div id=buyApproveNotice><center><i class=revealSmall>(Approve <span id=buyApproveTxt2>2000</span> HEX first)</i></center></div>
+</div>
+</div>
+<br>
+<center><button type=button class="warning button small" data-close aria-label="Close modal">CANCEL</button></center>
+<button class=close-button data-close aria-label="Close modal" type=button>
+<span aria-hidden=true>&times;</span>
+</button>
+</div>
+<div class=reveal id=refScanPanel data-reveal>
+<h1 class=yellow>Scanning for free slots...</h1>
+<p>This displays the player who will receive the next FREE referral - allocated automatically by the system when a new user joins without a ref id!</p>
+<br>
+<span id=scanTitle>Searching:</span> <span class=yellow id=scanDetail></span>
+<br>
+<br>
+Use your own REF ID link to increase your income speed
+<br><br>
+<center><button type=button class="warning button small" data-close aria-label="Close modal">CLOSE</button></center>
+<button class=close-button data-close aria-label="Close modal" type=button>
+<span aria-hidden=true>&times;</span>
+</button>
+</div>
+<div class=reveal id=dashboardPanel2 data-reveal style=width:95%>
+<h1 class=yellow>Your HEXRun Matrix!</h1>
+Address: <span id=dashboardAddress2 class=yellow></span><br>
+Referred By: <span id=dashboardRef2 class=yellow></span><br>
+Matrix Ref: <span id=dashboardMatrix2 class=yellow></span><br>
+<br>
+Total Hex Earned: <span id=dashboardEarned2 class=yellow>0 HEX</span><br>
+<br>
+Ref Link:
+<center>
+<input class="shareUrl-input js-shareUrl js-shareUrl3" id=dashboardRefURL2 style=font-size:12pt readonly>
+<p class=shareUrl-subtext>Click above to copy the link.</p>
+</center>
+<br>
+<center>
+<div style="width:100%;overflow-x:scroll;background-color:rgba(100,100,100,.2);padding:10px;border-radius:5px;border-color:#fff;border:1px solid" id=matrixOuter>
+<div style=width:2000px id=matrixInner>
+<div class=grid-x>
+<div class="cell small-12 medium-12 large-12 depthPanel">
+<h3>YOU</h3>
+<i>[Top of your Matrix]</i>
+<br>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 2</span>
+</div>
+<div class="cell small-5 medium-5 large-5 depthPanel depthInactive" id=depthPanel_2_1>
+<h3 id=depthID_2_1>000</h3>
+<strong id=depthLvl_2_1>--</strong>
+</div>
+<div class="cell small-5 medium-5 large-5 depthPanel depthInactive" id=depthPanel_2_2>
+<h3 id=depthID_2_2>000</h3>
+<strong id=depthLvl_2_2>--</strong>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 2</span>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 3</span>
+</div>
+<div class="cell small-10 medium-10 large-10">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_3_1>
+<h3 id=depthID_3_1>000</h3>
+<strong id=depthLvl_3_1>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_3_2>
+<h3 id=depthID_3_2>000</h3>
+<strong id=depthLvl_3_2>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_3_3>
+<h3 id=depthID_3_3>000</h3>
+<strong id=depthLvl_3_3>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_3_4>
+<h3 id=depthID_3_4>000</h3>
+<strong id=depthLvl_3_4>--</strong>
+</div>
+</div>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 3</span>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 4</span>
+</div>
+<div class="cell small-10 medium-10 large-10">
+<div class=grid-x>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_4_1>
+<h3 id=depthID_4_1>000</h3>
+<strong id=depthLvl_4_1>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_4_2>
+<h3 id=depthID_4_2>000</h3>
+<strong id=depthLvl_4_2>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_4_3>
+<h3 id=depthID_4_3>000</h3>
+<strong id=depthLvl_4_3>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_4_4>
+<h3 id=depthID_4_4>000</h3>
+<strong id=depthLvl_4_4>--</strong>
+</div>
+</div>
+</div>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_4_5>
+<h3 id=depthID_4_5>000</h3>
+<strong id=depthLvl_4_5>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_4_6>
+<h3 id=depthID_4_6>000</h3>
+<strong id=depthLvl_4_6>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_4_7>
+<h3 id=depthID_4_7>000</h3>
+<strong id=depthLvl_4_7>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_4_8>
+<h3 id=depthID_4_8>000</h3>
+<strong id=depthLvl_4_8>--</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 4</span>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 5</span>
+</div>
+<div class="cell small-10 medium-10 large-10">
+<div class=grid-x>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_1>
+<h3 id=depthID_5_1>000</h3>
+<strong id=depthLvl_5_1>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_2>
+<h3 id=depthID_5_2>000</h3>
+<strong id=depthLvl_5_2>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_3>
+<h3 id=depthID_5_3>000</h3>
+<strong id=depthLvl_5_3>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_4>
+<h3 id=depthID_5_4>000</h3>
+<strong id=depthLvl_5_4>--</strong>
+</div>
+</div>
+</div>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_5>
+<h3 id=depthID_5_5>000</h3>
+<strong id=depthLvl_5_5>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_6>
+<h3 id=depthID_5_6>000</h3>
+<strong id=depthLvl_5_6>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_7>
+<h3 id=depthID_5_7>000</h3>
+<strong id=depthLvl_5_7>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_8>
+<h3 id=depthID_5_8>000</h3>
+<strong id=depthLvl_5_8>--</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_9>
+<h3 id=depthID_5_9>000</h3>
+<strong id=depthLvl_5_9>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_10>
+<h3 id=depthID_5_10>000</h3>
+<strong id=depthLvl_5_10>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_11>
+<h3 id=depthID_5_11>000</h3>
+<strong id=depthLvl_5_11>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_12>
+<h3 id=depthID_5_12>000</h3>
+<strong id=depthLvl_5_12>--</strong>
+</div>
+</div>
+</div>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_13>
+<h3 id=depthID_5_13>000</h3>
+<strong id=depthLvl_5_13>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_14>
+<h3 id=depthID_5_14>000</h3>
+<strong id=depthLvl_5_14>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_15>
+<h3 id=depthID_5_15>000</h3>
+<strong id=depthLvl_5_15>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_5_16>
+<h3 id=depthID_5_16>000</h3>
+<strong id=depthLvl_5_16>--</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 5</span>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 6</span>
+</div>
+<div class="cell small-10 medium-10 large-10 depthRow6">
+<div class=grid-x>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="small-3 large-3 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_1>
+<h3 id=depthID_6_1>000</h3>
+<strong id=depthLvl_6_1>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_2>
+<h3 id=depthID_6_2>000</h3>
+<strong id=depthLvl_6_2>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_3>
+<h3 id=depthID_6_3>000</h3>
+<strong id=depthLvl_6_3>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_4>
+<h3 id=depthID_6_4>000</h3>
+<strong id=depthLvl_6_4>--</strong>
+</div>
+</div>
+</div>
+<div class="small-3 large-3 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_5>
+<h3 id=depthID_6_5>000</h3>
+<strong id=depthLvl_6_5>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_6>
+<h3 id=depthID_6_6>000</h3>
+<strong id=depthLvl_6_6>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_7>
+<h3 id=depthID_6_7>000</h3>
+<strong id=depthLvl_6_7>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_8>
+<h3 id=depthID_6_8>000</h3>
+<strong id=depthLvl_6_8>--</strong>
+</div>
+</div>
+</div>
+<div class="small-3 large-3 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_9>
+<h3 id=depthID_6_9>000</h3>
+<strong id=depthLvl_6_9>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_10>
+<h3 id=depthID_6_10>000</h3>
+<strong id=depthLvl_6_10>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_11>
+<h3 id=depthID_6_11>000</h3>
+<strong id=depthLvl_6_11>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_12>
+<h3 id=depthID_6_12>000</h3>
+<strong id=depthLvl_6_12>--</strong>
+</div>
+</div>
+</div>
+<div class="small-3 large-3 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_13>
+<h3 id=depthID_6_13>000</h3>
+<strong id=depthLvl_6_13>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_14>
+<h3 id=depthID_6_14>000</h3>
+<strong id=depthLvl_6_14>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_15>
+<h3 id=depthID_6_15>000</h3>
+<strong id=depthLvl_6_15>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_16>
+<h3 id=depthID_6_16>000</h3>
+<strong id=depthLvl_6_16>--</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="small-6 large-6 columns">
+<div class=grid-x>
+<div class="small-3 large-3 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_17>
+<h3 id=depthID_6_17>000</h3>
+<strong id=depthLvl_6_17>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_18>
+<h3 id=depthID_6_18>000</h3>
+<strong id=depthLvl_6_18>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_19>
+<h3 id=depthID_6_19>000</h3>
+<strong id=depthLvl_6_19>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_20>
+<h3 id=depthID_6_20>000</h3>
+<strong id=depthLvl_6_20>--</strong>
+</div>
+</div>
+</div>
+<div class="small-3 large-3 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_21>
+<h3 id=depthID_6_21>000</h3>
+<strong id=depthLvl_6_21>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_22>
+<h3 id=depthID_6_22>000</h3>
+<strong id=depthLvl_6_22>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_23>
+<h3 id=depthID_6_23>000</h3>
+<strong id=depthLvl_6_23>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_24>
+<h3 id=depthID_6_24>000</h3>
+<strong id=depthLvl_6_24>--</strong>
+</div>
+</div>
+</div>
+<div class="small-3 large-3 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_25>
+<h3 id=depthID_6_25>000</h3>
+<strong id=depthLvl_6_25>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_26>
+<h3 id=depthID_6_26>000</h3>
+<strong id=depthLvl_6_26>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_27>
+<h3 id=depthID_6_27>000</h3>
+<strong id=depthLvl_6_27>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_28>
+<h3 id=depthID_6_28>000</h3>
+<strong id=depthLvl_6_28>--</strong>
+</div>
+</div>
+</div>
+<div class="small-3 large-3 columns">
+<div class=grid-x>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_29>
+<h3 id=depthID_6_29>000</h3>
+<strong id=depthLvl_6_29>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_30>
+<h3 id=depthID_6_30>000</h3>
+<strong id=depthLvl_6_30>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_31>
+<h3 id=depthID_6_31>000</h3>
+<strong id=depthLvl_6_31>--</strong>
+</div>
+<div class="cell small-3 medium-3 large-3 depthPanel depthInactive" id=depthPanel_6_32>
+<h3 id=depthID_6_32>000</h3>
+<strong id=depthLvl_6_32>--</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell small-1 medium-1 large-1">
+<span style=top:25%;position:relative>DEPTH 6</span>
+</div>
+</div>
+</div>
+</div>
+</center>
+<br>
+<h2>Payment Depth Info</h2>
+Share you Ref URL to ensure all of your levels are filled - that gives you the fastest ROI + Profit!
+<br><br>
+<h2>Payment Depth Info</h2>
+<p>
+When your referrals at each DEPTH LEVEL reach the following GAME LEVEL you get paid (If you are at the required level)
+</p>
+<p>
+<strong>DEPTH 2</strong><br>
+You are paid for Level 1 (Registration) and Level 6 Buys... as long as you are still registered/not expired at the level (1 or 6). This gives you a maximum of 2 payments from these.
+<br><br>
+<strong>DEPTH 3</strong><br>
+You are paid for Level 2 and Level 7 Buys from these players... as long as you are not expired at level 2/7. This gives you a maximum of 4 payments from these.
+<br><br>
+<strong>DEPTH 4</strong><br>
+You are paid for Level 3 and Level 8 Buys from these players... as long as you are not expired at level 3/8. This gives you a maximum of 8 payments from these.
+<br><br>
+<strong>DEPTH 5</strong><br>
+You are paid for Level 4 and Level 9 Buys from these players... as long as you are not expired at level 4/9. This gives you a maximum of 16 payments from these.
+<br><br>
+<strong>DEPTH 6</strong><br>
+You are paid for Level 5 and Level 10 Buys from these players... as long as you are not expired at level 5/10. This gives you a maximum of 32 payments from these.
+<br><br>
+</p>
+<br>
+<center><button type=button class="warning button small" data-close aria-label="Close modal">CLOSE</button></center>
+<br>
+</div>
+<div class=reveal id=dashboardPanel data-reveal>
+<h1 class=yellow>Your HEXRun Dashboard!</h1>
+Address: <span id=dashboardAddress class=yellow></span><br>
+Referred By: <span id=dashboardRef class=yellow></span><br>
+Matrix Ref: <span id=dashboardMatrix class=yellow></span><br>
+<br>
+Total Hex Earned: <span id=dashboardEarned class=yellow>0 HEX</span><br>
+<br>
+Ref Link:
+<center>
+<input class="shareUrl-input js-shareUrl js-shareUrl2" id=dashboardRefURL style=font-size:12pt readonly>
+<p class=shareUrl-subtext>Click above to copy the link.</p>
+</center>
+<br>
+<div class="grid-x grid-margin-x">
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 1</h3>
+Active? <span class=yellow id=dashboardLvl1Active>YES</span> <br>
+<div id=dashboardLvl1Stats>
+Expires: <time class=timeago id=dashboardLvl1Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl1Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl1Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl1Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl1>BUY LVL 1</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 2</h3>
+Active? <span class=yellow id=dashboardLvl2Active>NO</span> <br>
+<div id=dashboardLvl2Stats>
+Expires: <time class=timeago id=dashboardLvl2Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl2Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl2Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl2Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl2>BUY LVL 2</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 3</h3>
+Active? <span class=yellow id=dashboardLvl3Active>NO</span> <br>
+<div id=dashboardLvl3Stats>
+Expires: <time class=timeago id=dashboardLvl3Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl3Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl3Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl3Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl3>BUY LVL 3</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 4</h3>
+Active? <span class=yellow id=dashboardLvl4Active>NO</span> <br>
+<div id=dashboardLvl4Stats>
+Expires: <time class=timeago id=dashboardLvl4Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl4Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl4Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl4Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl4>BUY LVL 4</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 5</h3>
+Active? <span class=yellow id=dashboardLvl5Active>NO</span> <br>
+<div id=dashboardLvl5Stats>
+Expires: <time class=timeago id=dashboardLvl5Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl5Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl5Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl5Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl5>BUY LVL 5</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 6</h3>
+Active? <span class=yellow id=dashboardLvl6Active>NO</span> <br>
+<div id=dashboardLvl6Stats>
+Expires: <time class=timeago id=dashboardLvl6Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl6Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl6Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl6Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl6>BUY LVL 6</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 7</h3>
+Active? <span class=yellow id=dashboardLvl7Active>NO</span> <br>
+<div id=dashboardLvl7Stats>
+Expires: <time class=timeago id=dashboardLvl7Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl7Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl7Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl7Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl7>BUY LVL 7</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 8</h3>
+Active? <span class=yellow id=dashboardLvl8Active>NO</span> <br>
+<div id=dashboardLvl8Stats>
+Expires: <time class=timeago id=dashboardLvl8Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl8Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl8Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl8Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl8>BUY LVL 8</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 9</h3>
+Active? <span class=yellow id=dashboardLvl9Active>NO</span> <br>
+<div id=dashboardLvl9Stats>
+Expires: <time class=timeago id=dashboardLvl9Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl9Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl9Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl9Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl9>BUY LVL 9</button></center>
+</div>
+<div class="cell small-12 medium-12 large-6 infoPanel">
+<h3>Level 10</h3>
+Active? <span class=yellow id=dashboardLvl10Active>NO</span> <br>
+<div id=dashboardLvl10Stats>
+Expires: <time class=timeago id=dashboardLvl10Expires datetime=""></time><br>
+Referrals Eligible: <span id=dashboardLvl10Eligible>0</span>
+</div>
+HEX Referrals Missed: <span id=dashboardLvl10Missed>0</span><br>
+HEX Referrals Received: <span id=dashboardLvl10Received>0</span><br>
+<br>
+<center><button type=button class="success button medium" id=dashboardBuyLvl10>BUY LVL 10</button></center>
+</div>
+</div>
+<br>
+<center><button type=button class="warning button small" data-close aria-label="Close modal">CANCEL</button></center>
+<button class=close-button data-close aria-label="Close modal" type=button>
+<span aria-hidden=true>&times;</span>
+</button>
+</div>
+<div class=reveal id=errorPanel data-reveal>
+<h1 class=yellow>Sorry, there is an problem!</h1>
+<p id=errorMsg></p>
+<br>
+<center><button type=button class="warning button small" data-close aria-label="Close modal">CLOSE MSG</button></center>
+<button class=close-button data-close aria-label="Close modal" type=button>
+<span aria-hidden=true>&times;</span>
+</button>
+</div>
+<div class=footer>
+<center>
+<a href=https://t.me/HEXRun target=_new><img src=images/icon_telegram.png width=50 border=0></a>
+&nbsp;&nbsp;
+<a href=https://discord.gg/P5aJgaC target=_new><img src=images/icon_discord.png width=100 border=0></a>
+<br><br>
+<div style=width:70%>
+HEXRUN network is a smart contract running on the decentralised Ethereum network and does not belong to any individual person or business enterprise. It's purpose is to distribute the HEX cryptocurrency token evenly between all users of the smart contract. The distribution is controlled by the smart contract algorithm ~ which is immutable, uncontrollable and unstoppable!<br>
+The site administrators DO NOT own the HEXRUN project and have no technical or any other means to access user funds which are ALWAYS sent direct to users wallets P2P (Person 2 Person).
+<br><br>
+&copy; 2020 HEXRUN network ~ <a href=mailto:support@hexrun.network>support@hexrun.network</a>
+</div>
+</center>
+</div>
+<br><br><br>
+<div class="loadingSpinner hide" id=loadingDiv><center>Processing Tx...</center></div>
+<canvas id=canvas></canvas>
+<script src=https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js crossorign=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js></script>
+<script src=js/jquery.toast.min.js></script>
+<script src=js/bignumber.min.js></script>
+<script src=js/jquery.timeago.js></script>
+<script src=js/hexToken_abi.js></script>
+<script src=js/hexRun_abi.js></script>
+<script src="js/main.min.js?a=502"></script>
+<script>$(function(){function t(t,i){return Math.abs(Math.round(2*Math.random()-1+(2*Math.random()-1)+(2*Math.random()-1))*i)+t}function i(){this.h=parseInt(185),this.s=parseInt(180*Math.random()+30),this.l=parseInt(180*Math.random()+30),this.a=.8*Math.random(),this.color="hsla("+this.h+","+this.s+"%,"+this.l+"%,"+this.a+")",this.shadowcolor="hsla("+this.h+","+this.s+"%,"+this.l+"%,"+parseFloat(this.a-.55)+")",this.x=Math.random()*c,this.y=Math.random()*l,this.direction={x:-1+2*Math.random(),y:-1+2*Math.random()},this.radius=t(0,4),this.scale=.8*Math.random()+.5,this.rotation=Math.PI/4*Math.random(),this.grad=y.createRadialGradient(this.x,this.y,this.radius,this.x,this.y,0),this.grad.addColorStop(0,this.color),this.grad.addColorStop(1,this.shadowcolor),this.vx=.01*(2*Math.random()+4)*this.radius,this.vy=.01*(2*Math.random()+4)*this.radius,this.valpha=.01*Math.random()-.02,this.move=function(){this.x+=this.vx*this.direction.x,this.y+=this.vy*this.direction.y,this.rotation+=this.valpha},this.changeDirection=function(t){this.direction[t]*=-1,this.valpha*=-1},this.draw=function(){y.save(),y.translate(this.x+g.rx/-20*this.radius,this.y+g.ry/-20*this.radius),y.rotate(this.rotation),y.scale(1,this.scale),this.grad=y.createRadialGradient(0,0,this.radius,0,0,0),this.grad.addColorStop(1,this.color),this.grad.addColorStop(0,this.shadowcolor),y.beginPath(),y.fillStyle=this.grad,y.arc(0,0,this.radius,0,2*Math.PI,!1),y.fill(),y.restore()},this.boundaryCheck=function(){this.x>=1.2*c?(this.x=1.2*c,this.changeDirection("x")):this.x<=.2*-c&&(this.x=.2*-c,this.changeDirection("x")),this.y>=1.2*l?(this.y=1.2*l,this.changeDirection("y")):this.y<=.2*-l&&(this.y=.2*-l,this.changeDirection("y"))}}function h(){y.clearRect(0,0,c,l)}function a(){for(var t=m-1;t>=0;t--)p=new i,x.push(p)}function s(){for(var t=m-1;t>=0;t--)p=x[t],p.draw()}function n(){for(var t=x.length-1;t>=0;t--)p=x[t],p.move(),p.boundaryCheck()}function r(){a(),s()}function o(){h(),e(),d(),s(),n(),requestAnimationFrame(o)}function e(){this.now=(new Date).getTime(),g.delta=(this.now-this.then)/1e3,this.then=this.now}function d(){if(!(isNaN(g.delta)||g.delta<=0)){var t=g.x-g.rx,i=g.y-g.ry;0!==t&&0!==i&&(g.rx-=(g.rx-g.x)/g.speed,g.ry-=(g.ry-g.y)/g.speed)}}var c,l,u,y,m=700,x=[];c=window.innerWidth,l=window.innerHeight,u=$("#canvas").get(0),u.width=c,u.height=l,y=u.getContext("2d"),y.globalCompositeOperation="lighter";var g={x:0,y:0,rx:0,ry:0,speed:45,delta:0};document.addEventListener("mousemove",function(t){g.x=t.clientX||t.pageX,g.y=t.clientY||t.pageY,g.x-=c/2,g.y-=l/2},!1),r(),requestAnimationFrame(o)})</script>
+</body>
+</html></html>
