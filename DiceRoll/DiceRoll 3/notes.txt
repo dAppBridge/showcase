@@ -1,0 +1,66 @@
+https://dicesites.com/
+https://etheroll.com/#/about
+https://bitcointalk.org/index.php?topic=1805705.60
+https://safedice.com/house-edge
+https://bitcointalk.org/index.php?topic=1778449.0
+https://www.softswiss.com/knowledge-base/is-bitcoin-gambling-legal/
+https://dappradar.com/
+https://blog.vdice.io/development-update-april-2018/
+https://medium.com/loom-network/dappchains-scaling-ethereum-dapps-through-sidechains-f99e51fff447
+https://loomx.io/developers/docs/en/release-notes.html
+http://cryptomanual.co/
+https://bitinfocharts.com/
+https://gitter.im/ethereum/solidity?at=5768833c3881bc405b6f51ea
+https://idex.market/eth/aura
+https://enigma.co/catalyst/live-trading.html
+https://secure.freeola.com/myfreeola-control-panel/domains_managed_view.php?domain=dappbridge.com
+https://github.com/ronomon/crypto-async#performance
+https://github.com/ronomon/crypto-async#performance
+https://medium.com/aigang-network/how-ethereum-contract-can-communicate-with-external-data-source-2e32616ea180
+https://www.reddit.com/r/ethdev/comments/8r15la/introducing_the_notary_proxy_the_ethereum_oracle/
+https://dappinsight.com/list/3
+https://dappinsight.com/dapp/1073/smartdice
+https://medium.com/@alexdice/smartdice-is-bringing-you-pure-trust-and-fair-play-in-dice-betting-68c4f57f259a
+https://www.mobilefish.com/download/ethereum/web3api.html
+https://just-dice.com/biggest.txt#a2
+
+
+https://our.bet
+https://takemy.bet
+---------------
+bet against anything using Ether
+is tomorrow going to rain?
+is England going to score 2 against?
+That the price of BTC will be higher than 6000USD this time tomorrow....
+
+
+1. Needs predefined set of INPUTS to bet against -> these can be in an offline DB as well as in the contract
+2. The offline DB will be used for the website to show available/upcoming bets
+Example:
+https://openweathermap.org/history
+
+I bet you that the avg temp in London tomorrow will be higher than 23c.  1eth.
+Calculate Odds??? just winner takes all - mins our 4% fee??
+
+OR
+
+default odds to 1/1 and let bet placer select odds: 2/1, 3/1, 4/1, 5/1, 10/1, 50/1, 100/1 etc.
+
+The bet taker then only needs to place a fraction of the bet maker stake
+
+E.g.
+
+I bet that the avg. temp in London tomorrow will be higher than 23c. 1eth at 2/1.
+
+Bet taker then can take this bet for 0.5eth.... can this be split???  so 5 takers of 0.1? 
+YES= Each one then gets a 1/5 of the total pot (After our cut)
+
+
+If higher than 23c => bet maker wins 0.5eth - 4% fee.
+If <=23c then bet taker wins 1eth - 4% fee.
+
+
+
+
+
+

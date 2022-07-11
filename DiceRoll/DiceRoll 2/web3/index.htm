@@ -1,0 +1,402 @@
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <title>diceroll.app - ethereum dice roll casino gaming app</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <style type="text/css">
+
+  .mainContainer{
+    background-image: url(images/d-back.png);
+    background-repeat: no-repeat;
+
+  }
+
+  @media (min-width: 550px) {
+    .body
+    {
+      background-image: url(images/back-v1.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    
+    }
+
+    .mainContainer{
+      background-image: url(images/d-back.png);
+      background-repeat: no-repeat;
+
+      background-color:rgba(255, 255, 255, 0.95);
+      padding-left: 10px;
+      padding-right: 50px;
+      height: 120%;
+    }
+  }
+
+  .menuBar {
+      overflow: hidden;
+      background-color: #d5d8bf;
+      position: fixed; 
+      top: 0; 
+      width: 100%; 
+      height: 28px;
+      z-index: 5;
+  }
+  .footerBar {
+    position: absolute;
+    bottom: 15;
+  }
+  .menuButton {
+    background-color: #edf0d5;
+    color: #000;
+    border-radius: 0px;
+    border-color: #d5d8bf;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 28px;
+    height:  28px;
+    padding: 0 25px;
+  }
+  .menuButton:hover {
+    border-color: #edf0d5;
+  }
+  .orangeColor{
+    color: #ffb400;
+  }
+  .redColor{
+    color: #f9531c;
+  }
+  .orangeBackground {
+    background-color: #ffb400;
+  }
+  .orangeBackground_trans {
+    background-color: #fff7e5;
+  }
+  .redBackground{
+    background-color: #f9531c;
+  }
+  .small{
+    font-size: 1rem;
+  }
+  .small2{
+    font-size: 1.2rem;
+  }
+  .dice{
+    color: #666;
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+  	background-image: url("images/d.png");
+    background-size: 60px 60px;
+    cursor: pointer;
+  }
+  .dice:hover{
+    color: #666;
+  }
+  .betDisplay{
+    cursor: pointer;
+  }
+  .betDisplay:hover{
+    background-color: #d5d8bf;
+
+  }
+  .clickableRow{
+    cursor: pointer;
+  }
+  </style>
+
+<script src="js/abi.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/default.min.css"/>
+
+
+	<script type="text/javascript" src="js/web3.min.js"></script>
+  <script src='js/bignumber.min.js'></script>
+<script lanaguage="javascript">
+
+var canPlay = false;
+var houseEdge = 96;
+var minBet = 0.001;
+var maxBet = 0.002;
+var rollUnder = 40;
+var account = 0x00;
+var cryptodiceContract;
+var cryptodiceContract_subs;
+var wins = 0;
+var losses = 0;
+var subscriberWeb3;
+var current_potential_profit = 0;
+
+var rolling = false;
+var currentPlayBets = [];
+var refreshingBets = false;
+var maxRows = 5;//30
+var lastBlock = 0;
+var lastBlockAllGames = 0;
+var initPlayerBetsUpdate = 10000;
+var initAllGamesUpdate = 10000;
+var refreshAllGames = 7000;
+var refreshPlayerGames = 3000;
+var refreshGameStats = 30000;
+var useGasPrice = 20000000000;
+var contractAddress = "0xb316a2A34cf8A16091029BeE120eAAA3889b284E"; 
+var isMainGame = true;
+
+</script>
+
+<script src="js/main.min.js"></script>
+
+</head>
+<body class="body">
+  <div class="menuBar">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+          <div class="u-pull-right"><a class="button menuButton" href="/index.htm">Home</a><a class="button menuButton" href="/dataproofs.htm">Proofs</a><a class="button menuButton" href="/faq.htm">FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container mainContainer">
+
+
+    <div class="row">
+      <div class="two-thirds column" style="margin-top: 8%">
+
+        <h4 style="font-weight: bolder;"><span class="orangeColor">Dice</span><span class="redColor">Roll</span></h4>
+        <h5>Provably fair dice game for Ethereum</h5>
+        <p>
+          No login required - simply connect with your Ethereum Wallet or Browser and start playing!  
+          Extremely low House Edge of just <span id="houseEdge">4</span>% and the most provable system ensures you can be certain of a fair game!
+        </p>
+        <p>
+          <b>Low minimum Bets - just <span id="minBet2"></span> Ether!</b>
+        </p>
+
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_inline_share_toolbox"></div>
+            
+      </div>
+      <div class="one-third column" style="margin-top: 2%">
+      	<table class="u-full-width small" >
+      		<tbody>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+
+      			<tr>
+      				<td>Network:</td>
+      				<td><span id="networkName" style="font-weight: bolder;"></span></td>
+      			</tr>
+      			<tr>
+      				<td>Account:</td>
+      				<td><span id="accountAddr" style="font-weight: bolder;"></span></td>
+      			</tr>
+      			<tr>
+      				<td>Balance:</td>
+      				<td><span id="accountBalance" style="font-weight: bolder;"></span></td>
+      			</tr>
+      			<tr onclick="setStakeMaxBet();" class="clickableRow">
+      				<td>Max Bet:</td>
+      				<td><span id="maxBet" style="font-weight: bolder;"></span><input type="hidden" id="maxBet" value="0"/></td>
+      			</tr>
+      			<tr onclick="setStakeMinBet();" class="clickableRow">
+      				<td>Min Bet:</td>
+      				<td><span id="minBet" style="font-weight: bolder;"></span><input type="hidden" id="minBet" value="0"/></td>
+      			</tr>
+      			<tr>
+      				<td>Wins:</td>
+      				<td><span id="wins" style="font-weight: bolder;">0</span></td>
+      			</tr>
+      			<tr>
+	      			<td>Losses:</td>
+	      			<td><span id="losses" style="font-weight: bolder;">0</span></td>
+	      		</tr>
+      	</table>
+    </div>
+    <form id="gameForm">
+    <div class="row">
+    	<div class="twelve columns">
+    		<hr/>
+    	</div>
+    </div>
+    <div class="row" id="inputRow">
+    	<div class="eight columns">
+    		<h4>Roll Under</h4>
+
+        <div style="width: 70%; margin: 0 auto;">
+    		 <a class="dice" href="#" onclick="return selectRollUnder(this);" id="rollUnder20">20</a>
+    		 <a class="dice" href="#" onclick="return selectRollUnder(this);" id="rollUnder30">30</a>
+    		 <a class="dice" href="#" onclick="return selectRollUnder(this);" id="rollUnder40">40</a>
+    		 <a class="dice" href="#" onclick="return selectRollUnder(this);" id="rollUnder50">50</a>
+    		 <a class="dice" href="#" onclick="return selectRollUnder(this);" id="rollUnder60">60</a>
+        </div>
+
+    	</div>
+
+    	<div class="two columns">
+    		<h4>Stake</h4>
+    		<input class="u-full-width" placeholder="0.0000000" id="stake" type="number" style="-moz-appearance: textfield;" onchange="updatePotentialProfit();">
+    	</div>
+
+      <div class="two columns">
+        <h4>MultiRoll</h4>
+        <center>
+          <select id="number_of_rolls" onchange="updatePotentialProfit();">
+          </select>
+        </center>
+      </div>
+    </div>
+
+    <div class="row">
+    	<div class="twelve columns">
+    		<br/>
+    	</div>
+    </div>
+
+
+
+
+
+    <div class="row">
+    	<div class="three columns">
+    		<b>Chance of Win:</b>
+    	</div>
+    	<div class="three columns">
+	      	<span id="chanceOfWin">00%</span>
+	    </div>
+
+      <div class="three columns">
+        <b>Potential Profit:</b>
+      </div>
+      <div class="three columns">
+        <span id="potentialProfit" class="redColor" style="font-weight: bolder;">0.0000 Ether</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <br/>
+      </div>
+    </div>
+
+    <div class="row">
+    	<div class="twelve columns">
+    		<a class="button u-full-width" style="background-color: #c74216; border-color: #c74216; color: #FFF; font-weight; bolder; font-size: 1.5rem;" href="#" onclick="return rollDice();" id="RollDiceButton">ROLL DICE</a>
+    	</div>
+    </div>
+	</form>
+    <div class="row">
+    	<div class="twelve columns">
+    		<hr/>
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="six columns" style="height: 200px;">
+    		<h6>Latest Games</h6>
+
+          <table class="u-full-width small" id="latestGamesTable" >
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Roll Under</th>
+                <th>Result</th>
+                <th>Stake</th>
+                <th>Win?</th>
+                <th>Profit/Loss</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+
+    	</div>
+    	<div class="six columns" style="height: 200px;">
+    		<h6>Your Previous Games</h6>
+
+          <table class="u-full-width small" id="previousGamesTable" >
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Roll Under</th>
+                <th>Result</th>
+                <th>Stake</th>
+                <th>Win?</th>
+                <th>Profit/Loss</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+    	</div>
+    </div>
+
+
+
+
+
+    <div class="row">
+
+      <div class="twelve columns small u-full-width footerBar" style="text-align: center;">
+          <center>
+            diceroll.app is a service provided by cryptovegas.app, a totally new and provably fair way of crypto gaming - &copy; 2018 cryptovegas.app - contact <a href="mailto:support@diceroll.app">support@diceroll.app</a> or <a href="https://twitter.com/dicerollapp/" target="_new">@dicerollapp</a> for more info
+          </center>
+      </div>
+    </div>
+
+  </div>
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<!-- Default Statcounter code for diceroll.app
+https://diceroll.app -->
+<script type="text/javascript">
+var sc_project=11747325; 
+var sc_invisible=1; 
+var sc_security="bb007a08"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11747325/0/bb007a08/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b336c5a2f719314"></script>
+
+
+</body>
+</html>
