@@ -1,0 +1,266 @@
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <title>diceroll.app - ethereum dice game with validated data proofs</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <style type="text/css">
+  .mainContainer{
+    background-image: url(images/d-back.png);
+    background-repeat: no-repeat;
+  }
+  .menuBar {
+      overflow: hidden;
+      background-color: #d5d8bf;
+      position: fixed; 
+      top: 0; 
+      width: 100%; 
+      height: 28px;
+      z-index: 5;
+  }
+  .menuButton {
+    background-color: #edf0d5;
+    color: #000;
+    border-radius: 0px;
+    border-color: #d5d8bf;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 28px;
+    height:  28px;
+    padding: 0 25px;
+  }
+  .menuButton:hover {
+    border-color: #edf0d5;
+  }
+  .orangeColor{
+    color: #ffb400;
+  }
+  .redColor{
+    color: #f9531c;
+  }
+  .orangeBackground {
+    background-color: #ffb400;
+  }
+  .orangeBackground_trans {
+    background-color: #fff7e5;
+  }
+  .redBackground{
+    background-color: #f9531c;
+  }
+  .small{
+    font-size: 1rem;
+  }
+  .small2{
+    font-size: 1.2rem;
+  }
+  .dice{
+    color: #666;
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+  	background-image: url("images/d.png");
+    background-size: 60px 60px;
+    cursor: pointer;
+  }
+  .dice:hover{
+    color: #666;
+  }
+  .betDisplay{
+    cursor: pointer;
+  }
+  .betDisplay:hover{
+    background-color: #d5d8bf;
+
+  }
+  .clickableRow{
+    cursor: pointer;
+  }
+  </style>
+
+<script src="js/abi.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/default.min.css"/>
+
+
+	<script type="text/javascript" src="js/web3.min.js"></script>
+  <script src='js/bignumber.min.js'></script>
+<script lanaguage="javascript">
+
+var canPlay = false;
+var houseEdge = 96;
+var minBet = 0.001;
+var maxBet = 0.002;
+var rollUnder = 40;
+var account = 0x00;
+var cryptodiceContract;
+var cryptodiceContract_subs;
+var wins = 0;
+var losses = 0;
+var subscriberWeb3;
+var current_potential_profit = 0;
+
+var rolling = false;
+var currentPlayBets = [];
+var refreshingBets = false;
+var maxRows = 50;//30
+var lastBlock = 0;
+var lastBlockAllGames = 0;
+var initPlayerBetsUpdate = 10000;
+var initAllGamesUpdate = 10000;
+var refreshAllGames = 7000;
+var refreshPlayerGames = 3000;
+var refreshGameStats = 30000;
+var useGasPrice = 20000000000;
+var contractAddress = "0xCD0ebA4FB9210a20e79cad9ECcFE38AAc1a8ad5C";
+var isMainGame = false;
+</script>
+
+<script src="js/main.js"></script>
+
+</head>
+<body>
+  <div class="menuBar">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+          <div class="u-pull-right"><a class="button menuButton" href="/index.htm">Home</a><a class="button menuButton" href="/dataproofs.htm">Proofs</a><a class="button menuButton" href="/faq.htm">FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container mainContainer"">
+
+
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 8%">
+
+        <h4 style="font-weight: bolder;"><span class="orangeColor">Dice</span><span class="redColor">Roll</span></h4>
+        <h5>Data Proofs</h5>
+        <p>
+            How can you trust that the result of each game has not been altered?  That the game is fair?
+        </p>
+        <p>
+            A perfectly reasonble question!  And one that you should ask of any online game!  At <b>diceroll.app</b> we believe we offer the most provably fair system available... we use what is called a Data Oracle service to provide us with our random numbers - the service we use is <a href="https://www.dappbridge.com/" target="_new">dAppBridge</a> - and they in-turn use a fully audit-able 3rd party hosted Notary Proxy service to request random numbers from random.org!
+        </p>
+        <p>
+          The technical details are as follows...
+        </p>
+        <ul class="small2">
+          <li>Stage 1: You submit your dice roll which is submitted to the blockchain - the Stake & Roll Under figure are permentantly stored on the blockchain</li>
+          <li>Stage 2: A random number is then requested from random.org by <a href="https://www.dappbridge.com/" target="_new">dAppBridge</a></li>
+          <li>Stage 3: Instead of going direct to random.org the request is handed off to the <a href="https://github.com/dAppBridge/NotaryProxy" target="_new">Notary Proxy</a> - which will actually make the request on behalf of dAppBridge</li>
+          <li>Stage 4: <a href="https://github.com/dAppBridge/NotaryProxy" target="_new">Notary Proxy</a> makes the request from random.org - but when it receives the response it makes a Keccak256 Hash of the result and stores this securely to validate the original data</li>
+          <li>Stage 5: The random number is then stored on the blockchain (With a unique reference ID tying it back to the Keccak256 Hash file)</li>
+          <li>Stage 6: The result is checked against your original bet to see if you've won or lost!</li>
+
+        </ul>
+        <p>
+          All of this happens automatically - all you need to do is push the <a href="/index.htm">ROLL DICE</a> button!  When you receive your result (Or if you wish to check anyone elses result below for example) - simply click on the result item and it will give you a link to the file created in stage 5 above.
+        </p>
+        <p>
+          <b>Example verification file</b>
+        </p>
+          <pre>
+            {
+              "request_key":"0x4a3e88df51dcd2d7c004d0c2557a50f36f8ff730e48524df27695f9d5f98f701",
+              "full_body_hash":"596c2ea2d8e36604592ab90b923e846ac39eaf7a9195161c09335088ee833454",
+              "response_body_hash":"006b3e710f3089a74ecb6b0f5948e5ff07a3db6ba4da475d2be17624ba96b95b",
+              "response_ts":1529939531052
+            }
+          </pre>
+        <p>
+          The Keccak256 hash of the Random number is labeled <b>response_body_hash</b>.  To generate your own Keccak256 Hash of the random number you've received go to: <a href="https://emn178.github.io/online-tools/keccak_256.html" target="_new">https://emn178.github.io/online-tools/keccak_256.html</a>
+        </p>
+        <h5>More Information</h5>
+        <p>
+          For full technical details please read:
+          <ul>
+            <li><a href="https://medium.com/@dappbridge/ethereum-oracle-e0ab5e4ebafb" target="_new">Ethereum Oracle Services — Getting data into your dApp</a>
+          <li><a href="https://medium.com/@dappbridge/introducing-the-notary-proxy-the-ethereum-oracle-trust-layer-4f53cade6463" target="_new">Introducing the Notary Proxy — The Ethereum Oracle Trust Layer</a></li>
+          <li><a href="https://github.com/dAppBridge/NotaryProxy" target="_new">Notary Proxy - 3rd party validation & proof of online content</a>
+        </p>
+      </div>
+      
+
+
+
+    <form id="gameForm">
+    <div class="row">
+    	<div class="twelve columns">
+    		<hr/>
+    	</div>
+    </div>
+
+    
+    <div class="row">
+    	<div class="twelve columns">
+    		<h6>Latest Games</h6>
+
+          <table class="u-full-width small" id="latestGamesTable" >
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Address</th>
+                <th>Roll Under</th>
+                <th>Result</th>
+                <th>Stake</th>
+                <th>Win?</th>
+                <th>Profit/Loss</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+
+    	</div>
+    	
+    </div>
+
+
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<!-- Default Statcounter code for diceroll.app
+https://diceroll.app -->
+<script type="text/javascript">
+var sc_project=11747325; 
+var sc_invisible=1; 
+var sc_security="bb007a08"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11747325/0/bb007a08/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

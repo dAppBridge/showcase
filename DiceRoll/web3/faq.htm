@@ -1,0 +1,255 @@
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <title>FAQ - diceroll.app - ethereum dice game with validated data proofs</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <style type="text/css">
+  .mainContainer{
+    background-image: url(images/d-back.png);
+    background-repeat: no-repeat;
+  }
+  .menuBar {
+      overflow: hidden;
+      background-color: #d5d8bf;
+      position: fixed; 
+      top: 0; 
+      width: 100%; 
+      height: 28px;
+      z-index: 5;
+  }
+  .menuButton {
+    background-color: #edf0d5;
+    color: #000;
+    border-radius: 0px;
+    border-color: #d5d8bf;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 28px;
+    height:  28px;
+    padding: 0 25px;
+  }
+  .menuButton:hover {
+    border-color: #edf0d5;
+  }
+  .orangeColor{
+    color: #ffb400;
+  }
+  .redColor{
+    color: #f9531c;
+  }
+  .orangeBackground {
+    background-color: #ffb400;
+  }
+  .orangeBackground_trans {
+    background-color: #fff7e5;
+  }
+  .redBackground{
+    background-color: #f9531c;
+  }
+  .small{
+    font-size: 1rem;
+  }
+  .small2{
+    font-size: 1.2rem;
+  }
+  .dice{
+    color: #666;
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+  	background-image: url("images/d.png");
+    background-size: 60px 60px;
+    cursor: pointer;
+  }
+  .dice:hover{
+    color: #666;
+  }
+  .betDisplay{
+    cursor: pointer;
+  }
+  .betDisplay:hover{
+    background-color: #d5d8bf;
+
+  }
+  .clickableRow{
+    cursor: pointer;
+  }
+  </style>
+
+<script src="js/abi.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/default.min.css"/>
+
+
+	<script type="text/javascript" src="js/web3.min.js"></script>
+  <script src='js/bignumber.min.js'></script>
+<script lanaguage="javascript">
+
+var canPlay = false;
+var houseEdge = 96;
+var minBet = 0.001;
+var maxBet = 0.002;
+var rollUnder = 40;
+var account = 0x00;
+var cryptodiceContract;
+var cryptodiceContract_subs;
+var wins = 0;
+var losses = 0;
+var subscriberWeb3;
+var current_potential_profit = 0;
+
+var rolling = false;
+var currentPlayBets = [];
+var refreshingBets = false;
+var maxRows = 50;//30
+var lastBlock = 0;
+var lastBlockAllGames = 0;
+var initPlayerBetsUpdate = 10000;
+var initAllGamesUpdate = 10000;
+var refreshAllGames = 7000;
+var refreshPlayerGames = 3000;
+var refreshGameStats = 30000;
+var useGasPrice = 20000000000;
+var contractAddress = "0xCD0ebA4FB9210a20e79cad9ECcFE38AAc1a8ad5C";
+var isMainGame = false;
+</script>
+
+<script src="js/main.js"></script>
+
+</head>
+<body>
+  <div class="menuBar">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+          <div class="u-pull-right"><a class="button menuButton" href="/index.htm">Home</a><a class="button menuButton" href="/dataproofs.htm">Proofs</a><a class="button menuButton" href="/faq.htm">FAQ</a></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container mainContainer"">
+
+
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 8%">
+
+        <h4 style="font-weight: bolder;"><span class="orangeColor">Dice</span><span class="redColor">Roll</span></h4>
+        <h5>Frequently Asked Questions</h5>
+        
+        <h5>Can you trust the result of the dice roll?</h5>
+        <p>
+          Yes! 100% In fact we give you the tools to validate every single dice roll result.  See <a href="/dataproofs.html">PROOFS</a> for more information.
+        </p>
+
+        <h5>How do I play?</h5>
+        <p>
+          Simple - make sure you running an Ethereum Wallet or Browser (For desktop users we recommend <a href="https://metamask.io/" target="_new">metamask</a>, and for mobile users we recommend the Cipher Browser).
+        </p>
+        <p>
+          Once you've setup your Wallet or Browser and have some Ethereum loaded make sure your on the Mainnet (And not any testnets) and simply go to the main game page (<a href="https://diceroll.app">https://diceroll.app</a>) to start -> choose your stake (Or click the Min/Max Bet amounts) choose the dice roll you think the result will be under and click ROLL DICE!
+        </p>
+        <p>
+          Your result will then be mined onto the blockchain (Which may take a minute or so if it is busy so don't worry if it's not instant)... you can continue to roll dice whilst you wait for results.
+        </p>
+
+        <h5>What is the House Edge</h5>
+        <p>
+          The House Edge simply put is how we make our return on running this service.  It is our % of winnings.  So for every win we take a tiny percentage of that... this is the House Edge and allows us to continue running and enhancing this service.
+        </p>
+
+        <h5>Why does the Max Bet change</h5>
+        <p>
+          The Max Bet is a fluid number calculated within our smart contract to ensure it meets liquidity requirements... it will often increase so please keep checking back if you want to play for larger amounts!
+        </p>
+
+        <h5>How do I get in touch?</h5>
+        <p>
+          We welcome all contact &amp; feedback - we're on twitter <a href="https://twitter.com/dicerollapp" target="_new">@dicerollapp</a> and email: <a href="mailto:support@diceroll.app">support@diceroll.app</a>
+        </p>
+        
+      </div>
+      
+
+
+
+    <form id="gameForm">
+    <div class="row">
+    	<div class="twelve columns">
+    		<hr/>
+    	</div>
+    </div>
+
+    
+    <div class="row">
+    	<div class="twelve columns">
+    		<h6>Latest Games</h6>
+
+          <table class="u-full-width small" id="latestGamesTable" >
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Address</th>
+                <th>Roll Under</th>
+                <th>Result</th>
+                <th>Stake</th>
+                <th>Win?</th>
+                <th>Profit/Loss</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+
+    	</div>
+    	
+    </div>
+
+
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<!-- Default Statcounter code for diceroll.app
+https://diceroll.app -->
+<script type="text/javascript">
+var sc_project=11747325; 
+var sc_invisible=1; 
+var sc_security="bb007a08"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11747325/0/bb007a08/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
