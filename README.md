@@ -40,7 +40,7 @@ Some of the methods used within this project are now outdated - but were releven
 
 **Utilizing ERC721 & ERC20 stanadards, Web3JS, TronBoxJS, AWS Lambda, APIs, Custom Image Server, Babel, Mapping SDKs.**
 
-*(v2 version continas majority of work)*
+*(v2 version contians majority of work)*
 
 ## CryptoPunks2 - 2021 onwards
 [CryptoPunks2/](CryptoPunks2/)
