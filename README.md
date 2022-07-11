@@ -3,6 +3,7 @@
 
 ## dAppBridge - 2018
 [dAppBridge](dAppBridge)
+
 [dAppBridge-Client/](dAppBridge-Client/)
 
 An Ethereum Oracle service developed in 2018 (Prior to Chainlink becaming the market leader in this space!)
@@ -28,6 +29,7 @@ Notary Proxy is a Middleware service that when used in an audit-able environment
 
 ## PlanetCrypto - 2018 onwards
 [PlanetCrypto/](PlanetCrypto/)
+
 [PlanetCryptov2/](PlanetCrypto/v2)
 
 One of the first NFT trading games for Ethereum - splits the globe into a 10x10 matrix of "plots".  Each plot can be added into a custom NFT (E.g. Add the plots around the Eithel Tower to own the NFT of the landmark)
@@ -57,6 +59,7 @@ Various offline processes manage the NFT database (AWS MySQL) by watching for ne
 
 ## diceroll - 2018
 [DiceRoll/](DiceRoll/)
+
 [DiceRoll](DiceRoll)
 
 A gaming DApp that utlizes the random functionality of dAppBridge (Above)
@@ -72,12 +75,12 @@ Contracts: [tronwinP3T/contracts/project/contracts](tronwinP3T/contracts/project
 A gaming DApp featuring multiple on-chain games along with player ownership via the TronWin token (ERC20/TRC20).
 
 ## hexrun - 2020
-[HexRun](HexRun)
+[HexRun/](HexRun/)
 
 A gaming DApp using a ERC20 token (HEX).
 
 ## ethmatrix, tronmatrix & bscmatrix
-(Matrix)[Matrix/]
+[Matrix/](Matrix/)
 
 Multiple chain investment gaming that had a multi million dollar turn-over.
 
